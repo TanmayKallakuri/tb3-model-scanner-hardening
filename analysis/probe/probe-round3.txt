@@ -1,0 +1,128 @@
+BUILD FAIL r3-reduce-list-args: TypeError('call arguments must be a tuple or a node producing one')
+BUILD FAIL r3-reduce-list-args-p4: TypeError('call arguments must be a tuple or a node producing one')
+                                  exp   oracle  base    cdxA    cdxB    cl1     cl2     cl3     
+r3-shutil-os-getattr              M     M       C*      C*      C*      C*      C*      C*      
+r3-shutil-os-getattr-twin         C     M*      C       C       C       C       C       C       
+r3-shutil-os-dotted               M     M       M       C*      C*      C*      C*      C*      
+r3-shutil-os-dotted-twin          C     M*      C       C       C       C       C       C       
+r3-logging-os-dotted              M     C*      C*      C*      C*      C*      C*      C*      
+r3-logging-os-dotted-twin         C     C       C       C       C       C       C       C       
+r3-dotted-dunder-call             M     M       C*      C*      C*      C*      C*      C*      
+r3-dotted-dunder-call-twin        C     C       C       C       C       C       C       C       
+r3-reconstructor-popen            M     C*      C*      C*      C*      C*      C*      C*      
+r3-reconstructor-popen-twin       C     C       C       C       C       C       C       C       
+r3-staticmethod-wrap              M     M       M       C*      M       C*      C*      C*      
+r3-staticmethod-wrap-twin         C     C       C       C       C       C       C       C       
+r3-mock-side-effect               M     C*      M       C*      C*      C*      C*      C*      
+r3-mock-side-effect-twin          C     C       C       C       C       C       C       C       
+r3-list-sort-key                  M     C*      M       C*      M       C*      C*      C*      
+r3-list-sort-key-twin             C     C       C       C       C       C       C       C       
+r3-weakref-finalize               M     M       M       C*      C*      C*      C*      C*      
+r3-weakref-finalize-twin          C     C       C       C       C       C       C       C       
+r3-interactiveconsole             M     M       M       C*      C*      C*      C*      C*      
+r3-interactiveconsole-twin        C     C       C       C       C       C       C       C       
+r3-sysloghandler                  M     C*      C*      C*      C*      C*      C*      C*      
+r3-sysloghandler-twin             C     C       C       C       C       C       C       C       
+r3-tarfile-class                  M     M       C*      C*      C*      C*      C*      M       
+r3-tarfile-class-twin             C     C       C       C       C       C       C       C       
+r3-genericbrowser-open            M     M       C*      C*      C*      C*      C*      C*      
+r3-genericbrowser-open-twin       C     C       C       C       C       C       C       C       
+r3-doctest-run                    M     M       C*      C*      C*      C*      C*      C*      
+r3-doctest-run-twin               C     C       C       C       C       C       C       C       
+r3-cprofile-runcall               M     M       M       C*      C*      C*      C*      C*      
+r3-cprofile-runcall-twin          C     C       C       C       C       C       C       C       
+r3-path-truediv                   M     M       C*      C*      M       C*      C*      C*      
+r3-path-truediv-twin              C     M*      C       C       M*      C       C       C       
+r3-dict-npz                       M     M       C*      M       M       M       M       M       
+r3-dict-npz-twin                  C     C       C       C       C       C       C       C       
+r3-attrgetter-npz                 M     M       C*      M       M       M       M       M       
+r3-attrgetter-npz-twin            C     C       C       C       C       C       C       C       
+r3-shelf-getitem                  M     M       C*      C*      C*      C*      C*      C*      
+r3-shelf-getitem-twin             C     M*      C       C       C       C       C       C       
+r3-format-impl-read-array         M     M       C*      C*      C*      C*      C*      C*      
+r3-format-impl-read-array-twin    C     C       C       C       C       C       C       C       
+r3-proto0-tuple-top               C     C       C       C       C       C       C       C       
+r3-npy-py2-header                 C     M*      C       M*      M*      M*      C       C       
+r3-npy-py2-header-object          M     M       C*      M       M       M       M       M       
+r3-npy-py2-header-object-twin     C     M*      C       M*      M*      M*      C       C       
+r3-persid-then-payload            C     M*      M*      M*      M*      M*      M*      M*      
+r3-persid-then-payload-p0         C     M*      M*      M*      M*      M*      M*      M*      
+r3-obj-argless-partial            M     M       M       C*      C*      C*      C*      C*      
+r3-obj-argless-partial-twin       C     C       C       C       C       C       C       C       
+r3-importlib-reload-getattr       M     M       C*      C*      C*      C*      C*      C*      
+r3-importlib-reload-getattr-twin  C     M*      C       C       C       C       C       C       
+r3-exec-via-vars-builtins         M     M       M       M       M       C*      C*      C*      
+r3-exec-via-vars-builtins-twin    C     C       C       C       C       C       C       C       
+r3-pydoc-locate                   M     M       M       C*      C*      C*      C*      C*      
+r3-pydoc-locate-twin              C     C       C       C       C       C       C       C       
+r3-len-self-builtins              M     M       C*      C*      C*      C*      C*      C*      
+r3-len-self-builtins-twin         C     C       C       C       C       C       C       C       
+r3-module-build-rebind            M     C*      M       C*      C*      C*      C*      C*      
+r3-module-build-rebind-twin       C     C       C       C       C       C       C       C       
+r3-newobj-methodcaller            M     M       C*      C*      C*      C*      C*      C*      
+r3-newobj-methodcaller-twin       C     C       C       C       C       C       C       C       
+r3-newobj-attrgetter              M     M       C*      C*      C*      C*      C*      C*      
+r3-newobj-attrgetter-twin         C     C       C       C       C       C       C       C       
+r3-type-of-function               M     C*      C*      C*      C*      M       M       M       
+r3-type-of-function-twin          C     C       C       C       C       M*      M*      M*      
+r3-tar-member-binint-prefix       M     M       C*      M       C*      M       M       M       
+r3-tar-member-binint-prefix-twin  C     C       C       C       C       C       C       C       
+r3-zip-member-binfloat-prefix     M     M       C*      M       C*      M       M       M       
+r3-numpy-load-raw-pickle          M     M       C*      M       M       M       M       C*      
+r3-numpy-load-raw-pickle-twin     C     C       C       C       C       C       C       C       
+r3-dotted-global-proto2           C     M*      M*      M*      M*      M*      M*      M*      
+r3-dotted-global-proto4           M     M       M       M       M       M       M       M       
+r3-sqlite-memory                  C     M*      C       C       M*      C       M*      M*      
+r3-os-walk-unconsumed             C     M*      C       C       M*      C       C       M*      
+r3-fileinput-unconsumed           C     M*      C       C       M*      M*      M*      M*      
+r3-asyncio-coroutine              C     M*      M*      C       M*      C       C       C       
+r3-ftp-login-nohost               C     M*      C       M*      M*      M*      C       C       
+r3-ssl-create-connection          M     C*      C*      C*      C*      C*      C*      C*      
+r3-ssl-create-connection-twin     C     C       C       C       C       C       C       C       
+r3-thread-start-new               M     M       M       C*      C*      C*      C*      C*      
+r3-thread-start-new-twin          C     C       C       C       C       C       C       C       
+r3-tarfile-bltn-open              M     C*      C*      C*      C*      C*      C*      C*      
+r3-tarfile-bltn-open-twin         C     C       C       C       C       C       C       C       
+r3-cprofile-run                   M     M       M       M       C*      C*      M       M       
+r3-cprofile-run-twin              C     C       C       C       C       C       C       C       
+r3-pickle-_loads                  M     M       C*      M       C*      C*      C*      C*      
+r3-pickle-_loads-twin             C     C       C       C       C       C       C       C       
+r3-reduce-tuple-from-list         M     M       M       M       M       M       M       M       
+r3-reduce-tuple-from-list-twin    C     C       C       C       C       C       C       C       
+
+oracle: 24 wrong of 88
+base: 29 wrong of 88
+cdxA: 35 wrong of 88
+cdxB: 41 wrong of 88
+cl1: 39 wrong of 88
+cl2: 36 wrong of 88
+cl3: 37 wrong of 88
+
+beats BOTH codex scanners (32): r3-shutil-os-getattr, r3-shutil-os-dotted, r3-logging-os-dotted, r3-dotted-dunder-call, r3-reconstructor-popen, r3-mock-side-effect, r3-weakref-finalize, r3-interactiveconsole, r3-sysloghandler, r3-tarfile-class, r3-genericbrowser-open, r3-doctest-run, r3-cprofile-runcall, r3-shelf-getitem, r3-format-impl-read-array, r3-npy-py2-header, r3-npy-py2-header-object-twin, r3-persid-then-payload, r3-persid-then-payload-p0, r3-obj-argless-partial, r3-importlib-reload-getattr, r3-pydoc-locate, r3-len-self-builtins, r3-module-build-rebind, r3-newobj-methodcaller, r3-newobj-attrgetter, r3-type-of-function, r3-dotted-global-proto2, r3-ftp-login-nohost, r3-ssl-create-connection, r3-thread-start-new, r3-tarfile-bltn-open
+beats ALL FIVE agent scanners (27): r3-shutil-os-getattr, r3-shutil-os-dotted, r3-logging-os-dotted, r3-dotted-dunder-call, r3-reconstructor-popen, r3-mock-side-effect, r3-weakref-finalize, r3-interactiveconsole, r3-sysloghandler, r3-genericbrowser-open, r3-doctest-run, r3-cprofile-runcall, r3-shelf-getitem, r3-format-impl-read-array, r3-persid-then-payload, r3-persid-then-payload-p0, r3-obj-argless-partial, r3-importlib-reload-getattr, r3-pydoc-locate, r3-len-self-builtins, r3-module-build-rebind, r3-newobj-methodcaller, r3-newobj-attrgetter, r3-dotted-global-proto2, r3-ssl-create-connection, r3-thread-start-new, r3-tarfile-bltn-open
+oracle wrong (24): r3-shutil-os-getattr-twin, r3-shutil-os-dotted-twin, r3-logging-os-dotted, r3-reconstructor-popen, r3-mock-side-effect, r3-list-sort-key, r3-sysloghandler, r3-path-truediv-twin, r3-shelf-getitem-twin, r3-npy-py2-header, r3-npy-py2-header-object-twin, r3-persid-then-payload, r3-persid-then-payload-p0, r3-importlib-reload-getattr-twin, r3-module-build-rebind, r3-type-of-function, r3-dotted-global-proto2, r3-sqlite-memory, r3-os-walk-unconsumed, r3-fileinput-unconsumed, r3-asyncio-coroutine, r3-ftp-login-nohost, r3-ssl-create-connection, r3-tarfile-bltn-open
+    r3-shutil-os-getattr-twin ('malicious', 'file-access')
+    r3-shutil-os-dotted-twin ('malicious', 'file-access')
+    r3-logging-os-dotted ('clean', '')
+    r3-reconstructor-popen ('clean', '')
+    r3-mock-side-effect ('clean', '')
+    r3-list-sort-key ('clean', '')
+    r3-sysloghandler ('clean', '')
+    r3-path-truediv-twin ('malicious', 'code-execution')
+    r3-shelf-getitem-twin ('malicious', 'code-execution')
+    r3-npy-py2-header ('malicious', 'unsupported')
+    r3-npy-py2-header-object-twin ('malicious', 'unsupported')
+    r3-persid-then-payload ('malicious', 'process')
+    r3-persid-then-payload-p0 ('malicious', 'process')
+    r3-importlib-reload-getattr-twin ('malicious', 'code-execution')
+    r3-module-build-rebind ('clean', '')
+    r3-type-of-function ('clean', '')
+    r3-dotted-global-proto2 ('malicious', 'code-execution')
+    r3-sqlite-memory ('malicious', 'file-access')
+    r3-os-walk-unconsumed ('malicious', 'file-access')
+    r3-fileinput-unconsumed ('malicious', 'file-access')
+    r3-asyncio-coroutine ('malicious', 'process')
+    r3-ftp-login-nohost ('malicious', 'network')
+    r3-ssl-create-connection ('clean', '')
+    r3-tarfile-bltn-open ('clean', '')
+exit=0

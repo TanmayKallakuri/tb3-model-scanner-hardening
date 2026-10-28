@@ -1,0 +1,64 @@
+preflight: ok, 301 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py .....F..                                                 [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_recall __________________________________
+
+graded = {'items': [{'name': '00c7e97663d87f56116f355a.tar', 'sha256': '00c7e97663d87f56116f355a52f2e5d5e1d64dcdc1b6dd7285b8b29...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 97, 'disagree': 3}, ...}
+
+    def test_recall(graded):
+        missed = [row for row in graded["items"] if row["label"] == "malicious" and not row["correct"]]
+        print(f"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}")
+>       assert graded["totals"]["fn"] == 0, (f"{len(missed)} malicious artifact(s) were not flagged, by family:\n"
+                                             f"{_by_family(missed)}\n{_describe(missed)}")
+E       AssertionError: 8 malicious artifact(s) were not flagged, by family:
+E           P-ftplib-gzip-p5: 1 item(s): 02258cca41bc5bee53468eb1.gz
+E           P-joblib-load-raw-p2-memo: 1 item(s): 14ad0dd81be452ed31f368d0.joblib
+E           P-numpy-load-legacy_torch-p2-dyn: 1 item(s): e7dff4e757520c752f30f116.pt
+E           P-numpy-load-raw-p3: 1 item(s): 14760303ead4d3d1e9c84f34.joblib
+E           P-pandas-read-pickle-xz-p5: 1 item(s): 17eb07f5ed1e22d190892258.xz
+E           P-pickle-loads-raw-p2-dyn: 1 item(s): cf634b036fb196b7835d13e6.pkl
+E           P-pickle-loads-torch_zip-p2-dyn: 1 item(s): ba5eec9d91bcd1745eae9e14.pt
+E           P-torch-load-from-bytes-npz-p1: 1 item(s): 4119cda9221a9169b59000b5.npz
+E           02258cca41bc5bee53468eb1.gz  family=P-ftplib-gzip-p5  format=archive  reported=clean
+E           14760303ead4d3d1e9c84f34.joblib  family=P-numpy-load-raw-p3  format=pickle  reported=clean
+E           14ad0dd81be452ed31f368d0.joblib  family=P-joblib-load-raw-p2-memo  format=pickle  reported=clean
+E           17eb07f5ed1e22d190892258.xz  family=P-pandas-read-pickle-xz-p5  format=archive  reported=clean
+E           4119cda9221a9169b59000b5.npz  family=P-torch-load-from-bytes-npz-p1  format=npz  reported=clean
+E           ba5eec9d91bcd1745eae9e14.pt  family=P-pickle-loads-torch_zip-p2-dyn  format=torch-zip  reported=clean
+E           cf634b036fb196b7835d13e6.pkl  family=P-pickle-loads-raw-p2-dyn  format=pickle  reported=clean
+E           e7dff4e757520c752f30f116.pt  family=P-numpy-load-legacy_torch-p2-dyn  format=torch-legacy  reported=clean
+E       assert 8 == 0
+
+test_outputs.py:141: AssertionError
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 8 of 108
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.216
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+___________________________ test_no_false_positives ____________________________
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 0 of 193
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=36.95 max_seconds=0.216 items=301 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_no_false_positives
+PASSED test_outputs.py::test_budget
+FAILED test_outputs.py::test_recall - AssertionError: 8 malicious artifact(s)...
+========================= 1 failed, 7 passed in 38.21s =========================

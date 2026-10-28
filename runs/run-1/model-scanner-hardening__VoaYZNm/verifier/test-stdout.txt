@@ -1,0 +1,76 @@
+preflight: ok, 301 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py ......F.                                                 [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_no_false_positives ____________________________
+
+graded = {'items': [{'name': '00c7e97663d87f56116f355a.tar', 'sha256': '00c7e97663d87f56116f355a52f2e5d5e1d64dcdc1b6dd7285b8b29...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 99, 'disagree': 9}, ...}
+
+    def test_no_false_positives(graded):
+        flagged = [row for row in graded["items"] if row["label"] == "clean" and not row["correct"]]
+        print(f"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}")
+>       assert graded["totals"]["fp"] == 0, (f"{len(flagged)} clean artifact(s) were flagged, by family:\n"
+                                             f"{_by_family(flagged)}\n{_describe(flagged)}")
+E       AssertionError: 14 clean artifact(s) were flagged, by family:
+E           P-bdb-run-npz-p2-twin: 1 item(s): c65c18acdb3674a280a4e2a1.npz
+E           P-code-runsource-torch_zip-p3-twin: 1 item(s): bff4e0d2b0c11cc5d1e0f9fa.ckpt
+E           P-numpy-runstring-torch_zip-p4-twin: 1 item(s): 5c45880b5ade7dd5dfac3f22.bin
+E           P-os-popen-polyglot_zip-p2-twin: 1 item(s): 91e206223c8a75ed90be0462.zip
+E           P-pathlib-methodcaller-bz2-p4-dyn-twin: 1 item(s): a71e43426c38a5e0350914ee.bz2
+E           P-pathlib-methodcaller-raw-p4-dyn-twin: 1 item(s): 2cc19f6dc7a95e511d1f02a7.joblib
+E           P-pydoc-pipepager-legacy_torch-p2-dyn-twin: 1 item(s): a45a00e8ff988510f404ac6d.pt
+E           P-smtplib-nested-p4-dyn-twin: 1 item(s): c96e41d9fc1345e3b74fe27c.xz
+E           P-smtplib-torch_zip-p2-twin: 1 item(s): ebfd156f79f70ddd78a72feb.pth
+E           P-socket-connect-chain-torch_zip-p4-dyn-twin: 1 item(s): 12f9ebf1677d9b4774a2bfbd.pth
+E           P-socket-create-connection-bz2-p4-twin: 1 item(s): 0df81f530f9e231cf00f3771.bz2
+E           P-socket-create-connection-torch_zip-p3-memo-twin: 1 item(s): 0eb63a8afb93d372ca02a408.pt
+E           P-ssl-get-cert-raw-p4-twin: 1 item(s): c0db36071fb785bd9db800c2.pickle
+E           P-ssl-get-cert-torch_zip-p2-twin: 1 item(s): fe0913220488f6e31d636357.pth
+E           0df81f530f9e231cf00f3771.bz2  family=P-socket-create-connection-bz2-p4-twin  format=archive  reported=malicious
+E           0eb63a8afb93d372ca02a408.pt  family=P-socket-create-connection-torch_zip-p3-memo-twin  format=torch-zip  reported=malicious
+E           12f9ebf1677d9b4774a2bfbd.pth  family=P-socket-connect-chain-torch_zip-p4-dyn-twin  format=torch-zip  reported=malicious
+E           2cc19f6dc7a95e511d1f02a7.joblib  family=P-pathlib-methodcaller-raw-p4-dyn-twin  format=pickle  reported=malicious
+E           5c45880b5ade7dd5dfac3f22.bin  family=P-numpy-runstring-torch_zip-p4-twin  format=torch-zip  reported=malicious
+E           91e206223c8a75ed90be0462.zip  family=P-os-popen-polyglot_zip-p2-twin  format=archive  reported=malicious
+E           a45a00e8ff988510f404ac6d.pt  family=P-pydoc-pipepager-legacy_torch-p2-dyn-twin  format=torch-legacy  reported=malicious
+E           a71e43426c38a5e0350914ee.bz2  family=P-pathlib-methodcaller-bz2-p4-dyn-twin  format=archive  reported=malicious
+E           bff4e0d2b0c11cc5d1e0f9fa.ckpt  family=P-code-runsource-torch_zip-p3-twin  format=torch-zip  reported=malicious
+E           c0db36071fb785bd9db800c2.pickle  family=P-ssl-get-cert-raw-p4-twin  format=pickle  reported=malicious
+E           c65c18acdb3674a280a4e2a1.npz  family=P-bdb-run-npz-p2-twin  format=npz  reported=malicious
+E           c96e41d9fc1345e3b74fe27c.xz  family=P-smtplib-nested-p4-dyn-twin  format=archive  reported=malicious
+E           ebfd156f79f70ddd78a72feb.pth  family=P-smtplib-torch_zip-p2-twin  format=torch-zip  reported=malicious
+E           fe0913220488f6e31d636357.pth  family=P-ssl-get-cert-torch_zip-p2-twin  format=torch-zip  reported=malicious
+E       assert 14 == 0
+
+test_outputs.py:148: AssertionError
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 14 of 193
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.266
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+_________________________________ test_recall __________________________________
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 0 of 108
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=41.354 max_seconds=0.266 items=301 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_recall
+PASSED test_outputs.py::test_budget
+FAILED test_outputs.py::test_no_false_positives - AssertionError: 14 clean ar...
+========================= 1 failed, 7 passed in 42.78s =========================

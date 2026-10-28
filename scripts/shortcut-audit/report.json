@@ -1,0 +1,87 @@
+{
+ "items": 648,
+ "classifiers": {
+  "all-clean": {
+   "fn": 262,
+   "fp": 0,
+   "reward": 0,
+   "accuracy": 0.5957
+  },
+  "all-malicious": {
+   "fn": 0,
+   "fp": 386,
+   "reward": 0,
+   "accuracy": 0.4043
+  },
+  "canary-grep": {
+   "fn": 156,
+   "fp": 163,
+   "reward": 0,
+   "accuracy": 0.5077
+  },
+  "dangerous-name-grep": {
+   "fn": 156,
+   "fp": 98,
+   "reward": 0,
+   "accuracy": 0.608
+  },
+  "parse-error-or-multistream": {
+   "fn": 231,
+   "fp": 34,
+   "reward": 0,
+   "accuracy": 0.591
+  },
+  "no-frame-no-memoize": {
+   "fn": 262,
+   "fp": 3,
+   "reward": 0,
+   "accuracy": 0.591
+  },
+  "size-threshold(-77106)": {
+   "fn": 261,
+   "fp": 1,
+   "reward": 0,
+   "accuracy": 0.5957
+  },
+  "extension-majority(fit-on-corpus)": {
+   "fn": 245,
+   "fp": 17,
+   "reward": 0,
+   "accuracy": 0.5957
+  },
+  "stump-entropy(fit-on-corpus)": {
+   "fn": 217,
+   "fp": 42,
+   "reward": 0,
+   "accuracy": 0.6003
+  },
+  "stump-memoize_count(fit-on-corpus)": {
+   "fn": 247,
+   "fp": 12,
+   "reward": 0,
+   "accuracy": 0.6003
+  },
+  "stump-global_count(fit-on-corpus)": {
+   "fn": 249,
+   "fp": 12,
+   "reward": 0,
+   "accuracy": 0.5972
+  },
+  "stump-zip_members(fit-on-corpus)": {
+   "fn": 262,
+   "fp": 0,
+   "reward": 0,
+   "accuracy": 0.5957
+  },
+  "baseline-scanner": {
+   "fn": 238,
+   "fp": 32,
+   "reward": 0,
+   "accuracy": 0.5833
+  }
+ },
+ "strongest_shortcut": [
+  "dangerous-name-grep",
+  0.608
+ ]
+}

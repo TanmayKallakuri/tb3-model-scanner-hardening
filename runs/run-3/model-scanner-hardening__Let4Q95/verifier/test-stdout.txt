@@ -1,0 +1,35 @@
+preflight: ok, 301 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py ........                                                 [100%]
+
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.216
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+_________________________________ test_recall __________________________________
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 0 of 108
+___________________________ test_no_false_positives ____________________________
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 0 of 193
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=37.616 max_seconds=0.216 items=301 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_recall
+PASSED test_outputs.py::test_no_false_positives
+PASSED test_outputs.py::test_budget
+============================== 8 passed in 38.93s ==============================

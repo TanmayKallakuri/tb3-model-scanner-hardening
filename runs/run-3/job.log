@@ -1,0 +1,122 @@
+Skipping image OS validation for hb__f8371db0fe97819bea486189bc252e39: docker inspect returned 1
+Running command: apt-get update && apt-get install -y curl nodejs npm ripgrep
+Command outputs captured
+Running command: set -euo pipefail; if ldd --version 2>&1 | grep -qi musl || [ -f /etc/alpine-release ]; then  npm install -g @openai/codex@latest; else  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash &&  export NVM_DIR="$HOME/.nvm" &&  \. "$NVM_DIR/nvm.sh" || true &&  command -v nvm &>/dev/null || { echo 'Error: NVM failed to load' >&2; exit 1; } &&  nvm install 22 && nvm alias default 22 && npm -v &&  npm install -g @openai/codex@latest; fi && codex --version
+Command outputs captured
+Running command: for bin in node codex; do  BIN_PATH="$(which "$bin" 2>/dev/null || true)";  if [ -n "$BIN_PATH" ] && [ "$BIN_PATH" != "/usr/local/bin/$bin" ]; then    ln -sf "$BIN_PATH" "/usr/local/bin/$bin";  fi; done
+Command outputs captured
+Running command: mkdir -p "$CODEX_HOME" /tmp/codex-secrets /logs/agent
+Command outputs captured
+Codex auth: using <codex-auth-file> from <codex-auth-file>
+Running command: ln -sf <codex-auth-file> <codex-auth-file>
+
+Command outputs captured
+Running command: if [ -s ~/.nvm/nvm.sh ]; then . ~/.nvm/nvm.sh; fi; codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check --model gpt-6-astra --json --enable unified_exec -c model_reasoning_effort=xhigh -- 'ModelGate is the static scanner our model registry runs on every uploaded artifact before accepting it. It lives in `/app/modelgate/` and the registry invokes it once per artifact as `python3 -I /app/modelgate/cli.py scan --output /tmp/report.json /path/to/artifact`, reading the JSON report described in `/app/docs/report-schema.md`. The red team has shown that artifacts which run code when loaded get past it, and that it also flags some legitimate models. Harden the scanner so that its verdict matches the registry policy in `/app/docs/threat-model.md` for every artifact that policy covers: an artifact is `malicious` when loading it with its format'"'"'s standard loader, or invoking a function it exports, would execute attacker-controlled code, start a process, access files outside the artifact, or open a network connection, and `clean` otherwise. A missed malicious artifact and a flagged legitimate one are equally wrong.
+
+The registry grades the scanner on its own held-out corpus, built to the threat model, not on the examples in `/app/samples/`. Those examples, their labels in `/app/samples/labels.json` and the harness `/app/evaluate.py` show the formats, containers and report format, but they do not cover every technique the threat model describes. Only `/app/modelgate/` is deployed, so everything the scanner needs must live there, and the command line and report schema above must keep working unchanged. Scanning must never cause any behaviour of an artifact to run: the registry runs the scanner in an isolated sandbox and treats any process it starts, any network connection it opens and any file it writes other than its report as a failed scan. The registry scans its held-out corpus of roughly 300 artifacts in one pass, invoking the scanner once per artifact; the whole pass must finish within 900 seconds and no single artifact may take more than 60 seconds, using only the Python packages already installed in this environment.
+
+You have 28800 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.
+' 2>&1 </dev/null | tee /logs/agent/codex.txt
+Command outputs captured
+Running command: mkdir -p /logs/agent
+if [ -d "$CODEX_HOME/sessions" ]; then
+  rm -rf /logs/agent/sessions
+  cp -R "$CODEX_HOME/sessions" /logs/agent/sessions
+fi
+Command outputs captured
+Running command: rm -rf /tmp/codex-secrets "$CODEX_HOME"
+Command outputs captured
+Wrote Codex trajectory to jobs\run-3\model-scanner-hardening__LMR5moN\agent\trajectory.json
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__lmr5mon__env --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\environment -f <home>\AppData\Local\Temp\tmpwyyow30w\model-scanner-hardening__LMR5moN__env-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpzdw9f36n\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpzg8mssts\docker-compose-mounts.json cp main:/app/modelgate//. jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\app\modelgate. Return code: 1. Stdout:  model-scanner-hardening__lmr5mon__env-main-1 Copying model-scanner-hardening__lmr5mon__env-main-1:/app/modelgate//. to jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\app\modelgate
+invalid output path: directory "<home>\\Downloads\\klavis-tb3\\tasks\\model-scanner-hardening\\environment\\jobs\\run-3\\model-scanner-hardening__LMR5moN\\artifacts\\app" does not exist
+. Stderr: None. 
+Skipping image OS validation for hb__5507f56e8f8e859babc34d722092a429: docker inspect returned 1
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__lmr5mon__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmp0hwinad1\model-scanner-hardening__LMR5moN__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpes2ct55s\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmps1kv3ufr\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\logs\artifacts/. main:/logs/artifacts. Return code: 1. Stdout:  model-scanner-hardening__lmr5mon__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\logs\artifacts/. to model-scanner-hardening__lmr5mon__verifier__trial-main-1:/logs/artifacts
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__lmr5mon__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmp0hwinad1\model-scanner-hardening__LMR5moN__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpes2ct55s\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmps1kv3ufr\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\app\modelgate/. main:/app/modelgate/. Return code: 1. Stdout:  model-scanner-hardening__lmr5mon__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__LMR5moN\artifacts\app\modelgate/. to model-scanner-hardening__lmr5mon__verifier__trial-main-1:/app/modelgate/
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+Skipping image OS validation for hb__f8371db0fe97819bea486189bc252e39: docker inspect returned 1
+Running command: apt-get update && apt-get install -y curl nodejs npm ripgrep
+Command outputs captured
+Running command: set -euo pipefail; if ldd --version 2>&1 | grep -qi musl || [ -f /etc/alpine-release ]; then  npm install -g @openai/codex@latest; else  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash &&  export NVM_DIR="$HOME/.nvm" &&  \. "$NVM_DIR/nvm.sh" || true &&  command -v nvm &>/dev/null || { echo 'Error: NVM failed to load' >&2; exit 1; } &&  nvm install 22 && nvm alias default 22 && npm -v &&  npm install -g @openai/codex@latest; fi && codex --version
+Command outputs captured
+Running command: for bin in node codex; do  BIN_PATH="$(which "$bin" 2>/dev/null || true)";  if [ -n "$BIN_PATH" ] && [ "$BIN_PATH" != "/usr/local/bin/$bin" ]; then    ln -sf "$BIN_PATH" "/usr/local/bin/$bin";  fi; done
+Command outputs captured
+Running command: mkdir -p "$CODEX_HOME" /tmp/codex-secrets /logs/agent
+Command outputs captured
+Codex auth: using <codex-auth-file> from <codex-auth-file>
+Running command: ln -sf <codex-auth-file> <codex-auth-file>
+
+Command outputs captured
+Running command: if [ -s ~/.nvm/nvm.sh ]; then . ~/.nvm/nvm.sh; fi; codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check --model gpt-6-astra --json --enable unified_exec -c model_reasoning_effort=xhigh -- 'ModelGate is the static scanner our model registry runs on every uploaded artifact before accepting it. It lives in `/app/modelgate/` and the registry invokes it once per artifact as `python3 -I /app/modelgate/cli.py scan --output /tmp/report.json /path/to/artifact`, reading the JSON report described in `/app/docs/report-schema.md`. The red team has shown that artifacts which run code when loaded get past it, and that it also flags some legitimate models. Harden the scanner so that its verdict matches the registry policy in `/app/docs/threat-model.md` for every artifact that policy covers: an artifact is `malicious` when loading it with its format'"'"'s standard loader, or invoking a function it exports, would execute attacker-controlled code, start a process, access files outside the artifact, or open a network connection, and `clean` otherwise. A missed malicious artifact and a flagged legitimate one are equally wrong.
+
+The registry grades the scanner on its own held-out corpus, built to the threat model, not on the examples in `/app/samples/`. Those examples, their labels in `/app/samples/labels.json` and the harness `/app/evaluate.py` show the formats, containers and report format, but they do not cover every technique the threat model describes. Only `/app/modelgate/` is deployed, so everything the scanner needs must live there, and the command line and report schema above must keep working unchanged. Scanning must never cause any behaviour of an artifact to run: the registry runs the scanner in an isolated sandbox and treats any process it starts, any network connection it opens and any file it writes other than its report as a failed scan. The registry scans its held-out corpus of roughly 300 artifacts in one pass, invoking the scanner once per artifact; the whole pass must finish within 900 seconds and no single artifact may take more than 60 seconds, using only the Python packages already installed in this environment.
+
+You have 28800 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.
+' 2>&1 </dev/null | tee /logs/agent/codex.txt
+Command failed
+Running command: mkdir -p /logs/agent
+if [ -d "$CODEX_HOME/sessions" ]; then
+  rm -rf /logs/agent/sessions
+  cp -R "$CODEX_HOME/sessions" /logs/agent/sessions
+fi
+Command outputs captured
+Running command: rm -rf /tmp/codex-secrets "$CODEX_HOME"
+Command outputs captured
+Wrote Codex trajectory to jobs\run-3\model-scanner-hardening__Let4Q95\agent\trajectory.json
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__let4q95__env --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\environment -f <home>\AppData\Local\Temp\tmpo7b1do4w\model-scanner-hardening__Let4Q95__env-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpu22asxf9\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmp683nkhn2\docker-compose-mounts.json cp main:/app/modelgate//. jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\app\modelgate. Return code: 1. Stdout:  model-scanner-hardening__let4q95__env-main-1 Copying model-scanner-hardening__let4q95__env-main-1:/app/modelgate//. to jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\app\modelgate
+invalid output path: directory "<home>\\Downloads\\klavis-tb3\\tasks\\model-scanner-hardening\\environment\\jobs\\run-3\\model-scanner-hardening__Let4Q95\\artifacts\\app" does not exist
+. Stderr: None. 
+Skipping image OS validation for hb__5507f56e8f8e859babc34d722092a429: docker inspect returned 1
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__let4q95__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmplm9avjwq\model-scanner-hardening__Let4Q95__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpkr6d7w_k\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpldil_sl6\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\logs\artifacts/. main:/logs/artifacts. Return code: 1. Stdout:  model-scanner-hardening__let4q95__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\logs\artifacts/. to model-scanner-hardening__let4q95__verifier__trial-main-1:/logs/artifacts
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__let4q95__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmplm9avjwq\model-scanner-hardening__Let4Q95__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpkr6d7w_k\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpldil_sl6\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\app\modelgate/. main:/app/modelgate/. Return code: 1. Stdout:  model-scanner-hardening__let4q95__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__Let4Q95\artifacts\app\modelgate/. to model-scanner-hardening__let4q95__verifier__trial-main-1:/app/modelgate/
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Skipping image OS validation for hb__f8371db0fe97819bea486189bc252e39: docker inspect returned 1
+Running command: apt-get update && apt-get install -y curl nodejs npm ripgrep
+Command outputs captured
+Running command: set -euo pipefail; if ldd --version 2>&1 | grep -qi musl || [ -f /etc/alpine-release ]; then  npm install -g @openai/codex@latest; else  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash &&  export NVM_DIR="$HOME/.nvm" &&  \. "$NVM_DIR/nvm.sh" || true &&  command -v nvm &>/dev/null || { echo 'Error: NVM failed to load' >&2; exit 1; } &&  nvm install 22 && nvm alias default 22 && npm -v &&  npm install -g @openai/codex@latest; fi && codex --version
+Command outputs captured
+Running command: for bin in node codex; do  BIN_PATH="$(which "$bin" 2>/dev/null || true)";  if [ -n "$BIN_PATH" ] && [ "$BIN_PATH" != "/usr/local/bin/$bin" ]; then    ln -sf "$BIN_PATH" "/usr/local/bin/$bin";  fi; done
+Command outputs captured
+Running command: mkdir -p "$CODEX_HOME" /tmp/codex-secrets /logs/agent
+Command outputs captured
+Codex auth: using <codex-auth-file> from <codex-auth-file>
+Running command: ln -sf <codex-auth-file> <codex-auth-file>
+
+Command outputs captured
+Running command: if [ -s ~/.nvm/nvm.sh ]; then . ~/.nvm/nvm.sh; fi; codex exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check --model gpt-6-astra --json --enable unified_exec -c model_reasoning_effort=xhigh -- 'ModelGate is the static scanner our model registry runs on every uploaded artifact before accepting it. It lives in `/app/modelgate/` and the registry invokes it once per artifact as `python3 -I /app/modelgate/cli.py scan --output /tmp/report.json /path/to/artifact`, reading the JSON report described in `/app/docs/report-schema.md`. The red team has shown that artifacts which run code when loaded get past it, and that it also flags some legitimate models. Harden the scanner so that its verdict matches the registry policy in `/app/docs/threat-model.md` for every artifact that policy covers: an artifact is `malicious` when loading it with its format'"'"'s standard loader, or invoking a function it exports, would execute attacker-controlled code, start a process, access files outside the artifact, or open a network connection, and `clean` otherwise. A missed malicious artifact and a flagged legitimate one are equally wrong.
+
+The registry grades the scanner on its own held-out corpus, built to the threat model, not on the examples in `/app/samples/`. Those examples, their labels in `/app/samples/labels.json` and the harness `/app/evaluate.py` show the formats, containers and report format, but they do not cover every technique the threat model describes. Only `/app/modelgate/` is deployed, so everything the scanner needs must live there, and the command line and report schema above must keep working unchanged. Scanning must never cause any behaviour of an artifact to run: the registry runs the scanner in an isolated sandbox and treats any process it starts, any network connection it opens and any file it writes other than its report as a failed scan. The registry scans its held-out corpus of roughly 300 artifacts in one pass, invoking the scanner once per artifact; the whole pass must finish within 900 seconds and no single artifact may take more than 60 seconds, using only the Python packages already installed in this environment.
+
+You have 28800 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.
+' 2>&1 </dev/null | tee /logs/agent/codex.txt
+Command failed
+Running command: mkdir -p /logs/agent
+if [ -d "$CODEX_HOME/sessions" ]; then
+  rm -rf /logs/agent/sessions
+  cp -R "$CODEX_HOME/sessions" /logs/agent/sessions
+fi
+Command outputs captured
+Running command: rm -rf /tmp/codex-secrets "$CODEX_HOME"
+Command outputs captured
+Wrote Codex trajectory to jobs\run-3\model-scanner-hardening__JbXtYWb\agent\trajectory.json
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__jbxtywb__env --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\environment -f <home>\AppData\Local\Temp\tmpvapy5ffm\model-scanner-hardening__JbXtYWb__env-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpfwb070yl\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpw9oeokr0\docker-compose-mounts.json cp main:/app/modelgate//. jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\app\modelgate. Return code: 1. Stdout:  model-scanner-hardening__jbxtywb__env-main-1 Copying model-scanner-hardening__jbxtywb__env-main-1:/app/modelgate//. to jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\app\modelgate
+invalid output path: directory "<home>\\Downloads\\klavis-tb3\\tasks\\model-scanner-hardening\\environment\\jobs\\run-3\\model-scanner-hardening__JbXtYWb\\artifacts\\app" does not exist
+. Stderr: None. 
+Skipping image OS validation for hb__5507f56e8f8e859babc34d722092a429: docker inspect returned 1
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__jbxtywb__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmpi456olxy\model-scanner-hardening__JbXtYWb__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpqe6tt9ql\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpd3o23np_\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\logs\artifacts/. main:/logs/artifacts. Return code: 1. Stdout:  model-scanner-hardening__jbxtywb__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\logs\artifacts/. to model-scanner-hardening__jbxtywb__verifier__trial-main-1:/logs/artifacts
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment model-scanner-hardening. Command: docker compose --project-name model-scanner-hardening__jbxtywb__verifier__trial --project-directory <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests -f <home>\AppData\Local\Temp\tmpi456olxy\model-scanner-hardening__JbXtYWb__verifier__trial-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f <home>\AppData\Local\Temp\tmpqe6tt9ql\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmpd3o23np_\docker-compose-mounts.json cp jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\app\modelgate/. main:/app/modelgate/. Return code: 1. Stdout:  model-scanner-hardening__jbxtywb__verifier__trial-main-1 Copying jobs\run-3\model-scanner-hardening__JbXtYWb\artifacts\app\modelgate/. to model-scanner-hardening__jbxtywb__verifier__trial-main-1:/app/modelgate/
+GetFileAttributesEx <home>\Downloads\klavis-tb3\tasks\model-scanner-hardening\tests\jobs: The system cannot find the file specified.
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached

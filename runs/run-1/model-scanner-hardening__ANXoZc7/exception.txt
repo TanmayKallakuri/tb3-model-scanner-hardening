@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\single_step.py", line 77, in _run_agent
+    await self._run_agent_phase(
+    ...<5 lines>...
+    )
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 608, in _run_agent_phase
+    await asyncio.wait_for(
+    ...<6 lines>...
+    )
+  File "<home>\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\agents\installed\base.py", line 186, in wrapper
+    return await fn(self, instruction, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\agents\installed\claude_code.py", line 1908, in run
+    await self.exec_as_agent(
+    ...<14 lines>...
+    )
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\agents\installed\base.py", line 1007, in exec_as_agent
+    return await self._exec(
+           ^^^^^^^^^^^^^^^^^
+        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "<home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\agents\installed\base.py", line 974, in _exec
+    raise self._classify_exec_error(command, result)
+harbor.agents.installed.base.ApiRateLimitError: Command failed (exit 1): export PATH="$HOME/.local/bin:$PATH"; harbor_claude_code_instruction_abe792aa91104c9bb5bf2e49d89a75e2="$HARBOR_CLAUDE_CODE_INSTRUCTION_ABE792AA91104C9BB5BF2E49D89A75E2"; unset HARBOR_CLAUDE_CODE_INSTRUCTION_ABE792AA91104C9BB5BF2E49D89A75E2; printf "%s" "$harbor_claude_code_instruction_abe792aa91104c9bb5bf2e49d89a75e2" | claude --verbose --output-format=stream-json --effort max --permission-mode=bypassPermissions --print 2>&1 | tee /logs/agent/claude-code.txt
+stdout: {"type":"system","subtype":"init","cwd":"/app","session_id":"373ca690-e1c8-427f-8a3f-3f56ecc19761","tools":["Task","Bash","CronCreate","CronDelete","CronList","Edit","EnterWorktree","ExitWorktree","ListAgents","Monitor","NotebookEdit","Read","RemoteT ... [475299 chars truncated] ... subtype":"success","api_error_status":429,"api_error_origin":"first_party","api_error":"model_requires_usage_credits","result":"You're out of usage credits. Switch to another model to continue.","type":"result","duration_ms":119390,"uuid":"bdd3839b-fa8e-41cf-ab62-5e3c92977ae6","queued_turn_count":0,"result_index":0,"model_usage_since_last_result":{"claude-fable-5-1":{"inputTokens":226,"outputTokens":10344,"cacheReadInputTokens":425286,"cacheCreationInputTokens":90804,"webSearchRequests":0,"costUSD":2.4418615,"contextWindow":1000000,"maxOutputTokens":64000,"thinkingTokens":1384,"cacheCreationEphemeral5mInputTokens":0,"cacheCreationEphemeral1hInputTokens":90804,"canonicalModel":"claude-fable-5-1","provider":"firstParty","costBasis":"list"}}}
+
+stderr: None

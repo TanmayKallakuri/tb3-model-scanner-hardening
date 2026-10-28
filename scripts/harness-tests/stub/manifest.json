@@ -1,0 +1,26 @@
+[
+ {
+  "sha256": "49682c24d25c210a597fac051a093e94e7eb5e418af382080eb1ee17512e93a4",
+  "name": "49682c24d25c210a597fac05.pkl",
+  "label": "malicious",
+  "format": "pickle",
+  "family": "P-stub-marker",
+  "capability": "code-execution"
+ },
+ {
+  "sha256": "6f562f2782f4ab27de725078bb0074910b5ab654cb20f9bb1b3fb298cb262ad3",
+  "name": "6f562f2782f4ab27de725078.pkl",
+  "label": "clean",
+  "format": "pickle",
+  "family": "B-stub-dict",
+  "capability": null
+ },
+ {
+  "sha256": "a451d72cbb2f76bef6c2b8a213f39544207cfdf4ab99d2f0ab37add15f93a675",
+  "name": "a451d72cbb2f76bef6c2b8a2",
+  "label": "clean",
+  "format": "savedmodel",
+  "family": "B-stub-savedmodel",
+  "capability": null
+ }
+]

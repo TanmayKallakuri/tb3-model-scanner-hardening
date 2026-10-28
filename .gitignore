@@ -1,0 +1,13 @@
+# Harbor job output (trajectories, logs, images) is large and may hold tokens
+jobs/
+# Python
+.venv/
+__pycache__/
+*.pyc
+# Local env files (never commit auth)
+*.env
+.env*
+# Scratch
+tmp/
+# Session-state hook output (local)
+.session-state/

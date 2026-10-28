@@ -1,0 +1,392 @@
+[
+ [
+  "tf matmul serving WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_serve_26/dropout/Identity exempt=False"
+ ],
+ [
+  "tf matmul serving WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_serve_26/dropout/Identity exempt=False"
+ ],
+ [
+  "tf matmul serving ReadFile data",
+  "OK",
+  "fired=False info=__inference_serve_26/cond/Identity exempt=False"
+ ],
+ [
+  "tf matmul wrapper WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_signature_wrapper_serve_36/dropout/Identity exempt=False"
+ ],
+ [
+  "tf matmul wrapper WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_36/dropout/Identity exempt=False"
+ ],
+ [
+  "tf matmul wrapper ReadFile data",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_36/cond/Identity exempt=False"
+ ],
+ [
+  "tf matmul if_branch WriteFile control benign=False",
+  "OK",
+  "fired=True info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf matmul if_branch WriteFile control benign=True",
+  "OK",
+  "fired=False info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf matmul if_branch ReadFile data",
+  "OK",
+  "fired=False info=cond_true_431/embedding/Gather exempt=False"
+ ],
+ [
+  "tf cond serving WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_serve_211/dropout/Identity exempt=False"
+ ],
+ [
+  "tf cond serving WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_serve_211/dropout/Identity exempt=False"
+ ],
+ [
+  "tf cond serving ReadFile data",
+  "OK",
+  "fired=False info=__inference_serve_211/cond/Identity_7 exempt=False"
+ ],
+ [
+  "tf cond wrapper WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_signature_wrapper_serve_219/dropout/Identity exempt=False"
+ ],
+ [
+  "tf cond wrapper WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_219/dropout/Identity exempt=False"
+ ],
+ [
+  "tf cond wrapper ReadFile data",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_219/cond/Identity exempt=False"
+ ],
+ [
+  "tf cond if_branch WriteFile control benign=False",
+  "OK",
+  "fired=True info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf cond if_branch WriteFile control benign=True",
+  "OK",
+  "fired=False info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf cond if_branch ReadFile data",
+  "OK",
+  "fired=False info=cond_true_431/embedding/Gather exempt=False"
+ ],
+ [
+  "tf loop serving WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_serve_399/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop serving WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_serve_399/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop serving ReadFile data",
+  "OK",
+  "fired=False info=__inference_serve_399/cond/Identity exempt=False"
+ ],
+ [
+  "tf loop wrapper WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_signature_wrapper_serve_407/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop wrapper WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_407/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop wrapper ReadFile data",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_407/cond/Identity exempt=False"
+ ],
+ [
+  "tf loop if_branch WriteFile control benign=False",
+  "OK",
+  "fired=True info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf loop if_branch WriteFile control benign=True",
+  "OK",
+  "fired=False info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf loop if_branch ReadFile data",
+  "OK",
+  "fired=False info=cond_true_431/embedding/Gather exempt=False"
+ ],
+ [
+  "tf loop while_body WriteFile control benign=False",
+  "OK",
+  "fired=True info=while_body_361/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop while_body WriteFile control benign=True",
+  "OK",
+  "fired=False info=while_body_361/dropout/Identity exempt=False"
+ ],
+ [
+  "tf loop while_body ReadFile data",
+  "OK",
+  "fired=False info=while_body_361/cond/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_serve_572/dropout/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_serve_572/dropout/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving ReadFile data",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures wrapper WriteFile control benign=False",
+  "OK",
+  "fired=True info=__inference_signature_wrapper_serve_580/dropout/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures wrapper WriteFile control benign=True",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_580/dropout/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures wrapper ReadFile data",
+  "OK",
+  "fired=False info=__inference_signature_wrapper_serve_580/cond/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures if_branch WriteFile control benign=False",
+  "OK",
+  "fired=True info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf two_signatures if_branch WriteFile control benign=True",
+  "OK",
+  "fired=False info=cond_true_431/restore/Const exempt=False"
+ ],
+ [
+  "tf two_signatures if_branch ReadFile data",
+  "OK",
+  "fired=False info=cond_true_431/embedding/Gather exempt=False"
+ ],
+ [
+  "tf matmul serving WriteFile second-meta-graph",
+  "OK",
+  "fired=True info=__inference_serve_26/dropout/Identity exempt=False"
+ ],
+ [
+  "tf cond serving WriteFile pbtxt",
+  "OK",
+  "fired=True info=__inference_serve_211/dropout/Identity exempt=False"
+ ],
+ [
+  "tf matmul skeleton benign",
+  "OK",
+  "fired=False info=None/None exempt=False"
+ ],
+ [
+  "tf two_signatures serving MatchingFiles",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving MatchingFilesDataset",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving TextLineDataset",
+  "OK",
+  "fired=False info=__inference_serve_572/dense_1/BiasAdd exempt=False"
+ ],
+ [
+  "tf two_signatures serving TFRecordDataset",
+  "OK",
+  "fired=False info=__inference_serve_572/dense_1/BiasAdd exempt=False"
+ ],
+ [
+  "tf two_signatures serving FixedLengthRecordDataset",
+  "OK",
+  "fired=False info=__inference_serve_572/restore/Const exempt=False"
+ ],
+ [
+  "tf two_signatures serving WholeFileReaderV2",
+  "OK",
+  "fired=False info=__inference_serve_572/sequential/dense/MatMul exempt=False"
+ ],
+ [
+  "tf two_signatures serving TextLineReaderV2",
+  "OK",
+  "fired=False info=__inference_serve_572/sequential/dense/MatMul exempt=False"
+ ],
+ [
+  "tf two_signatures serving TFRecordReaderV2",
+  "OK",
+  "fired=False info=__inference_serve_572/sequential/dense/MatMul exempt=False"
+ ],
+ [
+  "tf two_signatures serving FixedLengthRecordReaderV2",
+  "OK",
+  "fired=False info=__inference_serve_572/sequential/dense/MatMul exempt=False"
+ ],
+ [
+  "tf two_signatures serving Save",
+  "OK",
+  "fired=False info=__inference_serve_572/dense_1/BiasAdd_2 exempt=False"
+ ],
+ [
+  "tf two_signatures serving SaveSlices",
+  "OK",
+  "fired=False info=__inference_serve_572/save/Const_2 exempt=False"
+ ],
+ [
+  "tf two_signatures serving GenerateVocabRemapping",
+  "OK",
+  "fired=False info=__inference_serve_572/dropout/Identity exempt=False"
+ ],
+ [
+  "tf two_signatures serving PyFunc",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=True"
+ ],
+ [
+  "tf two_signatures serving PyFuncStateless",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=True"
+ ],
+ [
+  "tf two_signatures serving EagerPyFunc",
+  "OK",
+  "fired=False info=__inference_serve_572/cond/Identity exempt=True"
+ ],
+ [
+  "tf two_signatures serving Restore",
+  "OK",
+  "fired=False info=__inference_serve_572/dropout/Identity exempt=True"
+ ],
+ [
+  "tf two_signatures serving RestoreSlice",
+  "OK",
+  "fired=False info=__inference_serve_572/dense_1/BiasAdd exempt=True"
+ ],
+ [
+  "tf two_signatures serving LoadAndRemapMatrix",
+  "OK",
+  "fired=False info=__inference_serve_572/restore/Const exempt=True"
+ ],
+ [
+  "tf two_signatures serving ImmutableConst",
+  "OK",
+  "fired=False info=__inference_serve_572/sequential/dense/MatMul exempt=True"
+ ],
+ [
+  "tf two_signatures serving RegisterDataset",
+  "OK",
+  "fired=False info=__inference_serve_572/save/Const_2 exempt=True"
+ ],
+ [
+  "keras functional.keras top lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras functional.keras top benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras functional.h5 top lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras functional.h5 top benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras nested.keras nested lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras nested.keras nested benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras nested.h5 nested lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras nested.h5 nested benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras wrappers.keras wrapper lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras wrappers.keras wrapper benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras wrappers.h5 wrapper lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras wrappers.h5 wrapper benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras conv.keras top lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras conv.keras top benign",
+  "OK",
+  "fired=False"
+ ],
+ [
+  "keras conv.h5 top lambda",
+  "OK",
+  "fired=True"
+ ],
+ [
+  "keras conv.h5 top benign",
+  "OK",
+  "fired=False"
+ ]
+]

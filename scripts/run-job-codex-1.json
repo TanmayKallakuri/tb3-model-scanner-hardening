@@ -1,0 +1,23 @@
+{
+  "n_attempts": 1,
+  "jobs_dir": "jobs",
+  "n_concurrent_trials": 2,
+  "environment": {
+    "type": "docker"
+  },
+  "tasks": [
+    {
+      "path": "tasks/model-scanner-hardening"
+    }
+  ],
+  "agents": [
+    {
+      "name": "codex",
+      "model_name": "openai/gpt-6-astra",
+      "kwargs": {
+        "reasoning_effort": "xhigh"
+      },
+      "env": {}
+    }
+  ]
+}

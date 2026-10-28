@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "verifiable": {
+      "outcome": "pass",
+      "explanation": "The verifier regenerates a deterministic, seeded corpus, re-runs the scanner once per artifact under strict sandboxing, and grades via exact schema/recall/false-positive/budget checks with no runtime network installs (all deps baked into tests/Dockerfile). This is fully programmatic and deterministic."
+    },
+    "solvable": {
+      "outcome": "pass",
+      "explanation": "A complete reference solution (solution/modelgate/) implements a symbolic pickle interpreter, SavedModel op-table walker, and Keras Lambda scanner that matches the documented threat model, consistent with the 8-hour expert_time_estimate and the 8-hour agent timeout set in task.toml."
+    },
+    "difficult": {
+      "outcome": "pass",
+      "explanation": "Correctly implementing this requires genuine expertise in CPython pickle internals (memo, protocol-0 opcodes, REDUCE/BUILD/NEWOBJ semantics), TensorFlow graph protobuf structure, and Keras serialization, well beyond an average undergraduate's reach, as evidenced by the extensive twin-pair adversarial corpus described in the README."
+    },
+    "interesting": {
+      "outcome": "pass",
+      "explanation": "Hardening a static scanner against malicious ML model uploads is a real supply-chain security problem (mirrors real tools like ModelScan/picklescan) that ML-platform security engineers are paid to solve."
+    },
+    "outcome_verified": {
+      "outcome": "pass",
+      "explanation": "The instruction states the end goal (scanner verdicts must match the threat model) without prescribing an implementation approach, and the tests grade only final scanner behavior (verdicts, schema, side effects, timing), not the method used to get there."
+    },
+    "anti_cheat_robustness": {
+      "outcome": "pass",
+      "explanation": "The hidden 650-item corpus, its manifest, and the generator all live only in tests/ (verifier image), never reaching the agent container; preflight.py even asserts no sha256 overlap between the hidden corpus and the visible 30-sample set, and corpus names are content-hashed with shuffled order so no naming shortcut exists."
+    },
+    "task_security": {
+      "outcome": "pass",
+      "explanation": "All Dockerfiles, scripts, and generator code (including the adversarial pickle/TF/Keras payload generators used to build test fixtures) are legitimate, clearly-scoped security-research code for a malware-scanning task; no exfiltration, obfuscation, or host-escape behavior was found."
+    },
+    "functional_verification": {
+      "outcome": "pass",
+      "explanation": "Verification executes the submitted scanner as a subprocess against real artifacts and parses its JSON output program matically; it never greps the agent's source code for keywords."
+    },
+    "deterministic_reproducible": {
+      "outcome": "pass",
+      "explanation": "The corpus generator uses a fixed seed (SEED = 0x4D47) pinned to Python 3.12, all pip dependencies are version-pinned identically in environment/Dockerfile and tests/Dockerfile, and no live services are used."
+    },
+    "essential_difficulty": {
+      "outcome": "pass",
+      "explanation": "Difficulty comes from correctly reasoning about what each loader would execute (capability analysis), not from output formatting; the report schema itself is simple (three string keys per finding)."
+    },
+    "test_instruction_alignment": {
+      "outcome": "pass",
+      "explanation": "Every test (staging, corpus integrity, schema, side-effects, recall, false-positives, budget) traces directly to a requirement stated or referenced in instruction.md, and the instruction's core requirements (correct verdicts, unchanged CLI/schema, no side effects, time budget) are all covered by tests."
+    },
+    "novel": {
+      "outcome": "pass",
+      "explanation": "The exact capability policy, report schema, and twin-pair adversarial corpus are custom-built for this task and not a reproducible textbook exercise; memorized public picklescan/ModelScan solutions would not satisfy this task's specific closed op-table and schema requirements."
+    },
+    "agentic": {
+      "outcome": "pass",
+      "explanation": "Solving this requires iterative exploration of the baseline scanner, the threat model, and sample artifacts, followed by multi-file implementation and repeated testing via evaluate.py; it cannot be done in a single zero-shot generation."
+    },
+    "reviewable": {
+      "outcome": "pass",
+      "explanation": "The README's verification explanation describes in detail how hidden-corpus labels were derived by actually executing each artifact with real loaders (torch/TF/Keras/sklearn/NumPy) and recording canary actions, including documented exceptions, giving a non-specialist reviewer enough to judge correctness even though the one-off offline labeling script itself isn't shipped."
+    },
+    "instruction_concision": {
+      "outcome": "pass",
+      "explanation": "instruction.md uses absolute paths throughout, states the goal (match the registry policy) without prescribing an implementation approach, and reads as dense, human-written technical prose rather than LLM-generated filler."
+    },
+    "effective_instruction_length": {
+      "outcome": "pass",
+      "explanation": "instruction.md itself is a concise 299 words; the referenced threat-model.md (1604 words) and report-schema.md (339 words) are dense normative specifications (capability tables, op tables, schema rules) that the agent must implement against exactly, not padding or repetition, so the length is justified."
+    },
+    "solution_quality": {
+      "outcome": "pass",
+      "explanation": "solve.sh copies a genuine, independently-written implementation (symbolic pickletools interpreter, protobuf-based SavedModel walker, Keras JSON walker) from solution/modelgate/ rather than echoing a precomputed answer, and all substantial code lives in its own files rather than heredocs in solve.sh."
+    },
+    "separate_verifier_configured": {
+      "outcome": "pass",
+      "explanation": "The verifier only reads the staged /app/modelgate/ artifact plus files baked into tests/ (manifest.json, generator code); tests/Dockerfile pre-installs all verifier tooling (protobuf, numpy, h5py, pytest, pytest-json-ctrf) with no runtime installs in test.sh; and the duplicated vendored tfproto bindings differ from the agent copy only in package-relative import paths (modelgate.tfproto vs gen.tfproto), not in logic."
+    },
+    "environment_hygiene": {
+      "outcome": "pass",
+      "explanation": "environment/Dockerfile copies only app/ (docs, baseline scanner, samples) and installs only the three runtime deps the scanner needs; tests/Dockerfile owns all test-only tooling (pytest, ctrf plugin) and the unprivileged scanuser; neither Dockerfile uses apt so the apt-pinning rule doesn't apply."
+    },
+    "structured_data_schema": {
+      "outcome": "pass",
+      "explanation": "report-schema.md gives an exact, explicitly normative JSON schema (field set, allowed enum values, non-empty-iff rule) for the scanner's report output."
+    },
+    "typos": {
+      "outcome": "pass",
+      "explanation": "A review of instruction.md, the docs, task.toml, and the solution/test code found no typos in filenames, paths, commands, or identifiers."
+    },
+    "difficulty_explanation_quality": {
+      "outcome": "pass",
+      "explanation": "The README's difficulty explanation concretely names the specific hard cases (memo-reached globals, protocol-0 text opcodes, nested deserializers, TF library functions, Keras Lambda nesting) that defeat naive approaches, explains why pattern matching and blocklists lose on twin pairs, and names the real-world role (security engineer on a model-registry/ML-platform team) that would face this."
+    },
+    "solution_explanation_quality": {
+      "outcome": "pass",
+      "explanation": "The README's solution explanation describes the actual strategy (symbolic interpreter over pickletools.genops with capability-chain rules, closed-table SavedModel walk, recursive Keras JSON walk with fail-closed budgets) and is fully consistent with what the solution/modelgate/ code implements."
+    },
+    "verification_explanation_quality": {
+      "outcome": "pass",
+      "explanation": "The README's verification explanation enumerates the eight checks, matches test_outputs.py exactly, and explicitly justifies the one inequality-based threshold (the 900s/60s time budget) with concrete numbers (expected ~0.15s/artifact vs a 1.4s/artifact budget) rather than an unexplained bound."
+    },
+    "category_and_tags": {
+      "outcome": "pass",
+      "explanation": "Security/Reverse engineering fits a static-analysis malware-scanning task, and tags (pickle, pytorch, tensorflow, keras, model-serialization, static-analysis, supply-chain) are specific and directly descriptive of the task's skills."
+    },
+    "task_name": {
+      "outcome": "pass",
+      "explanation": "\"model-scanner-hardening\" is a concise, three-word, kebab-case, descriptive slug that accurately conveys the task's content."
+    },
+    "resource_configuration": {
+      "outcome": "pass",
+      "explanation": "The verifier timeout (1800s) comfortably covers the harness's own 1200s hard wall-clock plus staging/corpus overhead, the agent timeout (8h) matches the stated 8-hour expert estimate, and cpus/memory are modest and justified by a lightweight static-analysis workload, not inflated for artificial difficulty."
+    },
+    "task_readme": {
+      "outcome": "fail",
+      "explanation": "The README's \"Relevant experience\" section is left as an unfilled placeholder (\"TODO(Tanmay): the ModelScan disclosure in his words.\"), so one of the four required sections has no actual content."
+    },
+    "expert_time_estimate": {
+      "outcome": "pass",
+      "explanation": "expert_time_estimate_hours = 8 is non-zero and consistent with both the agent's 8-hour timeout and the README's description of a genuinely deep, multi-format implementation task."
+    },
+    "task_toml_schema": {
+      "outcome": "pass",
+      "explanation": "task.toml contains only recognized fields across [task], [metadata], [verifier], [agent], and [environment]; no invented fields were found."
+    },
+    "no_extraneous_files": {
+      "outcome": "fail",
+      "explanation": "The task directory ships a `.session-state/` folder (SESSION-STATE.md, SESSION-LOG.md) containing the task author's own Claude Code session bookkeeping, including a local Windows filesystem path; nothing in the Dockerfiles, instruction, solution, or tests references it, so it is leftover authoring-tool cruft that should not have shipped."
+    },
+    "artifact_efficiency": {
+      "outcome": "pass",
+      "explanation": "The only declared artifact is /app/modelgate/, the agent's own deliverable; the large hidden corpus is regenerated from a seed inside the verifier image rather than being shipped as an artifact, so no build-time-fixed content is transferred."
+    },
+    "verifier_execution_isolation": {
+      "outcome": "pass",
+      "explanation": "The root pytest process never imports agent code directly; it only shells out via setpriv to run the staged cli.py as an unprivileged scanuser (uid 61000) with rlimits and a scrubbed environment, /logs/verifier and /tests are chmod 700 before any agent code runs, and root alone derives the reward from the pytest exit code."
+    },
+    "ctrf_reporting": {
+      "outcome": "pass",
+      "explanation": "test.sh runs pytest with `--ctrf /logs/verifier/ctrf.json` against test_outputs.py, and test.sh itself parses that CTRF file to confirm exactly the expected 8 named tests passed before writing the reward."
+    },
+    "do_not_modify_enforced": {
+      "outcome": "not_applicable",
+      "explanation": "instruction.md contains no \"do not modify/preserve\" constraint naming a concrete artifact the agent must leave untouched; it only states that the CLI and schema contract must keep working, which is a functional requirement tested directly, not a protect-this-file constraint."
+    },
+    "binary_reward": {
+      "outcome": "pass",
+      "explanation": "test.sh writes exactly \"1\" or \"0\" to reward.txt based on the pytest exit code and a strict CTRF-shape check (all 8 named tests passed); no fractional or weighted value is ever written."
+    },
+    "score_provenance": {
+      "outcome": "pass",
+      "explanation": "harness.write_details writes a rich reward-details.json with per-item rows, totals (tp/fn/fp/tn, timeouts, canary events, seconds), thresholds, and pass flags, preserving the measured values behind every binary decision, including on failing items."
+    }
+  }
+}

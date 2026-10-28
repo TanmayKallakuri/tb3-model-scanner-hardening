@@ -1,0 +1,61 @@
+{
+    "id": "d79f2a0d-a526-48de-b796-609dfa0485c5",
+    "started_at": "2026-10-27T00:15:41.495668",
+    "updated_at": "2026-10-27T00:23:02.929640",
+    "finished_at": "2026-10-27T00:23:02.929640",
+    "n_total_trials": 2,
+    "stats": {
+        "n_completed_trials": 2,
+        "n_errored_trials": 1,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "claude-code__claude-fable-5-1__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "model-scanner-hardening__iktcx9M"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            },
+            "codex__gpt-6-astra__adhoc": {
+                "n_trials": 1,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "model-scanner-hardening__Pb8fpnE"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentSafetyRefusalError": [
+                        "model-scanner-hardening__Pb8fpnE"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 90475,
+        "n_cache_tokens": 60413,
+        "n_output_tokens": 12570,
+        "cost_usd": 0.7864862499999999
+    }
+}

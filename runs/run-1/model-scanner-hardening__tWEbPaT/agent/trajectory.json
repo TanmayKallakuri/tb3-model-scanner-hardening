@@ -1,0 +1,76 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "e610447e-80c2-4c83-b9d7-88b37cb4b328",
+  "agent": {
+    "name": "claude-code",
+    "version": "2.1.311",
+    "model_name": "<synthetic>",
+    "extra": {
+      "cwds": [
+        "/app"
+      ],
+      "git_branches": [
+        "HEAD"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-10-27T07:47:55.117Z",
+      "source": "user",
+      "message": "ModelGate is the static scanner our model registry runs on every uploaded artifact before accepting it. It lives in `/app/modelgate/` and the registry invokes it once per artifact as `python3 -I /app/modelgate/cli.py scan --output /tmp/report.json /path/to/artifact`, reading the JSON report described in `/app/docs/report-schema.md`. The red team has shown that artifacts which run code when loaded get past it, and that it also flags some legitimate models. Harden the scanner so that its verdict matches the registry policy in `/app/docs/threat-model.md` for every artifact that policy covers: an artifact is `malicious` when loading it with its format's standard loader, or invoking a function it exports, would execute attacker-controlled code, start a process, access files outside the artifact, or open a network connection, and `clean` otherwise. A missed malicious artifact and a flagged legitimate one are equally wrong.\n\nThe registry grades the scanner on its own held-out corpus, built to the threat model, not on the examples in `/app/samples/`. Those examples, their labels in `/app/samples/labels.json` and the harness `/app/evaluate.py` show the formats, containers and report format, but they do not cover every technique the threat model describes. Only `/app/modelgate/` is deployed, so everything the scanner needs must live there, and the command line and report schema above must keep working unchanged. Scanning must never cause any behaviour of an artifact to run: the registry runs the scanner in an isolated sandbox and treats any process it starts, any network connection it opens and any file it writes other than its report as a failed scan. The registry scans its held-out corpus of roughly 300 artifacts in one pass, invoking the scanner once per artifact; the whole pass must finish within 900 seconds and no single artifact may take more than 60 seconds, using only the Python packages already installed in this environment.\n\nYou have 28800 seconds to complete this task. Do not cheat by using online solutions or hints specific to this task.\n",
+      "extra": {
+        "is_sidechain": false
+      }
+    },
+    {
+      "step_id": 2,
+      "timestamp": "2026-10-27T07:47:55.538Z",
+      "source": "agent",
+      "model_name": "<synthetic>",
+      "message": "You're out of usage credits. Switch to another model to continue.",
+      "metrics": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "cached_tokens": 0,
+        "extra": {
+          "output_tokens_details": null,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": null,
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": null,
+          "iterations": null,
+          "speed": null,
+          "fallback_credit": null
+        }
+      },
+      "llm_call_count": 1,
+      "extra": {
+        "stop_reason": "stop_sequence",
+        "stop_sequence": "",
+        "cwd": "/app",
+        "is_sidechain": false
+      }
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 0,
+    "total_completion_tokens": 0,
+    "total_cached_tokens": 0,
+    "total_cost_usd": 0.0,
+    "total_steps": 2,
+    "extra": {
+      "total_cache_creation_input_tokens": 0,
+      "total_cache_read_input_tokens": 0
+    }
+  }
+}

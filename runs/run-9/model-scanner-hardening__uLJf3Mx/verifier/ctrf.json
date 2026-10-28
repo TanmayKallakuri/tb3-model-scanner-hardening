@@ -1,0 +1,107 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-28T06:41:02.421587+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 6,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793169581261,
+            "stop": 1793169662418
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 81061,
+                "start": 1793169581322,
+                "stop": 1793169662383,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 0,
+                "start": 1793169662384,
+                "stop": 1793169662384,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793169662385,
+                "stop": 1793169662386,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793169662386,
+                "stop": 1793169662387,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793169662387,
+                "stop": 1793169662388,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 20,
+                "start": 1793169662389,
+                "stop": 1793169662409,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 200, 'disagree': 34}, ...}\n\n    def test_recall(graded):\n        missed = [row for row in graded[\"items\"] if row[\"label\"] == \"malicious\" and not row[\"correct\"]]\n        print(f\"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}\")\n>       assert graded[\"totals\"][\"fn\"] == 0, (f\"{len(missed)} malicious artifact(s) were not flagged, by family:\\n\"\n                                             f\"{_by_family(missed)}\\n{_describe(missed)}\")\nE       AssertionError: 28 malicious artifact(s) were not flagged, by family:\nE           P-build-opener-open-npz-p3: 1 item(s): 59ebc9f5c2cc0d46991acc29.npz\nE           P-bz2-open-write-second_stream-p5-dyn: 1 item(s): d48b797a6c41a63f8ab75ad6.bin\nE           P-codecs-open-torch_zip-p2-memo-dyn: 1 item(s): 2c1fd6de79a4ffbf4784b5d1.ckpt\nE           P-cprofile-run-tar-p3-dyn: 1 item(s): 475a2f9c6950423664be822e.tar\nE           P-cprofile-runcall-raw-p3: 1 item(s): 665257353de403deef959ecd.joblib\nE           P-doctest-run-gzip-p5-dyn: 1 item(s): 98e9737957e05df10a907169.gz\nE           P-genericbrowser-open-raw-p4-dyn: 1 item(s): 8154c6d866ea2658677a130a.pkl\nE           P-gzip-open-write-tar-p2-dyn: 1 item(s): 81025ad304bc8b783bebc076.tar\nE           P-importlib-reload-getattr-raw-p5-dyn: 1 item(s): 1579fd5171d895f12b2edbc6.bin\nE           P-len-self-builtins-polyglot_zip-p4: 1 item(s): c0775385cae1e2956407195e.zip\nE           P-lmtp-tar-p2: 1 item(s): cfd6869132212f6f05a6a266.tar\nE           P-logging-os-dotted-nested-p4-dyn: 1 item(s): c381a89362463906a2ec9a75.tgz\nE           P-lzma-open-write-xz-p4-memo-dyn: 1 item(s): b2b2c02a7a5c0a36a32279c5.xz\nE           P-mock-side-effect-bz2-p1-dyn: 1 item(s): db63fc3e0fa4338810040032.bz2\nE           P-nntplib-raw-p2-memo: 1 item(s): e3351f6cb8c1f98fda4de098.pkl\nE           P-pickle-_loads-legacy_torch-p2: 1 item(s): 20d2963615a382d10801bfa1.pt\nE           P-pydoc-locate-nested-p4: 1 item(s): e5cff58f5518b5e7d6d6bf90.xz\nE           P-reconstructor-popen-xz-p4: 1 item(s): 87c3b17865cc33000b010854.xz\nE           P-shelf-getitem-torch_zip-p4: 1 item(s): 193cfb3b2ab53f2e86e4a1ea.pth\nE           P-singledispatch-wrap-torch_zip-p4: 1 item(s): 5fb0f6cdc956f2efa7756631.pth\nE           P-ssl-create-connection-polyglot_zip-p4-memo-dyn: 1 item(s): ef000c5041850285aa8aef2a.zip\nE           P-sysloghandler-gzip-p2: 1 item(s): 8d4ed3e68677ffdb53e880f5.gz\nE           P-tarfile-bltn-open-legacy_torch-p2-dyn: 1 item(s): 18c0ad6e2e45bd91d470eb4f.pth\nE           P-tarfile-class-torch_zip-p3-dyn: 1 item(s): 2fd05652e65fdbf6d8246d72.bin\nE           P-tarfile-write-torch_zip-p5-dyn: 1 item(s): b65b5ac7f1e30334348fe8cf.bin\nE           P-type-of-function-torch_zip-p2-dyn: 1 item(s): fd39d7ec53597907570e8b2c.pt\nE           P-weakref-finalize-second_stream-p2-dyn: 1 item(s): e1adde587c7bfbc2792d7320.pkl\nE           P-zipfile-write-zip-p2: 1 item(s): e2c20e19b379dca9c6bbee44.zip\nE           1579fd5171d895f12b2edbc6.bin  family=P-importlib-reload-getattr-raw-p5-dyn  format=pickle  reported=clean\nE           18c0ad6e2e45bd91d470eb4f.pth  family=P-tarfile-bltn-open-legacy_torch-p2-dyn  format=torch-legacy  reported=clean\nE           193cfb3b2ab53f2e86e4a1ea.pth  family=P-shelf-getitem-torch_zip-p4  format=torch-zip  reported=clean\nE           20d2963615a382d10801bfa1.pt  family=P-pickle-_loads-legacy_torch-p2  format=torch-legacy  reported=clean\nE           2c1fd6de79a4ffbf4784b5d1.ckpt  family=P-codecs-open-torch_zip-p2-memo-dyn  format=torch-zip  reported=clean\nE           2fd05652e65fdbf6d8246d72.bin  family=P-tarfile-class-torch_zip-p3-dyn  format=torch-zip  reported=clean\nE           475a2f9c6950423664be822e.tar  family=P-cprofile-run-tar-p3-dyn  format=archive  reported=clean\nE           59ebc9f5c2cc0d46991acc29.npz  family=P-build-opener-open-npz-p3  format=npz  reported=clean\nE           5fb0f6cdc956f2efa7756631.pth  family=P-singledispatch-wrap-torch_zip-p4  format=torch-zip  reported=clean\nE           665257353de403deef959ecd.joblib  family=P-cprofile-runcall-raw-p3  format=pickle  reported=clean\nE           81025ad304bc8b783bebc076.tar  family=P-gzip-open-write-tar-p2-dyn  format=archive  reported=clean\nE           8154c6d866ea2658677a130a.pkl  family=P-genericbrowser-open-raw-p4-dyn  format=pickle  reported=clean\nE           87c3b17865cc33000b010854.xz  family=P-reconstructor-popen-xz-p4  format=archive  reported=clean\nE           8d4ed3e68677ffdb53e880f5.gz  family=P-sysloghandler-gzip-p2  format=archive  reported=clean\nE           98e9737957e05df10a907169.gz  family=P-doctest-run-gzip-p5-dyn  format=archive  reported=clean\nE           b2b2c02a7a5c0a36a32279c5.xz  family=P-lzma-open-write-xz-p4-memo-dyn  format=archive  reported=clean\nE           b65b5ac7f1e30334348fe8cf.bin  family=P-tarfile-write-torch_zip-p5-dyn  format=torch-zip  reported=clean\nE           c0775385cae1e2956407195e.zip  family=P-len-self-builtins-polyglot_zip-p4  format=archive  reported=clean\nE           c381a89362463906a2ec9a75.tgz  family=P-logging-os-dotted-nested-p4-dyn  format=archive  reported=clean\nE           cfd6869132212f6f05a6a266.tar  family=P-lmtp-tar-p2  format=archive  reported=clean\nE           d48b797a6c41a63f8ab75ad6.bin  family=P-bz2-open-write-second_stream-p5-dyn  format=pickle  reported=clean\nE           db63fc3e0fa4338810040032.bz2  family=P-mock-side-effect-bz2-p1-dyn  format=archive  reported=clean\nE           e1adde587c7bfbc2792d7320.pkl  family=P-weakref-finalize-second_stream-p2-dyn  format=pickle  reported=clean\nE           e2c20e19b379dca9c6bbee44.zip  family=P-zipfile-write-zip-p2  format=archive  reported=clean\nE           e3351f6cb8c1f98fda4de098.pkl  family=P-nntplib-raw-p2-memo  format=pickle  reported=clean\nE           ... 3 more in /logs/verifier/reward-details.json\nE       assert 28 == 0\n\ntest_outputs.py:141: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 7,
+                "start": 1793169662409,
+                "stop": 1793169662416,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 200, 'disagree': 34}, ...}\n\n    def test_no_false_positives(graded):\n        flagged = [row for row in graded[\"items\"] if row[\"label\"] == \"clean\" and not row[\"correct\"]]\n        print(f\"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}\")\n>       assert graded[\"totals\"][\"fp\"] == 0, (f\"{len(flagged)} clean artifact(s) were flagged, by family:\\n\"\n                                             f\"{_by_family(flagged)}\\n{_describe(flagged)}\")\nE       AssertionError: 19 clean artifact(s) were flagged, by family:\nE           B-asyncio-coroutine: 1 item(s): 849df2a5a87f1329b9f8bc12.pickle\nE           B-ftp-login-nohost: 1 item(s): da3f7e70768127977555df24.bin\nE           B-os-walk-unconsumed: 1 item(s): a1abc092ba2b5fff423cb5b7.pickle\nE           B-sqlite-memory: 1 item(s): 853f5fbdfd03650884db6f7a.pickle\nE           KERAS-benign-decoy-key: 3 item(s): 949b85c63583f207ec07b12e.keras, bf85814097e8f4c9984e75c4.keras, f356a269aef618bf45992c2f.h5\nE           P-attrgetter-npz-tar-p2-twin: 1 item(s): d43951f935357a6242582707.tar\nE           P-dict-fromkeys-map-polyglot_zip-p4-twin: 1 item(s): 55aee9711ad1f29216698fff.zip\nE           P-dict-npz-npy-p5-memo-twin: 1 item(s): 04ae5d5378602347b7ddb208.npy\nE           P-executor-map-torch_zip-p3-twin: 1 item(s): 606ec9e85bb219bfc21f236f.ckpt\nE           P-executor-submit-bz2-p4-twin: 1 item(s): 89ae6d9ce4221236a670d101.bz2\nE           P-loads-memoryview-zip-p5-twin: 1 item(s): 477ffcfdf04a4aa2dd9cb1f1.zip\nE           P-path-truediv-bz2-p2-twin: 1 item(s): 4d85e431f14daf6c969dff80.bz2\nE           P-thread-run-polyglot_zip-p4-twin: 1 item(s): ccdabaef5affdd0ab2dab105.zip\nE           P-thread-start-npy-p5-dyn-twin: 1 item(s): 8ba210679016023f83500cf5.npy\nE           P-timer-start-npy-p5-twin: 1 item(s): 0e4a13cf73d740973aba1cf5.npy\nE           X-npy-py2-header-numeric: 1 item(s): 5640ead24781411bfd1e7149.npy\nE           X-npy-py2-header-object-twin: 1 item(s): 97d8909e7468c456c0034bee.npy\nE           04ae5d5378602347b7ddb208.npy  family=P-dict-npz-npy-p5-memo-twin  format=npy  reported=malicious\nE           0e4a13cf73d740973aba1cf5.npy  family=P-timer-start-npy-p5-twin  format=npy  reported=malicious\nE           477ffcfdf04a4aa2dd9cb1f1.zip  family=P-loads-memoryview-zip-p5-twin  format=archive  reported=malicious\nE           4d85e431f14daf6c969dff80.bz2  family=P-path-truediv-bz2-p2-twin  format=archive  reported=malicious\nE           55aee9711ad1f29216698fff.zip  family=P-dict-fromkeys-map-polyglot_zip-p4-twin  format=archive  reported=malicious\nE           5640ead24781411bfd1e7149.npy  family=X-npy-py2-header-numeric  format=npy  reported=malicious\nE           606ec9e85bb219bfc21f236f.ckpt  family=P-executor-map-torch_zip-p3-twin  format=torch-zip  reported=malicious\nE           849df2a5a87f1329b9f8bc12.pickle  family=B-asyncio-coroutine  format=pickle  reported=malicious\nE           853f5fbdfd03650884db6f7a.pickle  family=B-sqlite-memory  format=pickle  reported=malicious\nE           89ae6d9ce4221236a670d101.bz2  family=P-executor-submit-bz2-p4-twin  format=archive  reported=malicious\nE           8ba210679016023f83500cf5.npy  family=P-thread-start-npy-p5-dyn-twin  format=npy  reported=malicious\nE           949b85c63583f207ec07b12e.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious\nE           97d8909e7468c456c0034bee.npy  family=X-npy-py2-header-object-twin  format=npy  reported=malicious\nE           a1abc092ba2b5fff423cb5b7.pickle  family=B-os-walk-unconsumed  format=pickle  reported=malicious\nE           bf85814097e8f4c9984e75c4.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious\nE           ccdabaef5affdd0ab2dab105.zip  family=P-thread-run-polyglot_zip-p4-twin  format=archive  reported=malicious\nE           d43951f935357a6242582707.tar  family=P-attrgetter-npz-tar-p2-twin  format=archive  reported=malicious\nE           da3f7e70768127977555df24.bin  family=B-ftp-login-nohost  format=pickle  reported=malicious\nE           f356a269aef618bf45992c2f.h5  family=KERAS-benign-decoy-key  format=keras-h5  reported=malicious\nE       assert 19 == 0\n\ntest_outputs.py:148: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 2,
+                "start": 1793169662416,
+                "stop": 1793169662418,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

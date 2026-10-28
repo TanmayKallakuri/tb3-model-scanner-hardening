@@ -1,0 +1,107 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-27T09:07:16.575462+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 6,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793091997460,
+            "stop": 1793092036572
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 39023,
+                "start": 1793091997514,
+                "stop": 1793092036537,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793092036538,
+                "stop": 1793092036539,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793092036539,
+                "stop": 1793092036540,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793092036540,
+                "stop": 1793092036541,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793092036541,
+                "stop": 1793092036542,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 23,
+                "start": 1793092036542,
+                "stop": 1793092036565,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '00c7e97663d87f56116f355a.tar', 'sha256': '00c7e97663d87f56116f355a52f2e5d5e1d64dcdc1b6dd7285b8b29...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 99, 'disagree': 5}, ...}\n\n    def test_recall(graded):\n        missed = [row for row in graded[\"items\"] if row[\"label\"] == \"malicious\" and not row[\"correct\"]]\n        print(f\"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}\")\n>       assert graded[\"totals\"][\"fn\"] == 0, (f\"{len(missed)} malicious artifact(s) were not flagged, by family:\\n\"\n                                             f\"{_by_family(missed)}\\n{_describe(missed)}\")\nE       AssertionError: 4 malicious artifact(s) were not flagged, by family:\nE           P-bdb-run-npz-p2: 1 item(s): 8f1876e0bbf0c8cefc085254.npz\nE           P-code-runsource-torch_zip-p3: 1 item(s): 4924af228aa4a3ef9fb3de08.ckpt\nE           P-pathlib-methodcaller-bz2-p4-dyn: 1 item(s): e2f41583cff0ac8cfc87d73a.bz2\nE           P-pathlib-methodcaller-raw-p4-dyn: 1 item(s): 386d96595a1766a00140f254.joblib\nE           386d96595a1766a00140f254.joblib  family=P-pathlib-methodcaller-raw-p4-dyn  format=pickle  reported=clean\nE           4924af228aa4a3ef9fb3de08.ckpt  family=P-code-runsource-torch_zip-p3  format=torch-zip  reported=clean\nE           8f1876e0bbf0c8cefc085254.npz  family=P-bdb-run-npz-p2  format=npz  reported=clean\nE           e2f41583cff0ac8cfc87d73a.bz2  family=P-pathlib-methodcaller-bz2-p4-dyn  format=archive  reported=clean\nE       assert 4 == 0\n\ntest_outputs.py:141: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 6,
+                "start": 1793092036565,
+                "stop": 1793092036571,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '00c7e97663d87f56116f355a.tar', 'sha256': '00c7e97663d87f56116f355a52f2e5d5e1d64dcdc1b6dd7285b8b29...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 99, 'disagree': 5}, ...}\n\n    def test_no_false_positives(graded):\n        flagged = [row for row in graded[\"items\"] if row[\"label\"] == \"clean\" and not row[\"correct\"]]\n        print(f\"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}\")\n>       assert graded[\"totals\"][\"fp\"] == 0, (f\"{len(flagged)} clean artifact(s) were flagged, by family:\\n\"\n                                             f\"{_by_family(flagged)}\\n{_describe(flagged)}\")\nE       AssertionError: 5 clean artifact(s) were flagged, by family:\nE           P-joblib-load-raw-p2-memo-twin: 1 item(s): 99441d6d45a4e0a2ea6cc544.joblib\nE           P-numpy-load-legacy_torch-p2-dyn-twin: 1 item(s): 840037bd785f250d18aabc5b.pt\nE           P-pickle-loads-raw-p2-dyn-twin: 1 item(s): fdbbafaeaa629c477dfdba1c.pkl\nE           P-pickle-loads-torch_zip-p2-dyn-twin: 1 item(s): aae71d58b2c9d22a0883f540.pt\nE           P-torch-load-from-bytes-npz-p1-twin: 1 item(s): 3a1973957454c537c084a294.npz\nE           3a1973957454c537c084a294.npz  family=P-torch-load-from-bytes-npz-p1-twin  format=npz  reported=malicious\nE           840037bd785f250d18aabc5b.pt  family=P-numpy-load-legacy_torch-p2-dyn-twin  format=torch-legacy  reported=malicious\nE           99441d6d45a4e0a2ea6cc544.joblib  family=P-joblib-load-raw-p2-memo-twin  format=pickle  reported=malicious\nE           aae71d58b2c9d22a0883f540.pt  family=P-pickle-loads-torch_zip-p2-dyn-twin  format=torch-zip  reported=malicious\nE           fdbbafaeaa629c477dfdba1c.pkl  family=P-pickle-loads-raw-p2-dyn-twin  format=pickle  reported=malicious\nE       assert 5 == 0\n\ntest_outputs.py:148: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793092036571,
+                "stop": 1793092036572,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

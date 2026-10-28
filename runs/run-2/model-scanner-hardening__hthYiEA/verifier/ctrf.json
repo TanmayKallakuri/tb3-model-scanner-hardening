@@ -1,0 +1,104 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-27T10:26:13.949781+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 7,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793096735744,
+            "stop": 1793096773946
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 38123,
+                "start": 1793096735795,
+                "stop": 1793096773918,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773918,
+                "stop": 1793096773919,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773919,
+                "stop": 1793096773920,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773920,
+                "stop": 1793096773921,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773921,
+                "stop": 1793096773922,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 21,
+                "start": 1793096773922,
+                "stop": 1793096773943,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '00c7e97663d87f56116f355a.tar', 'sha256': '00c7e97663d87f56116f355a52f2e5d5e1d64dcdc1b6dd7285b8b29...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 97, 'disagree': 3}, ...}\n\n    def test_recall(graded):\n        missed = [row for row in graded[\"items\"] if row[\"label\"] == \"malicious\" and not row[\"correct\"]]\n        print(f\"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}\")\n>       assert graded[\"totals\"][\"fn\"] == 0, (f\"{len(missed)} malicious artifact(s) were not flagged, by family:\\n\"\n                                             f\"{_by_family(missed)}\\n{_describe(missed)}\")\nE       AssertionError: 8 malicious artifact(s) were not flagged, by family:\nE           P-ftplib-gzip-p5: 1 item(s): 02258cca41bc5bee53468eb1.gz\nE           P-joblib-load-raw-p2-memo: 1 item(s): 14ad0dd81be452ed31f368d0.joblib\nE           P-numpy-load-legacy_torch-p2-dyn: 1 item(s): e7dff4e757520c752f30f116.pt\nE           P-numpy-load-raw-p3: 1 item(s): 14760303ead4d3d1e9c84f34.joblib\nE           P-pandas-read-pickle-xz-p5: 1 item(s): 17eb07f5ed1e22d190892258.xz\nE           P-pickle-loads-raw-p2-dyn: 1 item(s): cf634b036fb196b7835d13e6.pkl\nE           P-pickle-loads-torch_zip-p2-dyn: 1 item(s): ba5eec9d91bcd1745eae9e14.pt\nE           P-torch-load-from-bytes-npz-p1: 1 item(s): 4119cda9221a9169b59000b5.npz\nE           02258cca41bc5bee53468eb1.gz  family=P-ftplib-gzip-p5  format=archive  reported=clean\nE           14760303ead4d3d1e9c84f34.joblib  family=P-numpy-load-raw-p3  format=pickle  reported=clean\nE           14ad0dd81be452ed31f368d0.joblib  family=P-joblib-load-raw-p2-memo  format=pickle  reported=clean\nE           17eb07f5ed1e22d190892258.xz  family=P-pandas-read-pickle-xz-p5  format=archive  reported=clean\nE           4119cda9221a9169b59000b5.npz  family=P-torch-load-from-bytes-npz-p1  format=npz  reported=clean\nE           ba5eec9d91bcd1745eae9e14.pt  family=P-pickle-loads-torch_zip-p2-dyn  format=torch-zip  reported=clean\nE           cf634b036fb196b7835d13e6.pkl  family=P-pickle-loads-raw-p2-dyn  format=pickle  reported=clean\nE           e7dff4e757520c752f30f116.pt  family=P-numpy-load-legacy_torch-p2-dyn  format=torch-legacy  reported=clean\nE       assert 8 == 0\n\ntest_outputs.py:141: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773944,
+                "stop": 1793096773945,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793096773945,
+                "stop": 1793096773946,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

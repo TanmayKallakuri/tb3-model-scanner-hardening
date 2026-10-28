@@ -1,0 +1,55 @@
+{
+ "fixtures": {
+  "keras/conv.h5": {
+   "bytes": 16824,
+   "sha256": "7c1a8a96c0cddbb6382f58868715c9123aa32630e9d238fb1bff4b14a6a76d52"
+  },
+  "keras/conv.keras": {
+   "bytes": 19628,
+   "sha256": "193cff8ba842f4efa20ef3b374cbc4769112293d3eca49a0aa917f070d633483"
+  },
+  "keras/functional.h5": {
+   "bytes": 18760,
+   "sha256": "7c5d3beb35d309689b73d1c0e7347464f3cb20330562fc46cec325ee112cb266"
+  },
+  "keras/functional.keras": {
+   "bytes": 20764,
+   "sha256": "1ea5e2c42e7e6c99a8b0b35d3faee64da064ccf335e1262fd39da68d5da7236c"
+  },
+  "keras/nested.h5": {
+   "bytes": 21048,
+   "sha256": "90a22feff18e9b5358ddd7b043dbb73462ddf2ec432dcf021a59f0fc9277ea9f"
+  },
+  "keras/nested.keras": {
+   "bytes": 21878,
+   "sha256": "862b8c01f3236fb2fa465a988986443e4872c6ebbf0238def2bf01c83e06871d"
+  },
+  "keras/wrappers.h5": {
+   "bytes": 29344,
+   "sha256": "ac0a1909ac81cb03efbc38b9a758d48e48ce239abfa6490f7639082336bd8373"
+  },
+  "keras/wrappers.keras": {
+   "bytes": 34404,
+   "sha256": "aee3ef80d28bedd1bfa268af4dfcea9a58778a0f41d49d53f7c486539cda885e"
+  },
+  "tf/cond.tar": {
+   "bytes": 20480,
+   "sha256": "699b01991f1270eaf1afa63a7e32496338f1b227720d557df383a08a2b7e9e8c"
+  },
+  "tf/loop.tar": {
+   "bytes": 20480,
+   "sha256": "2dcfe2b4c11d93cb97572585ae4c6bc68ab67cf9311559579ad09f1d22273b16"
+  },
+  "tf/matmul.tar": {
+   "bytes": 20480,
+   "sha256": "2b9c70cb229e7189700d88d42c102f204695154085c1fe29f2f6b2dc411cf34f"
+  },
+  "tf/two_signatures.tar": {
+   "bytes": 20480,
+   "sha256": "35772b0fe181028cee339196843fc679d241b1cf3a93fb3597c9615eacab7fc1"
+  }
+ },
+ "keras": "3.10.0",
+ "numpy": "2.1.3",
+ "tensorflow": "2.19.0"
+}

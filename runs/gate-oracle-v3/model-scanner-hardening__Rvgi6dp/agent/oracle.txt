@@ -1,0 +1,1 @@
+modelgate: hardened scanner installed at /app/modelgate

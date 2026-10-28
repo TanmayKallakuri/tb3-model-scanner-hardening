@@ -1,0 +1,27 @@
+# Everything is text with LF in the repo and on checkout; shell scripts run
+# inside Linux containers and CRLF breaks them.
+* text=auto eol=lf
+*.sh text eol=lf
+
+# Binary task assets
+*.png binary
+*.jpg binary
+*.gz binary
+*.zip binary
+*.tar binary
+*.pkl binary
+*.pickle binary
+*.pt binary
+*.pth binary
+*.bin binary
+*.ckpt binary
+*.npy binary
+*.npz binary
+*.h5 binary
+*.hdf5 binary
+*.keras binary
+*.pb binary
+*.joblib binary
+*.bz2 binary
+*.xz binary
+*.tgz binary
