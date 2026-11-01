@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Launch the /run and /cheat equivalents for the task, with the exact
-# invocation shape BRINGUP.md sections 5 and 7 establish on this machine.
+# invocation shape docs/BRINGUP.md sections 5 and 7 establish on this machine.
 #
 #   scripts/run-trials.sh run    <job-name>   # 3 attempts per agent, scripts/run-job.json
 #   scripts/run-trials.sh cheat  <job-name>   # 1 attempt per agent with the hack prompt, scripts/cheat-job.json

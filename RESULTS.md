@@ -2,9 +2,10 @@
 
 Machine: Windows 11, Docker Desktop 29.8.1 (Linux VM, 16 CPUs, 15.3 GB),
 Harbor `0.23.1.dev202609170426`, dockerfile-pin 1.5.0, upstream
-`terminal-bench` at commit `6964e92` (trials and gates up to 2026-10-28) and
-`7b1f530` (the final static checks and gate rerun, 2026-10-28). Commands run from the repository root
-in Git Bash with `PYTHONUTF8=1` exported.
+`terminal-bench` at commit `6964e92` (trials and gates up to 2026-10-28),
+`7b1f530` (the 1.0.0 static checks and gate rerun, 2026-10-28) and `4031b48`
+(the 1.1.0 record in section 0, 2026-10-30 to 2026-11-01). Commands run from
+the repository root in Git Bash with `PYTHONUTF8=1` exported.
 
 ## 0. Version 1.1.0 on the brief's models (2026-10-30 and 2026-10-31)
 
@@ -367,7 +368,7 @@ The oracle (`solution/solve.sh` copies `solution/modelgate/` over `/app/modelgat
 
 ## 6. Local red-team pass (the `/cheat` configuration, run before the official trials)
 
-Command (`scripts/run-trials.sh cheat redteam-1`, i.e. `harbor run -c scripts/cheat-job.json ...` with the auth flags of BRINGUP.md section 5; `scripts/cheat-job.json` holds the two CI agents at `n_attempts = 1` with `docs/prompts/hack-trial-prompt.md` appended verbatim as `extra_instructions`).
+Command (`scripts/run-trials.sh cheat redteam-1`, i.e. `harbor run -c scripts/cheat-job.json ...` with the auth flags of docs/BRINGUP.md section 5; `scripts/cheat-job.json` holds the two CI agents at `n_attempts = 1` with `docs/prompts/hack-trial-prompt.md` appended verbatim as `extra_instructions`).
 
 | Trial | Agent / model | Reward | Outcome | Duration |
 |---|---|---|---|---|
@@ -378,7 +379,7 @@ No exploit was found or attempted, so the task went to the official trials witho
 
 ## 7. Trials (`/run`, 3 attempts per agent) and cheat trials (`/cheat`, 1 per agent)
 
-Configuration: `scripts/run-job.json` and `scripts/cheat-job.json` mirror `.github/harbor-run-defaults.yml` at upstream commit `6964e92`, a file unchanged at `7b1f530` (claude-code `anthropic/claude-fable-5-1` with `reasoning_effort=max` and `CLAUDE_CODE_MAX_OUTPUT_TOKENS=128000`; codex `openai/gpt-6-astra` with `reasoning_effort=xhigh`), two trials concurrent, launched with `scripts/run-trials.sh` (auth supplied at run time only, as BRINGUP.md section 5 describes).
+Configuration: `scripts/run-job.json` and `scripts/cheat-job.json` mirror `.github/harbor-run-defaults.yml` at upstream commit `6964e92`, a file unchanged at `7b1f530` (claude-code `anthropic/claude-fable-5-1` with `reasoning_effort=max` and `CLAUDE_CODE_MAX_OUTPUT_TOKENS=128000`; codex `openai/gpt-6-astra` with `reasoning_effort=xhigh`), two trials concurrent, launched with `scripts/run-trials.sh` (auth supplied at run time only, as docs/BRINGUP.md section 5 describes).
 
 **Which model actually ran the claude-code trials.** Every claude-code
 session on this task (`run-1`, `run-2`, `run-4`, `run-7`) hit a Fable 5.1
