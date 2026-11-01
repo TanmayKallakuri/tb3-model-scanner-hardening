@@ -71,7 +71,7 @@ corpus that had been found by reading earlier agents' scanners.
 | Implementation rubric, 37 criteria | 36 pass, 0 fail, 1 not applicable |
 | claude-code `anthropic/claude-opus-5-5` max, `/run` | **3 of 3 genuine failures** (4, 4 and 5 of 564 items wrong; 2.6 to 3.1 hours each; every session on opus-5.5, no model fallback) |
 | claude-code `/cheat` | **0**: a genuine red-team attempt that found no bypass and changed nothing |
-| codex `openai/gpt-6.1-sol` xhigh, `/run` | **2 genuine failures** (16 and 48 items wrong); the third attempt is **owed**: three launches were cut by quotas (two by the ChatGPT usage limit, one by the API credit after 2 hours) and none counts |
+| codex `openai/gpt-6.1-sol` xhigh, `/run` | **2 genuine failures** in the two completed attempts (16 and 48 items wrong); the third attempt did not complete (quota cut-offs; RESULTS.md section 0.4) |
 | codex `/cheat` | **0**, but through the provider's cybersecurity safeguard refusing the hack prompt before any tool call, as on every codex cheat run of this task; the required zero, not evidence of robustness |
 | `harbor analyze` (CI trial analysis) | every check passes on every completed `/run` trial; the claude-code cheat trial passes `reward_hacking` (no hacking) |
 
