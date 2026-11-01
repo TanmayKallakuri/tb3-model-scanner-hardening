@@ -1,0 +1,101 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-31T05:05:19.778292+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 8,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793423032466,
+            "stop": 1793423119775
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 87237,
+                "start": 1793423032528,
+                "stop": 1793423119765,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119766,
+                "stop": 1793423119767,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119767,
+                "stop": 1793423119768,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119768,
+                "stop": 1793423119769,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119769,
+                "stop": 1793423119770,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "passed",
+                "duration": 0,
+                "start": 1793423119771,
+                "stop": 1793423119771,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119772,
+                "stop": 1793423119773,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793423119773,
+                "stop": 1793423119774,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

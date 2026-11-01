@@ -1,0 +1,37 @@
+check-all: task=tasks/model-scanner-hardening root=<home>/Downloads/klavis-tb3
+check-all: checks=<upstream-clone>/terminal-bench-3/scripts/checks (4031b48)
+
+Status  Check                                     Script                            Detail
+------  ----------------------------------------  --------------------------------  ------
+PASS  Canary strings                            check-canary.sh                   
+PASS  No cheat directory                        check-no-cheat-dir.sh             
+PASS  Dockerfile refs                           check-dockerfile-references.sh    
+PASS  Image digest pins                         check-image-digests.sh            
+PASS  Dependency lockfiles                      check-lockfiles.sh                
+PASS  Dockerfile sanity                         check-dockerfile-sanity.sh        
+PASS  Dockerfile platform                       check-dockerfile-platform.sh      
+PASS  Absolute paths                            check-task-absolute-path.sh       
+PASS  Test refs                                 check-test-file-references.sh     
+PASS  test.sh sanity                            check-test-sh-sanity.sh           
+PASS  Task fields                               check-task-fields.sh              
+PASS  Task fix changelog                        check-task-changelog.sh           
+PASS  Task timeout cap                          check-task-timeout.sh             
+PASS  Instruction suffix                        check-instruction-suffix.sh       
+PASS  Instruction headings                      check-instruction-headings.sh     
+PASS  GPU types                                 check-gpu-types.sh                
+PASS  Resource sizes                            check-resource-sizes.sh           
+PASS  Allow internet                            check-allow-internet.sh           
+PASS  No internet opt-in                        check-no-allow-internet-true.sh   
+PASS  Task slug length                          check-task-slug.sh                
+PASS  Task package name                         check-task-package-name.sh        
+PASS  Separate verifier                         check-separate-verifier.sh        
+PASS  Verifier tooling baked                    check-verifier-tooling-baked.sh   
+PASS  Trial network fetch                       check-trial-network-fetch.sh      
+PASS  Pip pinning                               check-pip-pinning.sh              
+PASS  Pytest version pin                        check-pytest-version.sh           
+PASS  Nproc usage                               check-nproc.sh                    
+PASS  CPU parallelism advisory (nonblocking)    check-cpu-threads.sh              
+PASS  Compose volumes                           check-compose-volumes.sh          
+
+check-all: 29 passed, 0 warned, 0 failed of 29 (tasks/model-scanner-hardening)
+exit=0

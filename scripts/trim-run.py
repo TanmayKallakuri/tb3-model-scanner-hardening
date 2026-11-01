@@ -39,7 +39,7 @@ USERNAME = os.environ.get("USERNAME") or os.environ.get("USER") or ""
 AUTH_PATH = re.compile(r"\S*auth\.json\S*")
 # A safeguard refusal continues with the account's programme eligibility and
 # security settings; that text describes the account, not the trial.
-REFUSAL_TAIL = re.compile(r'(flagged for possible cybersecurity risk\.)[^"\n]*')
+REFUSAL_TAIL = re.compile(r'(flagged for possible cybersecurity risk\.)[^"\\\n]*')
 REFUSAL_PLACEHOLDER = r"\1 <rest of the provider refusal message removed>"
 # Harbor's exception text also carries a truncated copy of the same message
 # that starts mid-sentence after a "[N chars truncated] ..." marker (or at a

@@ -64,28 +64,12 @@
   "capability": null
  },
  {
-  "sha256": "049fdb1f801e2bb7663c365ff036f2a8c6523f20cb598ab7baa65a8b205259b8",
-  "name": "049fdb1f801e2bb7663c365f.npy",
-  "label": "malicious",
-  "format": "npy",
-  "family": "P-dict-npz-npy-p5-memo",
-  "capability": "code-execution"
- },
- {
   "sha256": "04ab13bda1066385b9a6d55377b20d6bcf397e9c014323a6caf0e1113fbfc3f9",
   "name": "04ab13bda1066385b9a6d553.h5",
   "label": "malicious",
   "format": "keras-h5",
   "family": "KERAS-wrapper-h5",
   "capability": "code-execution"
- },
- {
-  "sha256": "04ae5d5378602347b7ddb208ea86d1a807e18ea4f2ec8378e5c230bb9bec78ba",
-  "name": "04ae5d5378602347b7ddb208.npy",
-  "label": "clean",
-  "format": "npy",
-  "family": "P-dict-npz-npy-p5-memo-twin",
-  "capability": null
  },
  {
   "sha256": "04d9d3619bb9d253e18636636f33077da90ba71a579226b01a2dab0895df713a",
@@ -424,14 +408,6 @@
   "capability": "process"
  },
  {
-  "sha256": "13cd4055666a035980699b4505b12d509efdd44c9a7eff0e6b551e6fad50ac45",
-  "name": "13cd4055666a035980699b45.tar",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-cprofile-run-tar-p3-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "1422b6f97efb2a279fd014f5a81529f9ddb603782824c29761a2baf99b62270e",
   "name": "1422b6f97efb2a279fd014f5.npz",
   "label": "malicious",
@@ -453,14 +429,6 @@
   "label": "malicious",
   "format": "npy",
   "family": "P-timer-start-npy-p5",
-  "capability": "process"
- },
- {
-  "sha256": "1579fd5171d895f12b2edbc6d30d5bec54ae2162fb15201ae71041e16cfd1b05",
-  "name": "1579fd5171d895f12b2edbc6.bin",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-importlib-reload-getattr-raw-p5-dyn",
   "capability": "process"
  },
  {
@@ -536,28 +504,12 @@
   "capability": null
  },
  {
-  "sha256": "18c0ad6e2e45bd91d470eb4ff907c159ba98970b0269ca45864b5509e1551d99",
-  "name": "18c0ad6e2e45bd91d470eb4f.pth",
-  "label": "malicious",
-  "format": "torch-legacy",
-  "family": "P-tarfile-bltn-open-legacy_torch-p2-dyn",
-  "capability": "file-access"
- },
- {
   "sha256": "19230cf820fcebf157517e351da38cb02e816f987dbe5c6b82e5811d331c2b0c",
   "name": "19230cf820fcebf157517e35.zip",
   "label": "malicious",
   "format": "archive",
   "family": "P-operator-call-polyglot_zip-p5-dyn",
   "capability": "process"
- },
- {
-  "sha256": "193cfb3b2ab53f2e86e4a1ea02b4685d7baa000ab3edeb91021f7e884849f012",
-  "name": "193cfb3b2ab53f2e86e4a1ea.pth",
-  "label": "malicious",
-  "format": "torch-zip",
-  "family": "P-shelf-getitem-torch_zip-p4",
-  "capability": "code-execution"
  },
  {
   "sha256": "19b5c02a1e4f0e4d290595e31aa8700d1448089aac3b01897b9a92c819364104",
@@ -573,14 +525,6 @@
   "label": "clean",
   "format": "archive",
   "family": "P-io-fileio-zip-p5-twin",
-  "capability": null
- },
- {
-  "sha256": "1a0cedda7b5d5392e6823ec451c383c47e7cae3d51f38f7b34dc4ae1790773dc",
-  "name": "1a0cedda7b5d5392e6823ec4.pt",
-  "label": "clean",
-  "format": "torch-legacy",
-  "family": "P-pickle-_loads-legacy_torch-p2-twin",
   "capability": null
  },
  {
@@ -621,14 +565,6 @@
   "label": "clean",
   "format": "keras-h5",
   "family": "KERAS-benign-plain",
-  "capability": null
- },
- {
-  "sha256": "1bf6f1da4e73168acfc86922561f9636fb483ae8c2007b93879b9b5f213a5152",
-  "name": "1bf6f1da4e73168acfc86922.bin",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-importlib-reload-getattr-raw-p5-dyn-twin",
   "capability": null
  },
  {
@@ -688,14 +624,6 @@
   "capability": "file-access"
  },
  {
-  "sha256": "1eb9eb9e86edc2f288a6f978cc18ab0cc6e89b3128a1103354b4572b08086bfc",
-  "name": "1eb9eb9e86edc2f288a6f978.xz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-interactiveconsole-nested-p4-twin",
-  "capability": null
- },
- {
   "sha256": "1ec699a14be99e883f64367df1e0b304d1956bdbb97b7a4460975784c2d751b4",
   "name": "1ec699a14be99e883f64367d.zip",
   "label": "malicious",
@@ -728,36 +656,12 @@
   "capability": "code-execution"
  },
  {
-  "sha256": "20d2963615a382d10801bfa1b03be84ed587630c65d1386d2ae28c69ea2f314a",
-  "name": "20d2963615a382d10801bfa1.pt",
-  "label": "malicious",
-  "format": "torch-legacy",
-  "family": "P-pickle-_loads-legacy_torch-p2",
-  "capability": "code-execution"
- },
- {
   "sha256": "20dc62575818d3f77e6bc6b63a1ef8fc1c5c673a923b59c415b6c372afd61ea5",
   "name": "20dc62575818d3f77e6bc6b6.pickle",
   "label": "malicious",
   "format": "pickle",
   "family": "P-numpy-npyio-impl-load-second_stream-p0",
   "capability": "code-execution"
- },
- {
-  "sha256": "21ca1ae6077c36fa4c1b3659ce8a1c93d7fe8cb7a224d2bb60535f98972b3651",
-  "name": "21ca1ae6077c36fa4c1b3659.zip",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-len-self-builtins-polyglot_zip-p4-twin",
-  "capability": null
- },
- {
-  "sha256": "222bbe98f7ddc2c509aae88eff3526b15aa554464cd5fc40bb2097db2a8d73dd",
-  "name": "222bbe98f7ddc2c509aae88e.zip",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-module-build-rebind-zip-p3-twin",
-  "capability": null
  },
  {
   "sha256": "227fec9d06cbc30e1a9fa2c2086e02eecb184b7bb212ea4097415f7daccaf546",
@@ -813,14 +717,6 @@
   "label": "clean",
   "format": "savedmodel",
   "family": "TF-serving-twin",
-  "capability": null
- },
- {
-  "sha256": "26badb627b93e63d650f8b59a1388b6e1dc664221716a860da5112c64cb049f8",
-  "name": "26badb627b93e63d650f8b59.bin",
-  "label": "clean",
-  "format": "torch-zip",
-  "family": "P-tarfile-class-torch_zip-p3-dyn-twin",
   "capability": null
  },
  {
@@ -880,14 +776,6 @@
   "capability": null
  },
  {
-  "sha256": "29f7be95267ab21020834d91e4c054d08f8bf3a17907b8b6985bda3c7b45cf21",
-  "name": "29f7be95267ab21020834d91.npz",
-  "label": "clean",
-  "format": "npz",
-  "family": "P-dotted-dunder-call-npz-p4-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "29fa4d03b93430ae48654035acf36a88571455b6d1e845d55edc0cbe68766788",
   "name": "29fa4d03b93430ae48654035.keras",
   "label": "clean",
@@ -912,27 +800,11 @@
   "capability": "file-access"
  },
  {
-  "sha256": "2d2aa30094487613c773846f2ba7b1090e155f04adfe64741d072318a40c0eac",
-  "name": "2d2aa30094487613c773846f.tar",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-attrgetter-npz-tar-p2",
-  "capability": "code-execution"
- },
- {
   "sha256": "2d38b3a95540acc62796e5bc4a92abc01b249064ae5349104a4c8f4094979b16",
   "name": "2d38b3a95540acc62796e5bc.bin",
   "label": "clean",
   "format": "torch-zip",
   "family": "P-path-write-bytes-torch_zip-p5-twin",
-  "capability": null
- },
- {
-  "sha256": "2e85b504d6d8a96ae3e1e2a65b03155289e9c2c7999f272fa83901c5e08aeddb",
-  "name": "2e85b504d6d8a96ae3e1e2a6.bin",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-numpy-load-raw-pickle-second_stream-p2-twin",
   "capability": null
  },
  {
@@ -942,22 +814,6 @@
   "format": "savedmodel",
   "family": "TF-if_branch-mg1-twin",
   "capability": null
- },
- {
-  "sha256": "2ef4181d67c1fbd57cef8b9a9f3da5780f59c8ed76ba1ac651912369f8f81bb0",
-  "name": "2ef4181d67c1fbd57cef8b9a.tgz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-exec-via-vars-builtins-nested-p4",
-  "capability": "code-execution"
- },
- {
-  "sha256": "2fd05652e65fdbf6d8246d721e0bdcc8fa036d11b8165a9bdb8504c5807e78ec",
-  "name": "2fd05652e65fdbf6d8246d72.bin",
-  "label": "malicious",
-  "format": "torch-zip",
-  "family": "P-tarfile-class-torch_zip-p3-dyn",
-  "capability": "file-access"
  },
  {
   "sha256": "31180cf02493cd208b4ff9e9b1fecfe16ea69fb5ee94699e80ef05bcfd6985ba",
@@ -1014,14 +870,6 @@
   "format": "keras-h5",
   "family": "KERAS-output_shape-h5",
   "capability": "code-execution"
- },
- {
-  "sha256": "354b619fb2aa62cae03fdc9c02dac8bba414a05a0145ed71303b77f0d4a99358",
-  "name": "354b619fb2aa62cae03fdc9c.zip",
-  "label": "malicious",
-  "format": "archive",
-  "family": "X-zip-member-binfloat-prefix",
-  "capability": "process"
  },
  {
   "sha256": "35664e1d90a47d8445505410f1ed258c46d1d2c6e1de1561ac3d5b8397334bd7",
@@ -1128,14 +976,6 @@
   "capability": "process"
  },
  {
-  "sha256": "3b60f470c13ade95ba51e8cad661e52efed8e3f76e1b2794fc1408d6aaff1e40",
-  "name": "3b60f470c13ade95ba51e8ca.bin",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-obj-argless-partial-second_stream-p1-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "3b7f1edd2fc12f030c3ae7a4d79d39cbd9886d2d761300c4c7d4a006dd7b7b09",
   "name": "3b7f1edd2fc12f030c3ae7a4",
   "label": "malicious",
@@ -1192,14 +1032,6 @@
   "capability": "process"
  },
  {
-  "sha256": "3d789d2e8980c294cdec1fa16f47e9c2f1ebc1c268870ef7fd5f9616a42c4a74",
-  "name": "3d789d2e8980c294cdec1fa1.bin",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-reduce-list-args",
-  "capability": null
- },
- {
   "sha256": "3d82a24fc32a879c9115adb4dde9fcf5468050a46ac8af04194ba795a46913e2",
   "name": "3d82a24fc32a879c9115adb4.xz",
   "label": "malicious",
@@ -1254,14 +1086,6 @@
   "format": "archive",
   "family": "P-getitem-sys-modules-polyglot_zip-p4",
   "capability": "process"
- },
- {
-  "sha256": "4150d434476c5357495f19d9ab1be88fb1a14696713872f9a4917d384b55a439",
-  "name": "4150d434476c5357495f19d9.pickle",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-proto0-tuple-top",
-  "capability": null
  },
  {
   "sha256": "41556199ba4aff5569ecbdd3e5577d7fe782e32f12420182f2f4e77f11353b55",
@@ -1384,14 +1208,6 @@
   "capability": null
  },
  {
-  "sha256": "475a2f9c6950423664be822edfa9b73b441f14c04f3eaf29da4f259010046479",
-  "name": "475a2f9c6950423664be822e.tar",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-cprofile-run-tar-p3-dyn",
-  "capability": "code-execution"
- },
- {
   "sha256": "477ffcfdf04a4aa2dd9cb1f1b305e1e8cdecd765212d21599a9d398f7d585c01",
   "name": "477ffcfdf04a4aa2dd9cb1f1.zip",
   "label": "clean",
@@ -1488,14 +1304,6 @@
   "capability": "code-execution"
  },
  {
-  "sha256": "4be2a10a947ae9f24c7f16c3991fc68ac14dcf11035d35bdfa0405a847fc53ea",
-  "name": "4be2a10a947ae9f24c7f16c3.zip",
-  "label": "clean",
-  "format": "archive",
-  "family": "B-fileinput-unconsumed",
-  "capability": null
- },
- {
   "sha256": "4cc10a3075146e8e48d41ffffec092a401b924f936b4f55ecb7502b972028811",
   "name": "4cc10a3075146e8e48d41fff.pickle",
   "label": "clean",
@@ -1512,14 +1320,6 @@
   "capability": "network"
  },
  {
-  "sha256": "4d85e431f14daf6c969dff804d0d8091b9443811c55f2c2395fc8547b07e4cbc",
-  "name": "4d85e431f14daf6c969dff80.bz2",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-path-truediv-bz2-p2-twin",
-  "capability": null
- },
- {
   "sha256": "4ddddd90898795219c2c2cd46f7d8244bac042a4822196e9d63b2fa400ebaabe",
   "name": "4ddddd90898795219c2c2cd4.npz",
   "label": "malicious",
@@ -1534,14 +1334,6 @@
   "format": "savedmodel",
   "family": "TF-wrapper-twin",
   "capability": null
- },
- {
-  "sha256": "4f22ada332f0897dd48551b3c37b7a13029e11c7fa5a30fc434ace194e7f9738",
-  "name": "4f22ada332f0897dd48551b3.bin",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-numpy-load-raw-pickle-second_stream-p2",
-  "capability": "code-execution"
  },
  {
   "sha256": "4f2c0da0cb8ae4d79d36a0ac980b090fbd04b539b4fe7eae8219b461a6080d4f",
@@ -1616,28 +1408,12 @@
   "capability": null
  },
  {
-  "sha256": "528a863739da01b09cfabc18be6fdc871951aba6407777224ebd8a599acecdbe",
-  "name": "528a863739da01b09cfabc18.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-reduce-list-args",
-  "capability": null
- },
- {
   "sha256": "544081b16880afb14991d1dd960289148d9fb9af4cae0eb4ff58ad2d109442c4",
   "name": "544081b16880afb14991d1dd.pth",
   "label": "malicious",
   "format": "torch-legacy",
   "family": "P-open-write-legacy_torch-p2-dyn",
   "capability": "file-access"
- },
- {
-  "sha256": "548ba07b0214b4ee2d1a7086e39919d4e045d2d6ddbfed1059e8456bcf761358",
-  "name": "548ba07b0214b4ee2d1a7086.bin",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-obj-argless-partial-second_stream-p1-dyn",
-  "capability": "process"
  },
  {
   "sha256": "54ceef431e6c3366fc3864f79ff1fce471720b268391d002beb99262237d6a5d",
@@ -1693,14 +1469,6 @@
   "label": "clean",
   "format": "archive",
   "family": "P-dict-fromkeys-map-polyglot_zip-p4-twin",
-  "capability": null
- },
- {
-  "sha256": "5631e6b7912c459175189c7e94915c48b76a3f7fbf9c07cb39b01fc08bf3f39c",
-  "name": "5631e6b7912c459175189c7e.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-persid-then-payload-p0",
   "capability": null
  },
  {
@@ -1872,14 +1640,6 @@
   "capability": "file-access"
  },
  {
-  "sha256": "605715ac6dc659d9e2d126e5ce3c8ac973dfea85a7b5625b31479e1c7b42d548",
-  "name": "605715ac6dc659d9e2d126e5.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-genericbrowser-open-raw-p4-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "606ec9e85bb219bfc21f236f521fa10ee6fdc51f7761da0153af575fb0c30e71",
   "name": "606ec9e85bb219bfc21f236f.ckpt",
   "label": "clean",
@@ -1960,14 +1720,6 @@
   "capability": null
  },
  {
-  "sha256": "658dab683c75242ed9b3ff0ad3ec8005833441b5332ba18c7fa44bbe03c84203",
-  "name": "658dab683c75242ed9b3ff0a.xz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-interactiveconsole-nested-p4",
-  "capability": "code-execution"
- },
- {
   "sha256": "65a51cd961f73b7e778a0b83168f06c251239adb9ff1221ab2cf9bfd145b2db5",
   "name": "65a51cd961f73b7e778a0b83.keras",
   "label": "malicious",
@@ -2008,46 +1760,6 @@
   "capability": null
  },
  {
-  "sha256": "665257353de403deef959ecd3ccb0e171b4c7494b9aefc1a1bfc9a20e6af8183",
-  "name": "665257353de403deef959ecd.joblib",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-cprofile-runcall-raw-p3",
-  "capability": "process"
- },
- {
-  "sha256": "667f0074807f1628c7141d4c35283611be30cbb5ee921c31d4ece2e1d0d448d3",
-  "name": "667f0074807f1628c7141d4c.npz",
-  "label": "malicious",
-  "format": "npz",
-  "family": "P-dotted-dunder-call-npz-p4-dyn",
-  "capability": "code-execution"
- },
- {
-  "sha256": "6694b683332067350c1bf2b4b8e750c185024f30525a4a65bceb35ed4e45cb9c",
-  "name": "6694b683332067350c1bf2b4.joblib",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-cprofile-runcall-raw-p3-twin",
-  "capability": null
- },
- {
-  "sha256": "66b1946f6a7291a579f24f4c0a8b049c466a2be4f480ce35a6995a5ef51761c2",
-  "name": "66b1946f6a7291a579f24f4c.xz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-pydoc-locate-nested-p4-twin",
-  "capability": null
- },
- {
-  "sha256": "66bf4d2391335c0da89d8a5088182a8fc8154db837d0b10c15b511c27571d357",
-  "name": "66bf4d2391335c0da89d8a50.bz2",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-shutil-os-getattr-bz2-p4-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "6748f2367b544c31ea2bb653b58b8cc43b37bf652a05ac0be869ebf90081c798",
   "name": "6748f2367b544c31ea2bb653.pkl",
   "label": "malicious",
@@ -2069,14 +1781,6 @@
   "label": "clean",
   "format": "savedmodel",
   "family": "TF-if_branch-mg1-twin",
-  "capability": null
- },
- {
-  "sha256": "696e5549faf7569579313b931db9fd2b16914e390d769618083565d5d637620f",
-  "name": "696e5549faf7569579313b93.tgz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-exec-via-vars-builtins-nested-p4-twin",
   "capability": null
  },
  {
@@ -2224,14 +1928,6 @@
   "capability": null
  },
  {
-  "sha256": "720ab2b66057257da8f1edfb3d3b40289390da3270f33cc2c4f99156749baacb",
-  "name": "720ab2b66057257da8f1edfb.pth",
-  "label": "clean",
-  "format": "torch-zip",
-  "family": "P-shelf-getitem-torch_zip-p4-twin",
-  "capability": null
- },
- {
   "sha256": "728f15500428db4642976feee13cd97c08cab9f5f3d715b0b6723573cb58bd53",
   "name": "728f15500428db4642976fee",
   "label": "malicious",
@@ -2288,27 +1984,11 @@
   "capability": null
  },
  {
-  "sha256": "77eb030681093087965cb6c8410caf96b7b1793463e7f1e577e4745d5ecd99b9",
-  "name": "77eb030681093087965cb6c8.gz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-shutil-os-dotted-gzip-p4",
-  "capability": "process"
- },
- {
   "sha256": "77ed527bcf4e9a975bd3c2a725ee2d4974624346be0a0f43fdfc0252c684b655",
   "name": "77ed527bcf4e9a975bd3c2a7.ckpt",
   "label": "malicious",
   "format": "torch-zip",
   "family": "P-inst-text-torch_zip-p2-dyn",
-  "capability": "process"
- },
- {
-  "sha256": "786a99d45eb9dca749aeb08109390c36292943f1a505f9b770e67d2b8b65cc31",
-  "name": "786a99d45eb9dca749aeb081.gz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-newobj-attrgetter-gzip-p2",
   "capability": "process"
  },
  {
@@ -2333,14 +2013,6 @@
   "label": "clean",
   "format": "savedmodel",
   "family": "TF-wrapper-twin",
-  "capability": null
- },
- {
-  "sha256": "790b2f6432ca8f5148a13833d3296a477bd5ac4be051ab4b8533f7472790e047",
-  "name": "790b2f6432ca8f5148a13833.npz",
-  "label": "clean",
-  "format": "npz",
-  "family": "P-list-sort-key-npz-p4-twin",
   "capability": null
  },
  {
@@ -2496,14 +2168,6 @@
   "capability": "process"
  },
  {
-  "sha256": "8154c6d866ea2658677a130a6baa1e357664a71044e87d0a76f4845ea4a19b77",
-  "name": "8154c6d866ea2658677a130a.pkl",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-genericbrowser-open-raw-p4-dyn",
-  "capability": "process"
- },
- {
   "sha256": "81696c3beaf54d56e152a2fa35927b4fd3a38f7a35565cd1dc01f839e8754024",
   "name": "81696c3beaf54d56e152a2fa.ckpt",
   "label": "malicious",
@@ -2552,27 +2216,11 @@
   "capability": null
  },
  {
-  "sha256": "843032f7d9c1515d066fd11483d4005ebf0524612b7e095bec912ed0332ef5e4",
-  "name": "843032f7d9c1515d066fd114.bz2",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-mock-side-effect-bz2-p1-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "8447865fb756690f0fc9e066cf03097765efbde2093e182fb8c5bda3866f5ba1",
   "name": "8447865fb756690f0fc9e066.h5",
   "label": "clean",
   "format": "keras-h5",
   "family": "KERAS-benign-inert",
-  "capability": null
- },
- {
-  "sha256": "849df2a5a87f1329b9f8bc12717bd9032f4dc17c66bcdca8f479a1cc87623b91",
-  "name": "849df2a5a87f1329b9f8bc12.pickle",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-asyncio-coroutine",
   "capability": null
  },
  {
@@ -2582,22 +2230,6 @@
   "format": "npy",
   "family": "P-loads-latin1-encode-npy-p4",
   "capability": "code-execution"
- },
- {
-  "sha256": "853f5fbdfd03650884db6f7a0a9c34beaafb3688eea7770171823b557db68d1a",
-  "name": "853f5fbdfd03650884db6f7a.pickle",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-sqlite-memory",
-  "capability": null
- },
- {
-  "sha256": "85dbb590f00a5368d609df4cd8b0e85d07f5d22aee4a5855e9f94cafc65adea6",
-  "name": "85dbb590f00a5368d609df4c.ckpt",
-  "label": "clean",
-  "format": "torch-zip",
-  "family": "P-newobj-methodcaller-torch_zip-p4-twin",
-  "capability": null
  },
  {
   "sha256": "86c73c68e44e3a3f5c81faa7ee72696d42b8294079847bcdb058dbf053026e36",
@@ -2629,14 +2261,6 @@
   "label": "malicious",
   "format": "pickle",
   "family": "P-pkgutil-resolve-second_stream-p5-dyn",
-  "capability": "process"
- },
- {
-  "sha256": "87c3b17865cc33000b010854a82e541ba4b5c28b9d57bc2c8c022a923cdd0195",
-  "name": "87c3b17865cc33000b010854.xz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-reconstructor-popen-xz-p4",
   "capability": "process"
  },
  {
@@ -2718,14 +2342,6 @@
   "format": "npy",
   "family": "P-loads-fromhex-npy-p4",
   "capability": "code-execution"
- },
- {
-  "sha256": "8d4ed3e68677ffdb53e880f5f7ae96bb0ca74585a3d9a4dc34ab6bf58734a22a",
-  "name": "8d4ed3e68677ffdb53e880f5.gz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-sysloghandler-gzip-p2",
-  "capability": "network"
  },
  {
   "sha256": "8da259e61bfcf88e32cae3aa49d51fc0b257e75d9a18cf60471a30c234620dd9",
@@ -2920,22 +2536,6 @@
   "capability": "network"
  },
  {
-  "sha256": "97d8909e7468c456c0034bee312116b25a37719e45e352930dc3e8a45e4b02d8",
-  "name": "97d8909e7468c456c0034bee.npy",
-  "label": "clean",
-  "format": "npy",
-  "family": "X-npy-py2-header-object-twin",
-  "capability": null
- },
- {
-  "sha256": "98e9737957e05df10a907169821fba30698c0d4f230d7180555b7665afdc541e",
-  "name": "98e9737957e05df10a907169.gz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-doctest-run-gzip-p5-dyn",
-  "capability": "code-execution"
- },
- {
   "sha256": "98ee465a6f92c3e3c4873ebba7de790f08c537df89efce41f29fa709e116edcc",
   "name": "98ee465a6f92c3e3c4873ebb.npy",
   "label": "malicious",
@@ -2957,14 +2557,6 @@
   "label": "clean",
   "format": "pickle",
   "family": "X-streams-third-twin",
-  "capability": null
- },
- {
-  "sha256": "9c0682fa2deb96ab418305cb5acfba9f1faa71ba056124e0ef797d8c1c5e3bf1",
-  "name": "9c0682fa2deb96ab418305cb.xz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-reconstructor-popen-xz-p4-twin",
   "capability": null
  },
  {
@@ -3096,28 +2688,12 @@
   "capability": "code-execution"
  },
  {
-  "sha256": "a1abc092ba2b5fff423cb5b735c5ce1648e488c5e0370d1a62afd3e44a0a870f",
-  "name": "a1abc092ba2b5fff423cb5b7.pickle",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-os-walk-unconsumed",
-  "capability": null
- },
- {
   "sha256": "a1eb3dd1bb6ed77c974c694c7ae0ba39b1536b45a172da2041abf1b0739d56e1",
   "name": "a1eb3dd1bb6ed77c974c694c.pt",
   "label": "malicious",
   "format": "torch-zip",
   "family": "P-bytes-map-torch_zip-p3",
   "capability": "process"
- },
- {
-  "sha256": "a2b45044bd1eea5c3f2c78bbf7506d30a9bdf018a124db2275304b3bf84c5985",
-  "name": "a2b45044bd1eea5c3f2c78bb.gz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-shutil-os-dotted-gzip-p4-twin",
-  "capability": null
  },
  {
   "sha256": "a34ebd7e95bd562f6ae855c8bef7449cc583da79e5c3c9a61152328ad5ba3cbb",
@@ -3160,14 +2736,6 @@
   "capability": null
  },
  {
-  "sha256": "a814c9524d49b920ae6bd0953a20dbd5735c6a6cc29af72d8c36694574ecc164",
-  "name": "a814c9524d49b920ae6bd095.pickle",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-reduce-list-args",
-  "capability": null
- },
- {
   "sha256": "a89e4a46aca19f52396eb10d72785238f62a7ce71e3204be369ef600568eb9de",
   "name": "a89e4a46aca19f52396eb10d.gz",
   "label": "clean",
@@ -3206,14 +2774,6 @@
   "format": "keras-v3",
   "family": "KERAS-nested-keras-twin",
   "capability": null
- },
- {
-  "sha256": "ab3ecc6a9c8eb0e7379882df510df6365cf8c19c4e8674059c50e6a14af2c8dd",
-  "name": "ab3ecc6a9c8eb0e7379882df.tar",
-  "label": "malicious",
-  "format": "archive",
-  "family": "X-tar-member-binint-prefix",
-  "capability": "process"
  },
  {
   "sha256": "ab83e9b14ffc132ccd9c24baf292745f6b5e690d0687523e4d36752dd1c85387",
@@ -3640,14 +3200,6 @@
   "capability": null
  },
  {
-  "sha256": "bba8b1505a60cf9175cc90a16777be7588e863d48a0ec9f9be7af9484eed54f9",
-  "name": "bba8b1505a60cf9175cc90a1.tgz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-logging-os-dotted-nested-p4-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "bbefe45240caeb81d26bba5754140742d3b53b621173e3c9e91c54b4dbb7c403",
   "name": "bbefe45240caeb81d26bba57.npz",
   "label": "clean",
@@ -3662,14 +3214,6 @@
   "format": "npy",
   "family": "P-code-runsource-npy-p2-twin",
   "capability": null
- },
- {
-  "sha256": "bc8f35309426e5268a6272012e4f321d9cdf901fa62b4984b5c9f591b5e94a67",
-  "name": "bc8f35309426e5268a627201.npz",
-  "label": "malicious",
-  "format": "npz",
-  "family": "P-list-sort-key-npz-p4",
-  "capability": "process"
  },
  {
   "sha256": "bcb8115dbd3c7a1abb252893c45b667a50072baab73d4c1aba6ab9dddd071990",
@@ -3720,14 +3264,6 @@
   "capability": "process"
  },
  {
-  "sha256": "be7994af6899c757f095617e632167e3a507b98edfc360b95592acb99114cb95",
-  "name": "be7994af6899c757f095617e.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-dotted-global-proto2",
-  "capability": null
- },
- {
   "sha256": "bed72c05dc8effe736b3fce4fb352487b37ccb4717d8b2a48fd1dfa934486a44",
   "name": "bed72c05dc8effe736b3fce4",
   "label": "malicious",
@@ -3757,38 +3293,6 @@
   "label": "clean",
   "format": "pickle",
   "family": "X-streams-proto0-second-twin",
-  "capability": null
- },
- {
-  "sha256": "c0775385cae1e2956407195e4c92b1a3633a4888e8f9c3b32ca23c54414c6264",
-  "name": "c0775385cae1e2956407195e.zip",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-len-self-builtins-polyglot_zip-p4",
-  "capability": "code-execution"
- },
- {
-  "sha256": "c11c0838ae3a972920e1e81a3d339085e2e61594a47f1eb3364b567e37ed901c",
-  "name": "c11c0838ae3a972920e1e81a.ckpt",
-  "label": "malicious",
-  "format": "torch-zip",
-  "family": "P-newobj-methodcaller-torch_zip-p4",
-  "capability": "process"
- },
- {
-  "sha256": "c198028da9da0b9bc3dc7aeb657e6f159b423c7224dbdbfd630d9e1253111ebe",
-  "name": "c198028da9da0b9bc3dc7aeb.gz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-sysloghandler-gzip-p2-twin",
-  "capability": null
- },
- {
-  "sha256": "c1e0b0bce82e95a4d70d502ae4cbd19a5ffc6e18a23b0464cda7b0494b40c82f",
-  "name": "c1e0b0bce82e95a4d70d502a.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-persid-then-payload",
   "capability": null
  },
  {
@@ -3822,14 +3326,6 @@
   "format": "archive",
   "family": "P-logging-dictconfig-gzip-p1-twin",
   "capability": null
- },
- {
-  "sha256": "c381a89362463906a2ec9a75053554c81442de0b83e18ceba5b575299513c005",
-  "name": "c381a89362463906a2ec9a75.tgz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-logging-os-dotted-nested-p4-dyn",
-  "capability": "process"
  },
  {
   "sha256": "c4004d9bfcea310635dfeb1cb5fab958bf3290e6e0c53820ca8031bfe58b294e",
@@ -3888,14 +3384,6 @@
   "capability": null
  },
  {
-  "sha256": "c6b27bf9c26139d798f285e7cae39ea41cdd947ac6b6b9c223988424fcdfb2b8",
-  "name": "c6b27bf9c26139d798f285e7.zip",
-  "label": "clean",
-  "format": "archive",
-  "family": "X-zip-member-binfloat-prefix-twin",
-  "capability": null
- },
- {
   "sha256": "c6dcf82c49f886fc508365246fb6fe5b25d8814337b9693772eb93a775761187",
   "name": "c6dcf82c49f886fc50836524.pth",
   "label": "clean",
@@ -3942,14 +3430,6 @@
   "format": "archive",
   "family": "P-dict-fromkeys-map-polyglot_zip-p4",
   "capability": "process"
- },
- {
-  "sha256": "c8fc2583671793b859acf7648b72cfe8e869fcf4cd7ca375d55f254af586405f",
-  "name": "c8fc2583671793b859acf764.gz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-doctest-run-gzip-p5-dyn-twin",
-  "capability": null
  },
  {
   "sha256": "c9c5add20f341800e8c723de60c6aa1c7724aa7ff91ad0be650a7893e323b90c",
@@ -4176,14 +3656,6 @@
   "capability": "process"
  },
  {
-  "sha256": "d43951f935357a6242582707efc6b535a1b8d8c692e7f2ce74a45400eb004946",
-  "name": "d43951f935357a6242582707.tar",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-attrgetter-npz-tar-p2-twin",
-  "capability": null
- },
- {
   "sha256": "d449cbc7401f4c17b9a7f2e58c9454e37c9c4dda3ad7944d0d380c7a8f2303eb",
   "name": "d449cbc7401f4c17b9a7f2e5.bin",
   "label": "malicious",
@@ -4272,14 +3744,6 @@
   "capability": null
  },
  {
-  "sha256": "d88a386edb35522faa27108f50273894e48b33c0e27e2c197df227a837cc0e7a",
-  "name": "d88a386edb35522faa27108f.zip",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-ssl-create-connection-polyglot_zip-p4-memo-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "d8f03f9ce9b9bbb9969b17c0abd237ba84104a191156562a541bf465d7dc35c1",
   "name": "d8f03f9ce9b9bbb9969b17c0.pt",
   "label": "clean",
@@ -4320,14 +3784,6 @@
   "capability": "code-execution"
  },
  {
-  "sha256": "da3f7e70768127977555df240f29930f512c0464bf7e240ee2d1d1def8e305a1",
-  "name": "da3f7e70768127977555df24.bin",
-  "label": "clean",
-  "format": "pickle",
-  "family": "B-ftp-login-nohost",
-  "capability": null
- },
- {
   "sha256": "daf1cf6404ddf1ff9bda1e9bfa1fb0254296a7bc7ce1b63e48800ae7b7b2124d",
   "name": "daf1cf6404ddf1ff9bda1e9b.pickle",
   "label": "clean",
@@ -4342,14 +3798,6 @@
   "format": "savedmodel",
   "family": "TF-wrapper-twin",
   "capability": null
- },
- {
-  "sha256": "db63fc3e0fa433881004003256bbb6d5d1148519295a14298889f50cfce4bb3e",
-  "name": "db63fc3e0fa4338810040032.bz2",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-mock-side-effect-bz2-p1-dyn",
-  "capability": "process"
  },
  {
   "sha256": "dbc69e621cd5dfe3e3de9efa7a0161cd816728eabfda0e7fa332017d812e476b",
@@ -4440,14 +3888,6 @@
   "capability": "file-access"
  },
  {
-  "sha256": "ddafdb6db437fa17b8053f27fbc8739e25718acde99e12e93e4fabd87aec9b68",
-  "name": "ddafdb6db437fa17b8053f27.bz2",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-staticmethod-wrap-bz2-p5-twin",
-  "capability": null
- },
- {
   "sha256": "ddcf04fce81bac8034eb206d5839da6f1357194085f21d75f2f8608f19804a16",
   "name": "ddcf04fce81bac8034eb206d.zip",
   "label": "clean",
@@ -4510,14 +3950,6 @@
   "format": "archive",
   "family": "B-tar",
   "capability": null
- },
- {
-  "sha256": "e1adde587c7bfbc2792d73201a131757a6d07c3a4dd6269bc94d439410171b3c",
-  "name": "e1adde587c7bfbc2792d7320.pkl",
-  "label": "malicious",
-  "format": "pickle",
-  "family": "P-weakref-finalize-second_stream-p2-dyn",
-  "capability": "process"
  },
  {
   "sha256": "e1c783bbb52d91264a2e0e6e00ceb488f02957d5010d44b131555cd12af9e791",
@@ -4598,14 +4030,6 @@
   "format": "torch-zip",
   "family": "P-smtp-ssl-torch_zip-p4",
   "capability": "network"
- },
- {
-  "sha256": "e5cff58f5518b5e7d6d6bf908366690f8177ea3ec5e234773e2514c642cf8f6c",
-  "name": "e5cff58f5518b5e7d6d6bf90.xz",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-pydoc-locate-nested-p4",
-  "capability": "process"
  },
  {
   "sha256": "e5e0fadaca405e9a27613420c7c04b7c584cde72c4ebac946d357e21e510d102",
@@ -4744,14 +4168,6 @@
   "capability": null
  },
  {
-  "sha256": "ea819dea46d7f9914a27db4e14afad7f5e646573e1bfcff3f8d1121ce0968f16",
-  "name": "ea819dea46d7f9914a27db4e.zip",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-module-build-rebind-zip-p3",
-  "capability": "process"
- },
- {
   "sha256": "ea9f8e2efa951163452a5e32a3027a8952ae8b0344b8197ee5d154df313a9393",
   "name": "ea9f8e2efa951163452a5e32.zip",
   "label": "clean",
@@ -4773,22 +4189,6 @@
   "label": "malicious",
   "format": "archive",
   "family": "P-getstatusoutput-gzip-p2-dyn",
-  "capability": "process"
- },
- {
-  "sha256": "eb99682cc886c58b90deabd0e9b64463867acbec202e12458f3f4afd730193b5",
-  "name": "eb99682cc886c58b90deabd0.pth",
-  "label": "clean",
-  "format": "torch-legacy",
-  "family": "P-tarfile-bltn-open-legacy_torch-p2-dyn-twin",
-  "capability": null
- },
- {
-  "sha256": "ec06b9843f09c8546b960e75f277398d8575dc5ceb8c3f6e1288202184f45610",
-  "name": "ec06b9843f09c8546b960e75.bz2",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-staticmethod-wrap-bz2-p5",
   "capability": "process"
  },
  {
@@ -4888,14 +4288,6 @@
   "capability": null
  },
  {
-  "sha256": "ef000c5041850285aa8aef2a1909403750b0f158ad9d957341b27d35af3f6acb",
-  "name": "ef000c5041850285aa8aef2a.zip",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-ssl-create-connection-polyglot_zip-p4-memo-dyn",
-  "capability": "network"
- },
- {
   "sha256": "ef6ef81f7ed7a0901064e0b42305c588c63a6d321f4f4892d2fd695ac72ec507",
   "name": "ef6ef81f7ed7a0901064e0b4.zip",
   "label": "malicious",
@@ -4992,14 +4384,6 @@
   "capability": null
  },
  {
-  "sha256": "f3d0989c01e1f57daeb030012ee46f7e55fe54a24b9a1251a822bda823c9eba9",
-  "name": "f3d0989c01e1f57daeb03001.npy",
-  "label": "malicious",
-  "format": "npy",
-  "family": "X-npy-py2-header-object",
-  "capability": "process"
- },
- {
   "sha256": "f48662f25767bc853c525692b9a799dfdc458e9e24676fe8e432f7f674de7368",
   "name": "f48662f25767bc853c525692.pt",
   "label": "clean",
@@ -5022,14 +4406,6 @@
   "format": "archive",
   "family": "P-joblib-load-polyglot_zip-p5-memo",
   "capability": "code-execution"
- },
- {
-  "sha256": "f6f8563e19567b9ebefd23229b8de8ddebb576521d78a4c879235475bed48fd4",
-  "name": "f6f8563e19567b9ebefd2322.bz2",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-path-truediv-bz2-p2",
-  "capability": "file-access"
  },
  {
   "sha256": "f7086bdb0d627e811ca5019278b9e926265551cdaec1174a0b69d65922b2a27e",
@@ -5072,22 +4448,6 @@
   "capability": "process"
  },
  {
-  "sha256": "f829719ee29f4f2e863ab2e850e17aa380a9b7226d5d53973e09e0f35ccd6073",
-  "name": "f829719ee29f4f2e863ab2e8.tar",
-  "label": "clean",
-  "format": "archive",
-  "family": "X-tar-member-binint-prefix-twin",
-  "capability": null
- },
- {
-  "sha256": "f94a031f0589eb62bc03d062b9945ac3474f812948c951271b908542fb63ea22",
-  "name": "f94a031f0589eb62bc03d062.pkl",
-  "label": "clean",
-  "format": "pickle",
-  "family": "P-weakref-finalize-second_stream-p2-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "f9e8f6751095be6698d8edf89bbc16c1cc0c9487a267be748c47e7d1d0d1b44b",
   "name": "f9e8f6751095be6698d8edf8.pt",
   "label": "malicious",
@@ -5120,14 +4480,6 @@
   "capability": "process"
  },
  {
-  "sha256": "fb039d1587c0e01dd50f2c10fff76f3f79c3beebca14032a851d2316eb97243e",
-  "name": "fb039d1587c0e01dd50f2c10.pt",
-  "label": "clean",
-  "format": "torch-zip",
-  "family": "P-type-of-function-torch_zip-p2-dyn-twin",
-  "capability": null
- },
- {
   "sha256": "fb2431dd6cd36229dfd217d12c56c40eb043b380f2f641acab751745177ede53",
   "name": "fb2431dd6cd36229dfd217d1.gz",
   "label": "malicious",
@@ -5136,36 +4488,12 @@
   "capability": "code-execution"
  },
  {
-  "sha256": "fb460e87a579a7c169573b3e9c6e6e48479338995c3539a60aa5655c4eb9d77a",
-  "name": "fb460e87a579a7c169573b3e.bz2",
-  "label": "malicious",
-  "format": "archive",
-  "family": "P-shutil-os-getattr-bz2-p4-dyn",
-  "capability": "process"
- },
- {
-  "sha256": "fb59518d3a299b95040be43957259615a94d234653872ff2df04c14845f7d375",
-  "name": "fb59518d3a299b95040be439.gz",
-  "label": "clean",
-  "format": "archive",
-  "family": "P-newobj-attrgetter-gzip-p2-twin",
-  "capability": null
- },
- {
   "sha256": "fcda898c4cf79aa93610755843a77d57a9d614387c8e9220afac9197de26e88e",
   "name": "fcda898c4cf79aa936107558",
   "label": "clean",
   "format": "savedmodel",
   "family": "TF-serving-mg1-twin",
   "capability": null
- },
- {
-  "sha256": "fd39d7ec53597907570e8b2c8092ec238f1483d266a5692a18c47948e08d7962",
-  "name": "fd39d7ec53597907570e8b2c.pt",
-  "label": "malicious",
-  "format": "torch-zip",
-  "family": "P-type-of-function-torch_zip-p2-dyn",
-  "capability": "code-execution"
  },
  {
   "sha256": "ff8cb0c59306eb28725ad83c402808349ee3517208b885a41529e15d2b0a6bce",

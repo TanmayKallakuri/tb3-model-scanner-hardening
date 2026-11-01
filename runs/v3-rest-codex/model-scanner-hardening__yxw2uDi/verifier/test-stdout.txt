@@ -1,0 +1,103 @@
+preflight: ok, 564 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+configfile: pyproject.toml
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py .....FF.                                                 [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_recall __________________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 181, 'disagree': 27}, ...}
+
+    def test_recall(graded):
+        missed = [row for row in graded["items"] if row["label"] == "malicious" and not row["correct"]]
+        print(f"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}")
+>       assert graded["totals"]["fn"] == 0, (f"{len(missed)} malicious artifact(s) were not flagged, by family:\n"
+                                             f"{_by_family(missed)}\n{_describe(missed)}")
+E       AssertionError: 18 malicious artifact(s) were not flagged, by family:
+E           P-build-opener-open-npz-p3: 1 item(s): 59ebc9f5c2cc0d46991acc29.npz
+E           P-bytes-map-torch_zip-p3: 1 item(s): a1eb3dd1bb6ed77c974c694c.pt
+E           P-codecs-open-torch_zip-p2-memo-dyn: 1 item(s): 2c1fd6de79a4ffbf4784b5d1.ckpt
+E           P-counter-map-torch_zip-p4: 1 item(s): e22e0b4d918d2d53e2e98126.pth
+E           P-dict-fromkeys-map-polyglot_zip-p4: 1 item(s): c8456625b26a33352e365a2a.zip
+E           P-imap4-ssl-torch_zip-p2-memo: 1 item(s): 81696c3beaf54d56e152a2fa.ckpt
+E           P-imaplib-torch_zip-p2-dyn: 1 item(s): 59f6cf3d6c40b651e0508e64.pt
+E           P-importlib-dunder-import-raw-p5-dyn: 1 item(s): fabbf8639784e92a7ff361ef.pickle
+E           P-join-map-torch_zip-p2-dyn: 1 item(s): 6ace78867a72e8656022918a.pth
+E           P-loads-memoryview-zip-p5: 1 item(s): 75489991a2145dba603c8270.zip
+E           P-logging-filehandler-gzip-p2-dyn: 1 item(s): 1bade9e6238b27ae4ba01ea5.gz
+E           P-methodtype-npz-p5: 1 item(s): 136e571a70c5f22f46ff8275.npz
+E           P-nntplib-raw-p2-memo: 1 item(s): e3351f6cb8c1f98fda4de098.pkl
+E           P-object-getattribute-raw-p4-dyn: 1 item(s): dcf85df232ec8b5119633de5.bin
+E           P-pop3-ssl-polyglot_zip-p0-memo: 1 item(s): 456081c16f9a4a328ba9ff17.zip
+E           P-poplib-raw-p4-memo: 1 item(s): 1330e80062a733f0595b6505.pickle
+E           P-telnetlib-nested-p4-dyn: 1 item(s): 4797ce20fe203549fb11b948.tgz
+E           P-timer-start-npy-p5: 1 item(s): 1555c5e5e8a9785c0cebf578.npy
+E           1330e80062a733f0595b6505.pickle  family=P-poplib-raw-p4-memo  format=pickle  reported=clean
+E           136e571a70c5f22f46ff8275.npz  family=P-methodtype-npz-p5  format=npz  reported=clean
+E           1555c5e5e8a9785c0cebf578.npy  family=P-timer-start-npy-p5  format=npy  reported=clean
+E           1bade9e6238b27ae4ba01ea5.gz  family=P-logging-filehandler-gzip-p2-dyn  format=archive  reported=clean
+E           2c1fd6de79a4ffbf4784b5d1.ckpt  family=P-codecs-open-torch_zip-p2-memo-dyn  format=torch-zip  reported=clean
+E           456081c16f9a4a328ba9ff17.zip  family=P-pop3-ssl-polyglot_zip-p0-memo  format=archive  reported=clean
+E           4797ce20fe203549fb11b948.tgz  family=P-telnetlib-nested-p4-dyn  format=archive  reported=clean
+E           59ebc9f5c2cc0d46991acc29.npz  family=P-build-opener-open-npz-p3  format=npz  reported=clean
+E           59f6cf3d6c40b651e0508e64.pt  family=P-imaplib-torch_zip-p2-dyn  format=torch-zip  reported=clean
+E           6ace78867a72e8656022918a.pth  family=P-join-map-torch_zip-p2-dyn  format=torch-zip  reported=clean
+E           75489991a2145dba603c8270.zip  family=P-loads-memoryview-zip-p5  format=archive  reported=clean
+E           81696c3beaf54d56e152a2fa.ckpt  family=P-imap4-ssl-torch_zip-p2-memo  format=torch-zip  reported=clean
+E           a1eb3dd1bb6ed77c974c694c.pt  family=P-bytes-map-torch_zip-p3  format=torch-zip  reported=clean
+E           c8456625b26a33352e365a2a.zip  family=P-dict-fromkeys-map-polyglot_zip-p4  format=archive  reported=clean
+E           dcf85df232ec8b5119633de5.bin  family=P-object-getattribute-raw-p4-dyn  format=pickle  reported=clean
+E           e22e0b4d918d2d53e2e98126.pth  family=P-counter-map-torch_zip-p4  format=torch-zip  reported=clean
+E           e3351f6cb8c1f98fda4de098.pkl  family=P-nntplib-raw-p2-memo  format=pickle  reported=clean
+E           fabbf8639784e92a7ff361ef.pickle  family=P-importlib-dunder-import-raw-p5-dyn  format=pickle  reported=clean
+E       assert 18 == 0
+
+test_outputs.py:141: AssertionError
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 18 of 226
+___________________________ test_no_false_positives ____________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 181, 'disagree': 27}, ...}
+
+    def test_no_false_positives(graded):
+        flagged = [row for row in graded["items"] if row["label"] == "clean" and not row["correct"]]
+        print(f"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}")
+>       assert graded["totals"]["fp"] == 0, (f"{len(flagged)} clean artifact(s) were flagged, by family:\n"
+                                             f"{_by_family(flagged)}\n{_describe(flagged)}")
+E       AssertionError: 4 clean artifact(s) were flagged, by family:
+E           KERAS-benign-decoy-key: 3 item(s): 949b85c63583f207ec07b12e.keras, bf85814097e8f4c9984e75c4.keras, f356a269aef618bf45992c2f.h5
+E           X-npy-py2-header-numeric: 1 item(s): 5640ead24781411bfd1e7149.npy
+E           5640ead24781411bfd1e7149.npy  family=X-npy-py2-header-numeric  format=npy  reported=malicious
+E           949b85c63583f207ec07b12e.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious
+E           bf85814097e8f4c9984e75c4.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious
+E           f356a269aef618bf45992c2f.h5  family=KERAS-benign-decoy-key  format=keras-h5  reported=malicious
+E       assert 4 == 0
+
+test_outputs.py:148: AssertionError
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 4 of 338
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.216
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=71.539 max_seconds=0.216 items=564 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_budget
+FAILED test_outputs.py::test_recall - AssertionError: 18 malicious artifact(s...
+FAILED test_outputs.py::test_no_false_positives - AssertionError: 4 clean art...
+==================== 2 failed, 6 passed in 73.50s (0:01:13) ====================

@@ -1,0 +1,107 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-31T08:40:54.883702+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 6,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793435953295,
+            "stop": 1793436054880
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 101487,
+                "start": 1793435953356,
+                "stop": 1793436054843,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793436054844,
+                "stop": 1793436054845,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793436054845,
+                "stop": 1793436054846,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793436054847,
+                "stop": 1793436054848,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793436054848,
+                "stop": 1793436054849,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 22,
+                "start": 1793436054849,
+                "stop": 1793436054871,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 187, 'disagree': 37}, ...}\n\n    def test_recall(graded):\n        missed = [row for row in graded[\"items\"] if row[\"label\"] == \"malicious\" and not row[\"correct\"]]\n        print(f\"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}\")\n>       assert graded[\"totals\"][\"fn\"] == 0, (f\"{len(missed)} malicious artifact(s) were not flagged, by family:\\n\"\n                                             f\"{_by_family(missed)}\\n{_describe(missed)}\")\nE       AssertionError: 2 malicious artifact(s) were not flagged, by family:\nE           P-dict-fromkeys-map-polyglot_zip-p4: 1 item(s): c8456625b26a33352e365a2a.zip\nE           P-object-getattribute-raw-p4-dyn: 1 item(s): dcf85df232ec8b5119633de5.bin\nE           c8456625b26a33352e365a2a.zip  family=P-dict-fromkeys-map-polyglot_zip-p4  format=archive  reported=clean\nE           dcf85df232ec8b5119633de5.bin  family=P-object-getattribute-raw-p4-dyn  format=pickle  reported=clean\nE       assert 2 == 0\n\ntest_outputs.py:141: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 7,
+                "start": 1793436054871,
+                "stop": 1793436054878,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 187, 'disagree': 37}, ...}\n\n    def test_no_false_positives(graded):\n        flagged = [row for row in graded[\"items\"] if row[\"label\"] == \"clean\" and not row[\"correct\"]]\n        print(f\"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}\")\n>       assert graded[\"totals\"][\"fp\"] == 0, (f\"{len(flagged)} clean artifact(s) were flagged, by family:\\n\"\n                                             f\"{_by_family(flagged)}\\n{_describe(flagged)}\")\nE       AssertionError: 46 clean artifact(s) were flagged, by family:\nE           B-reload-fspath: 1 item(s): 46f791a1d3f990f1be253ad8.pkl\nE           P-build-opener-open-npz-p3-twin: 1 item(s): b73b0b3c0ea03b07cad3124f.npz\nE           P-bz2-open-write-second_stream-p5-dyn-twin: 1 item(s): 6d2f1728390afc4a66542e0a.bin\nE           P-commands-getstatusoutput-gzip-p2-twin: 1 item(s): 9ccb3629f2336de2f26e63b4.gz\nE           P-ftplib-second_stream-p4-dyn-twin: 1 item(s): 2b34115155b8344aec171cc5.joblib\nE           P-getoutput-raw-p4-memo-dyn-twin: 1 item(s): ba7a6a61140aa24caf4cc738.pickle\nE           P-getstatusoutput-gzip-p2-dyn-twin: 1 item(s): dc6187f702068c749fb7eada.gz\nE           P-gzip-open-write-tar-p2-dyn-twin: 1 item(s): b2a3a1422b77cae25d9f5d66.tar\nE           P-http-connect-chain-zip-p4-dyn-twin: 1 item(s): 9d1d58a8e8489df5ba9fa72d.zip\nE           P-imap4-ssl-torch_zip-p2-memo-twin: 1 item(s): 788037cb6b3cecfc4f11ab09.ckpt\nE           P-imaplib-torch_zip-p2-dyn-twin: 1 item(s): cac52cf4eb80c061989d6bbf.pt\nE           P-lmtp-tar-p2-twin: 1 item(s): e78df450b929ae1030007dd1.tar\nE           P-lzma-open-write-xz-p4-memo-dyn-twin: 1 item(s): de38a107430a01b068b39d77.xz\nE           P-named-tempfile-raw-p1-memo-twin: 1 item(s): 7f3637f1eeb34bc3281870bb.bin\nE           P-nntplib-raw-p2-memo-twin: 1 item(s): cffa091be98587be4e2a151f.pkl\nE           P-os-mkfifo-zip-p0-dyn-twin: 1 item(s): 65ab52647de4fa0e67188a26.zip\nE           P-os-popen-second_stream-p2-memo-dyn-twin: 1 item(s): 947e2d85371d32bd4f98a448.joblib\nE           P-os-posix-spawn-legacy_torch-p2-memo-twin: 1 item(s): c2f779d0d049b88124622780.pth\nE           P-os-spawnvp-second_stream-p3-twin: 1 item(s): 6ff96ae12233bb79cfd848f4.joblib\nE           P-path-write-bytes-torch_zip-p5-twin: 1 item(s): 2d38b3a95540acc62796e5bc.bin\nE           P-pathlib-methodcaller-raw-p2-dyn-twin: 1 item(s): 92af5d15790186894c983f90.pickle\nE           P-pathlib-methodcaller-xz-p0-dyn-twin: 1 item(s): 11cdf2bc5756b4c39ecfd3dc.xz\nE           P-pathlib-touch-raw-p2-twin: 1 item(s): f76d9f92d0692ed563326a9c.pkl\nE           P-pop3-ssl-polyglot_zip-p0-memo-twin: 1 item(s): 26eb73fd73f3aac5d9a93380.zip\nE           P-poplib-raw-p4-memo-twin: 1 item(s): 0eb4cf95cea9f51cb618c314.pickle\nE           P-pydoc-pipepager-tar-p2-twin: 1 item(s): 35ac3c96a7d9c87d7fca60d7.tar\nE           P-shutil-copy2-second_stream-p4-twin: 1 item(s): 6edb2a70a67262e1dbd942c8.pkl\nE           P-shutil-copytree-nested-p2-dyn-twin: 1 item(s): 35664e1d90a47d8445505410.xz\nE           P-singledispatch-wrap-torch_zip-p4-twin: 1 item(s): 1061e6c472f3d7a5ec47d434.pth\nE           P-smtp-ssl-torch_zip-p4-twin: 1 item(s): ccac305b3ac00d6397074208.bin\nE           P-smtplib-legacy_torch-p2-dyn-twin: 1 item(s): 9cae647dfa944a54053d6616.pth\nE           P-socket-connect-chain-tar-p4-twin: 1 item(s): f7086bdb0d627e811ca50192.tar\nE           P-socket-connect-ex-second_stream-p4-twin: 1 item(s): c83fc82ff02f08bcd68c76dc.bin\nE           P-socket-create-connection-bz2-p1-dyn-twin: 1 item(s): b888db462f02af7ceb2f4a90.bz2\nE           P-socket-create-connection-nested-p4-dyn-twin: 1 item(s): ead55292e28af34b567be0e0.tgz\nE           P-sqlite3-connect-npz-p5-twin: 1 item(s): 7debe52a5bac791c3d34ea29.npz\nE           P-ssl-get-cert-polyglot_zip-p1-twin: 1 item(s): cc15e72a22d7858951e43acb.zip\nE           P-tarfile-write-torch_zip-p5-dyn-twin: 1 item(s): ad02e58a1fab030266cfcf8a.bin\nE           P-tempfile-mkdtemp-torch_zip-p5-memo-twin: 1 item(s): 1691495cddee8c6a5b30a7d3.ckpt\nE           P-tempfile-mkstemp-npy-p4-twin: 1 item(s): bdffe707d69458101e993d62.npy\nE           P-temporary-directory-polyglot_zip-p5-twin: 1 item(s): af856a49e6a6961f5fe57945.zip\nE           P-urlopen-bz2-p4-twin: 1 item(s): f14ef5e3611060593cca0d46.bz2\nE           P-urlopen-npy-p5-twin: 1 item(s): 912b4774726b5a4b8d1cb28f.npy\nE           P-urlretrieve-xz-p0-dyn-twin: 1 item(s): f0e7781dfe175d5075438c8f.xz\nE           P-wraps-wrapper-bz2-p0-dyn-twin: 1 item(s): e3b9ef6e60b1c55fe21f8777.bz2\nE           P-zipfile-write-zip-p2-twin: 1 item(s): aa706fb2b826144c1523b6a4.zip\nE           0eb4cf95cea9f51cb618c314.pickle  family=P-poplib-raw-p4-memo-twin  format=pickle  reported=malicious\nE           1061e6c472f3d7a5ec47d434.pth  family=P-singledispatch-wrap-torch_zip-p4-twin  format=torch-zip  reported=malicious\nE           11cdf2bc5756b4c39ecfd3dc.xz  family=P-pathlib-methodcaller-xz-p0-dyn-twin  format=archive  reported=malicious\nE           1691495cddee8c6a5b30a7d3.ckpt  family=P-tempfile-mkdtemp-torch_zip-p5-memo-twin  format=torch-zip  reported=malicious\nE           26eb73fd73f3aac5d9a93380.zip  family=P-pop3-ssl-polyglot_zip-p0-memo-twin  format=archive  reported=malicious\nE           2b34115155b8344aec171cc5.joblib  family=P-ftplib-second_stream-p4-dyn-twin  format=pickle  reported=malicious\nE           2d38b3a95540acc62796e5bc.bin  family=P-path-write-bytes-torch_zip-p5-twin  format=torch-zip  reported=malicious\nE           35664e1d90a47d8445505410.xz  family=P-shutil-copytree-nested-p2-dyn-twin  format=archive  reported=malicious\nE           35ac3c96a7d9c87d7fca60d7.tar  family=P-pydoc-pipepager-tar-p2-twin  format=archive  reported=malicious\nE           46f791a1d3f990f1be253ad8.pkl  family=B-reload-fspath  format=pickle  reported=malicious\nE           65ab52647de4fa0e67188a26.zip  family=P-os-mkfifo-zip-p0-dyn-twin  format=archive  reported=malicious\nE           6d2f1728390afc4a66542e0a.bin  family=P-bz2-open-write-second_stream-p5-dyn-twin  format=pickle  reported=malicious\nE           6edb2a70a67262e1dbd942c8.pkl  family=P-shutil-copy2-second_stream-p4-twin  format=pickle  reported=malicious\nE           6ff96ae12233bb79cfd848f4.joblib  family=P-os-spawnvp-second_stream-p3-twin  format=pickle  reported=malicious\nE           788037cb6b3cecfc4f11ab09.ckpt  family=P-imap4-ssl-torch_zip-p2-memo-twin  format=torch-zip  reported=malicious\nE           7debe52a5bac791c3d34ea29.npz  family=P-sqlite3-connect-npz-p5-twin  format=npz  reported=malicious\nE           7f3637f1eeb34bc3281870bb.bin  family=P-named-tempfile-raw-p1-memo-twin  format=pickle  reported=malicious\nE           912b4774726b5a4b8d1cb28f.npy  family=P-urlopen-npy-p5-twin  format=npy  reported=malicious\nE           92af5d15790186894c983f90.pickle  family=P-pathlib-methodcaller-raw-p2-dyn-twin  format=pickle  reported=malicious\nE           947e2d85371d32bd4f98a448.joblib  family=P-os-popen-second_stream-p2-memo-dyn-twin  format=pickle  reported=malicious\nE           9cae647dfa944a54053d6616.pth  family=P-smtplib-legacy_torch-p2-dyn-twin  format=torch-legacy  reported=malicious\nE           9ccb3629f2336de2f26e63b4.gz  family=P-commands-getstatusoutput-gzip-p2-twin  format=archive  reported=malicious\nE           9d1d58a8e8489df5ba9fa72d.zip  family=P-http-connect-chain-zip-p4-dyn-twin  format=archive  reported=malicious\nE           aa706fb2b826144c1523b6a4.zip  family=P-zipfile-write-zip-p2-twin  format=archive  reported=malicious\nE           ad02e58a1fab030266cfcf8a.bin  family=P-tarfile-write-torch_zip-p5-dyn-twin  format=torch-zip  reported=malicious\nE           ... 21 more in /logs/verifier/reward-details.json\nE       assert 46 == 0\n\ntest_outputs.py:148: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793436054878,
+                "stop": 1793436054879,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

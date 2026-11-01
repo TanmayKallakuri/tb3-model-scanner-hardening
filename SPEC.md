@@ -472,6 +472,12 @@ failing claude-code scanners (`tmp/probe/`, results in `analysis/`):
   second stream, `pickle.loads` over two embedded streams (only the first
   runs); Keras `Lambda` bytecode in `output_shape`.
 
+Task version 1.1.0 removes the 84 items (46 families) whose only source was
+round 3 of the probe, the candidates written from reading agent scanners of
+earlier trials (`ROUND3_GADGETS` and `ROUND3_FAMILIES` in `tests/gen/corpus.py`;
+RESULTS.md, section 0), which leaves 564 items, 226 malicious and 338 clean.
+The composition below is the 1.0.0 corpus before that cut.
+
 v2 composition: 648 items, 262 malicious (process 104, code execution 75,
 file access 57, network 26) and 386 clean; 197 pickle gadget pairs (the 42
 v1 gadgets plus 136 new ones) across 15 placements (floor 26 per

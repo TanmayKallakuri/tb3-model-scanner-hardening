@@ -1,0 +1,129 @@
+{
+    "id": "41409762-2a44-4c87-bab8-08af23099b9f",
+    "task_name": "analyze-model-scanner-hardening__pZmdSZW",
+    "trial_name": "analyze-model-scanner-hardening__uiite9e",
+    "trial_uri": "file:///<home>/Downloads/klavis-tb3/jobs/v3-analyze2-pilot-codex/analyze-model-scanner-hardening__uiite9e",
+    "task_id": {
+        "path": "<home>\\AppData\\Local\\Temp\\harbor-analyze-rhgdtgm8\\analyze-model-scanner-hardening__pZmdSZW"
+    },
+    "source": null,
+    "task_checksum": "ec42fe91982651f65ca26d2c7995f4c37dccd1784c18c8cf3ffc7611eb00df6b",
+    "config": {
+        "task": {
+            "path": "<home>\\AppData\\Local\\Temp\\harbor-analyze-rhgdtgm8\\analyze-model-scanner-hardening__pZmdSZW",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "analyze-model-scanner-hardening__uiite9e",
+        "trials_dir": "jobs\\v3-analyze2-pilot-codex",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "claude-sonnet-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CLAUDE_CODE_OAUTH_TOKEN}"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "30e20c77-d349-43a8-b243-9f7eafe20c50",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.316",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1089942,
+        "n_cache_tokens": 1005279,
+        "n_output_tokens": 8290,
+        "cost_usd": 0.6225518,
+        "model_usage": {
+            "claude-sonnet-5": {
+                "n_input_tokens": 1089942,
+                "n_cache_tokens": 1005279,
+                "n_output_tokens": 8290,
+                "cost_usd": 0.49559929999999996
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-11-01T09:06:07.760030Z",
+    "finished_at": "2026-11-01T09:11:00.988134Z",
+    "environment_setup": {
+        "started_at": "2026-11-01T09:06:08.155872Z",
+        "finished_at": "2026-11-01T09:06:22.337530Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-01T09:06:22.337593Z",
+        "finished_at": "2026-11-01T09:08:52.388879Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-01T09:08:52.389124Z",
+        "finished_at": "2026-11-01T09:10:41.464562Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-01T09:10:53.171721Z",
+        "finished_at": "2026-11-01T09:10:55.284765Z"
+    },
+    "step_results": null
+}

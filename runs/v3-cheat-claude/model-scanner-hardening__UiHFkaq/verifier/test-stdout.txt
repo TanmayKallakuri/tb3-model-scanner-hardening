@@ -1,0 +1,314 @@
+preflight: ok, 564 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+configfile: pyproject.toml
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py .....FF.                                                 [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_recall __________________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 22, 'disagree': 1}, ...}
+
+    def test_recall(graded):
+        missed = [row for row in graded["items"] if row["label"] == "malicious" and not row["correct"]]
+        print(f"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}")
+>       assert graded["totals"]["fn"] == 0, (f"{len(missed)} malicious artifact(s) were not flagged, by family:\n"
+                                             f"{_by_family(missed)}\n{_describe(missed)}")
+E       AssertionError: 203 malicious artifact(s) were not flagged, by family:
+E           KERAS-activation-h5: 1 item(s): b13bd7b03656d418795960f7.h5
+E           KERAS-activation-keras: 1 item(s): 20b629239ed42d6d9522da8c.keras
+E           KERAS-nested-h5: 1 item(s): 5f273c2a0c10546cf83028c2.h5
+E           KERAS-nested-keras: 2 item(s): 178e59bd065778137533b476.keras, bdf46a92e31a413c7d3eb197.keras
+E           KERAS-output_shape-keras: 2 item(s): 38d9c2bcc1054c2c40269697.keras, fab37c34a3af1fc1f1faf3d5.keras
+E           KERAS-top-keras: 5 item(s): 37418f9838eeab71deb5bba1.keras, 3d36b576c32415e106f394a0.keras, 4b957421e83c771f7d7c62d2.keras, bf38810269776a71be415cbb.keras, c9c5add20f341800e8c723de.keras
+E           KERAS-wrapper-h5: 2 item(s): 04ab13bda1066385b9a6d553.h5, 5637b817973daa46bb9e1ebc.h5
+E           KERAS-wrapper-keras: 1 item(s): 65a51cd961f73b7e778a0b83.keras
+E           P-_pickle-load-bytesio-nested-p3: 1 item(s): 14998128eeab1b2de4b7c16c.xz
+E           P-_pickle-loads-bz2-p4-memo: 1 item(s): 5e37622c1ae4ced83e28cdc3.bz2
+E           P-_unpickler-load-second_stream-p4: 1 item(s): d74937a5a1f0833bc6915e44.joblib
+E           P-attrgetter-sys-modules-torch_zip-p3-dyn: 1 item(s): e9b99ed8489d307fb8915731.ckpt
+E           P-bdb-run-polyglot_zip-p3: 1 item(s): 31afbdcc1887f3fb9bdf9166.zip
+E           P-build-opener-open-npz-p3: 1 item(s): 59ebc9f5c2cc0d46991acc29.npz
+E           P-bz2-open-write-second_stream-p5-dyn: 1 item(s): d48b797a6c41a63f8ab75ad6.bin
+E           P-code-runsource-npy-p2: 1 item(s): 88afcb69df017ae015634f88.npy
+E           P-codecs-open-torch_zip-p2-memo-dyn: 1 item(s): 2c1fd6de79a4ffbf4784b5d1.ckpt
+E           P-commands-getstatusoutput-gzip-p2: 1 item(s): 54ceef431e6c3366fc3864f7.gz
+E           P-compile-eval-bz2-p5: 1 item(s): 41556199ba4aff5569ecbdd3.bz2
+E           P-copy-copy-zip-p5-dyn: 1 item(s): cd7da803a7f252f33adf8405.zip
+E           P-copy-deepcopy-xz-p2: 1 item(s): 3d6467669b67e6f468428cec.xz
+E           P-dbm-open-npy-p2-dyn: 1 item(s): ed4b82ef7878761281c4e441.npy
+E           P-deque-map-npy-p4: 1 item(s): 9495a96a7dcc136d19ff6ae2.npy
+E           P-dict-fromkeys-map-polyglot_zip-p4: 1 item(s): c8456625b26a33352e365a2a.zip
+E           P-dunder-import-fromlist-raw-p4-dyn: 1 item(s): ca10d4eeb9bc5de8a87de040.pkl
+E           P-eval-legacy_torch-p2: 1 item(s): 5e1f41a68989e5f2336f8f27.pt
+E           P-eval-raw-p0: 1 item(s): 1bbf092b586988eb186b9de7.pkl
+E           P-exec-polyglot_zip-p2: 1 item(s): 099ad278b075bb4d36bbe72f.zip
+E           P-executor-submit-bz2-p4: 1 item(s): de2e0632371370ef6a2a2d8b.bz2
+E           P-ftp-tls-connect-torch_zip-p3-dyn: 1 item(s): aff22196363d30ccd3ac958e.bin
+E           P-ftplib-second_stream-p4-dyn: 1 item(s): 372ffc9bea37c5bb516b3744.joblib
+E           P-functools-cache-wrap-npz-p0: 1 item(s): 4ddddd90898795219c2c2cd4.npz
+E           P-getattr-dunder-call-gzip-p5-dyn: 1 item(s): 07145e6cda6d1a632091b313.gz
+E           P-getattr-import-torch_zip-p2-dyn: 1 item(s): 44bfb6c03fa53feb20a0d6be.bin
+E           P-getitem-sys-modules-polyglot_zip-p4: 1 item(s): 40aeec50ad27be4c6eb402bf.zip
+E           P-getstatusoutput-gzip-p2-dyn: 1 item(s): eb2fdb758ff4031e4966f7c1.gz
+E           P-gzip-open-write-tar-p2-dyn: 1 item(s): 81025ad304bc8b783bebc076.tar
+E           P-http-connect-chain-zip-p4-dyn: 1 item(s): ef6ef81f7ed7a0901064e0b4.zip
+E           P-https-request-bz2-p2-dyn: 1 item(s): 976f37ccc6405a01f8b36332.bz2
+E           P-imap4-ssl-torch_zip-p2-memo: 1 item(s): 81696c3beaf54d56e152a2fa.ckpt
+E           P-imaplib-torch_zip-p2-dyn: 1 item(s): 59f6cf3d6c40b651e0508e64.pt
+E           P-import-module-attrgetter-legacy_torch-p2-dyn: 1 item(s): f9e8f6751095be6698d8edf8.pt
+E           P-import-module-posix-npy-p2-dyn: 1 item(s): e0b08ba61b96d6e7aa4644ee.npy
+E           P-importlib-dunder-import-raw-p5-dyn: 1 item(s): fabbf8639784e92a7ff361ef.pickle
+E           P-inst-text-raw-p2: 1 item(s): 238a3fee7b35b7d31b2e96fa.pickle
+E           P-inst-text-torch_zip-p2-dyn: 1 item(s): 77ed527bcf4e9a975bd3c2a7.ckpt
+E           P-io-fileio-zip-p5: 1 item(s): 5dd564709c994384a43cf870.zip
+E           P-io-open-xz-p2-memo-dyn: 1 item(s): d4a7915a9224eaf487351d69.xz
+E           P-joblib-load-polyglot_zip-p5-memo: 1 item(s): f5c47ce6d787cf0a5d5ac0e1.zip
+E           P-joblib-numpy-pickle-load-tar-p4: 1 item(s): da040ee604d5dc3c9905c13a.tar
+E           P-list-chain-map-legacy_torch-p2: 1 item(s): 81b815f5aa29270da5460e2d.pt
+E           P-list-islice-map-legacy_torch-p2-memo: 1 item(s): 1821cf1660bda0f28425e897.pth
+E           P-list-starmap-polyglot_zip-p5-memo: 1 item(s): 9e45181dd02f6ec92bfcba31.zip
+E           P-list-zip-map-legacy_torch-p2-memo: 1 item(s): e78992b8d604a9333c930a61.pt
+E           P-lmtp-tar-p2: 1 item(s): cfd6869132212f6f05a6a266.tar
+E           P-loads-b64decode-xz-p4: 1 item(s): 01d9fd57f93714b2ca7e7061.xz
+E           P-loads-bytearray-raw-p5: 1 item(s): 48030a236f2e74aabd707506.bin
+E           P-loads-bytes-list-npy-p2: 1 item(s): 617ba45f79be6062d884ca40.npy
+E           P-loads-codecs-hex-torch_zip-p3-memo: 1 item(s): 0a3f9adad21cdb45a3513709.ckpt
+E           P-loads-concat-raw-p1: 1 item(s): a59e03b06548fe8451f9fbfb.bin
+E           P-loads-fromhex-npy-p4: 1 item(s): 8cab3cf7fc47093bde3e4c4d.npy
+E           P-loads-gzip-xz-p4: 1 item(s): 8f59905fc2e686d60f996a79.xz
+E           P-loads-join-tar-p3: 1 item(s): d78f6ab6254f6a92abbad4eb.tar
+E           P-loads-latin1-encode-npy-p4: 1 item(s): 84e326c2232dffa60aaa133a.npy
+E           P-loads-loads-nested-p4-memo: 1 item(s): 1693a1671173d97afe0f2d86.xz
+E           P-loads-memoryview-zip-p5: 1 item(s): 75489991a2145dba603c8270.zip
+E           P-loads-mul-legacy_torch-p2: 1 item(s): 203d9a67d569b453036c50f9.pt
+E           P-loads-unhexlify-zip-p4: 1 item(s): dc88dd940b2bd61d060f21e9.zip
+E           P-loads-zlib-zip-p2: 1 item(s): 7d5f4f0037b7f888dfd85f07.zip
+E           P-logging-dictconfig-gzip-p1: 1 item(s): 481d66e68306883121dc4fa5.gz
+E           P-logging-filehandler-gzip-p2-dyn: 1 item(s): 1bade9e6238b27ae4ba01ea5.gz
+E           P-lru-cache-wrap-xz-p0-dyn: 1 item(s): 3d82a24fc32a879c9115adb4.xz
+E           P-lzma-open-write-xz-p4-memo-dyn: 1 item(s): b2b2c02a7a5c0a36a32279c5.xz
+E           P-marshal-functiontype-nested-p2-dyn: 1 item(s): e85c662f87df5d63ccde7557.xz
+E           P-max-key-partial-nested-p2: 1 item(s): 444e99e1f010b59c502a3353.xz
+E           P-max-map-xz-p3: 1 item(s): c40b8608e00966505d87bbfb.xz
+E           P-methodcaller-dunder-call-nested-p4-dyn: 1 item(s): 60e1f5f9df75bb765ee19dab.tgz
+E           P-methodcaller-on-module-npz-p2: 1 item(s): f81ee8c37c5c8caad8d454bd.npz
+E           P-methodtype-npz-p5: 1 item(s): 136e571a70c5f22f46ff8275.npz
+E           P-named-tempfile-raw-p1-memo: 1 item(s): 50d7f5d47dfab74ccc07c730.bin
+E           P-next-map-xz-p4-memo: 1 item(s): 8ef84bb20972bca584b32dbd.xz
+E           P-nntplib-raw-p2-memo: 1 item(s): e3351f6cb8c1f98fda4de098.pkl
+E           P-numpy-load-raw-p2: 1 item(s): b001631d3218f649c6acbcef.joblib
+E           P-numpy-npyio-impl-load-second_stream-p0: 1 item(s): 20dc62575818d3f77e6bc6b6.pickle
+E           P-numpy-read-array-npy-p4: 1 item(s): 98ee465a6f92c3e3c4873ebb.npy
+E           P-numpy-runstring-torch_zip-p4-dyn: 1 item(s): 91c44162278e2632c4385004.pt
+E           P-obj-raw-p1-dyn: 1 item(s): b00ad93f7331a45ba2cf8cd0.pkl
+E           P-obj-zip-p2: 1 item(s): 963275c072c56e40ee3d1779.zip
+E           P-object-getattribute-raw-p4-dyn: 1 item(s): dcf85df232ec8b5119633de5.bin
+E           P-open-write-legacy_torch-p2-dyn: 1 item(s): 544081b16880afb14991d1dd.pth
+E           P-operator-call-polyglot_zip-p5-dyn: 1 item(s): 19230cf820fcebf157517e35.zip
+E           P-os-makedirs-zip-p2-dyn: 1 item(s): a0b856dbb34f61a7fa4bd98e.zip
+E           P-os-mkfifo-zip-p0-dyn: 1 item(s): 402cd557019a48dd5aa4dfd6.zip
+E           P-os-open-npz-p1-memo-dyn: 1 item(s): 962290e4653262dac96ebec5.npz
+E           P-os-popen-second_stream-p2-memo-dyn: 1 item(s): ed4a05d1dc6760494e41d14e.joblib
+E           P-os-posix-spawn-legacy_torch-p2-memo: 1 item(s): 9692afc25be9bf06a7d0f569.pth
+E           P-os-spawnlp-torch_zip-p2: 1 item(s): 3d58669343754253f18862a2.ckpt
+E           P-os-spawnvp-second_stream-p3: 1 item(s): b7517e5e97e1d97852d7f8c8.joblib
+E           P-os-symlink-tar-p0-dyn: 1 item(s): 394f77811f7888ec62efd934.tar
+E           P-pandas-read-pickle-zip-p5-memo: 1 item(s): ef75f2ade824ef2c67336d4d.zip
+E           P-partial-of-copy-npz-p5-dyn: 1 item(s): e2df0dc731a8c505acd778f2.npz
+E           P-partial-retarget-second_stream-p0: 1 item(s): 6748f2367b544c31ea2bb653.pkl
+E           P-path-open-write-raw-p4-dyn: 1 item(s): dd98bf34ed301406ef0d1929.pkl
+E           P-path-write-bytes-torch_zip-p5: 1 item(s): ec7657d80bc8432e7b7bf3fe.bin
+E           P-pathlib-methodcaller-raw-p2-dyn: 1 item(s): 4482776f0e8d251314afb160.pickle
+E           P-pathlib-methodcaller-xz-p0-dyn: 1 item(s): 9406504e31cbc08bcf83478a.xz
+E           P-pathlib-mkdir-npz-p5: 1 item(s): 1422b6f97efb2a279fd014f5.npz
+E           P-pathlib-touch-raw-p2: 1 item(s): fa590873ad10b3fbf6d174e9.pkl
+E           P-pickle-load-bytesio-xz-p2: 1 item(s): 7a05fa050f41fd8dd7163146.xz
+E           P-pickle-loads-gzip-p5-memo: 1 item(s): fb2431dd6cd36229dfd217d1.gz
+E           P-pickle-loads-raw-p0: 1 item(s): 5ac7ec7298d0a54f3745adc4.bin
+E           P-pkgutil-resolve-second_stream-p5-dyn: 1 item(s): 877591bab26976c2d012eac7.pickle
+E           P-pop3-ssl-polyglot_zip-p0-memo: 1 item(s): 456081c16f9a4a328ba9ff17.zip
+E           P-poplib-raw-p4-memo: 1 item(s): 1330e80062a733f0595b6505.pickle
+E           P-posix-system-zip-p5-memo-dyn: 1 item(s): 8115d3f6547c4d73105a6f4f.zip
+E           P-pydoc-pipepager-tar-p2: 1 item(s): c7c58dd1e8d4b770b40ed370.tar
+E           P-reduce-add-map-gzip-p5: 1 item(s): 11a7bcff636c4e3530aa37f5.gz
+E           P-reduce-popen-tar-p0-dyn: 1 item(s): 47d052e7d63c1db13814a356.tar
+E           P-runpy-run-code-raw-p5-memo-dyn: 1 item(s): a9b55d4173c2bebbc993cc3b.pkl
+E           P-set-map-gzip-p1-dyn: 1 item(s): cc79eb919f2d20fe30a8902b.gz
+E           P-shelve-open-npz-p5-dyn: 1 item(s): 6d8478acf2da498d89b3126b.npz
+E           P-shutil-copy2-second_stream-p4: 1 item(s): 94dffaf598d0051ef9735a30.pkl
+E           P-shutil-copyfile-legacy_torch-p2-memo: 1 item(s): 8bdaf7ea6c68145c4520501c.pt
+E           P-shutil-copytree-nested-p2-dyn: 1 item(s): 6d9b42fb6e77393e63f4b774.xz
+E           P-smtp-ssl-torch_zip-p4: 1 item(s): e52499bbec93ed907bf5e0b8.bin
+E           P-smtplib-legacy_torch-p2-dyn: 1 item(s): 4d2841eeef5fb431f79b716c.pth
+E           P-socket-connect-chain-tar-p4: 1 item(s): ccf80bec87d1d805ce561ca8.tar
+E           P-socket-connect-ex-second_stream-p4: 1 item(s): 54f4766a0f1cfbce79775161.bin
+E           P-socket-create-connection-bz2-p1-dyn: 1 item(s): 2783d6612fffa2ee05dea55a.bz2
+E           P-socket-create-connection-nested-p4-dyn: 1 item(s): 0e10a52a0b1d41172f6e1842.tgz
+E           P-sqlite3-connect-npz-p5: 1 item(s): 57fc9e035e93a8523c74e388.npz
+E           P-ssl-get-cert-polyglot_zip-p1: 1 item(s): b20ffebb5f39941e576b6e3a.zip
+E           P-subprocess-check-output-npz-p4-dyn: 1 item(s): b28159889499ce1eec93344e.npz
+E           P-subprocess-popen-tar-p1: 1 item(s): 9d435e9da271a6f765002021.tar
+E           P-subprocess-run-npz-p5-dyn: 1 item(s): 9c565069dc8b771461cd8f15.npz
+E           P-sum-map-tar-p5-dyn: 1 item(s): 9a97a347a27794983943921d.tar
+E           P-sys-modules-itemgetter-legacy_torch-p2: 1 item(s): ecd147d9575b20943fd1b1e1.pth
+E           P-tarfile-write-torch_zip-p5-dyn: 1 item(s): b65b5ac7f1e30334348fe8cf.bin
+E           P-telnetlib-nested-p4-dyn: 1 item(s): 4797ce20fe203549fb11b948.tgz
+E           P-tempfile-mkdtemp-torch_zip-p5-memo: 1 item(s): 1070e287521e0a8d1af81126.ckpt
+E           P-tempfile-mkstemp-npy-p4: 1 item(s): 7ca165e77ae8472d43948c5e.npy
+E           P-temporary-directory-polyglot_zip-p5: 1 item(s): 17448b7fdbbbfb4c839ee993.zip
+E           P-thread-run-polyglot_zip-p4: 1 item(s): 1ec699a14be99e883f64367d.zip
+E           P-thread-start-npy-p5-dyn: 1 item(s): d3fb5083aedd9081dfeeba4f.npy
+E           P-timeit-bz2-p2-dyn: 1 item(s): d08e37afb3faf0febd119adc.bz2
+E           P-timer-start-npy-p5: 1 item(s): 1555c5e5e8a9785c0cebf578.npy
+E           P-torch-load-from-bytes-xz-p2: 1 item(s): f17ce6e04d23cc6434e7d40b.xz
+E           P-tuple-map-tar-p1-dyn: 1 item(s): 095e52026b68f28c99852448.tar
+E           P-unpickler-load-bz2-p4: 1 item(s): d9cb8579691f87b3ca72e5b0.bz2
+E           P-urlopen-bz2-p4: 1 item(s): acfa7cf53454f8f0018945cb.bz2
+E           P-urlopen-npy-p5: 1 item(s): 8a915a7d7414645faa35e51d.npy
+E           P-urlretrieve-xz-p0-dyn: 1 item(s): 047fe5b3140883616ae15863.xz
+E           P-vars-getitem-nested-p3: 1 item(s): d5d1fc219b760ee4073b37d9.tgz
+E           P-wraps-wrapper-bz2-p0-dyn: 1 item(s): 0e53f7a22b64f02dd6d77afd.bz2
+E           P-xmlrpc-call-gzip-p4-dyn: 1 item(s): 037e76b4c064a7b2d8449e5f.gz
+E           P-zipfile-write-zip-p2: 1 item(s): e2c20e19b379dca9c6bbee44.zip
+E           TF-if_branch: 3 item(s): 017840bb120a31a6bff4c86a, 1e7f6c6d4fc02f7ef6384343, 6c10b6678931db9b3c22f914
+E           TF-if_branch-mg1: 2 item(s): 661888a18abdb374e723b596, bed72c05dc8effe736b3fce4
+E           TF-if_branch-pbtxt: 1 item(s): 600c9d79e38fda74401a0ebb
+E           TF-serving: 3 item(s): 4fa92e1b5a3bca99c59caa35, 6f9d1178fb8cb3c719d5e8fb, 789fad672a3e6f3012df3a82
+E           TF-serving-mg1: 3 item(s): a13d0f5ae2e21b44aa25c4e4, e5e0fadaca405e9a27613420, e892908a3dcf3bb6e21161d5
+E           TF-serving-pbtxt: 1 item(s): 728f15500428db4642976fee
+E           TF-while_body: 4 item(s): 32ce15fc05da8e881c31ab42, 6131dde597ee6d9a149db2df, 7779be4f46dba40721ea7e34, d618314cda11ea0f31a0c16a
+E           TF-while_body-pbtxt: 2 item(s): 3b7f1edd2fc12f030c3ae7a4, f7da471b1a79e2bb8bff67fd
+E           TF-wrapper: 5 item(s): 1d81643f6a525f1b364da210, 8f4e060bd4fd33a99f24e5a3, dd839fbe534cf15892591928, e1c783bbb52d91264a2e0e6e, e434e2aede3317bfb0888d6c
+E           TF-wrapper-pbtxt: 2 item(s): 365bd7e0916b3d0b7f35b385, a34ebd7e95bd562f6ae855c8
+E           X-gzip-header-fields: 1 item(s): b9dcbaf5d3b5895920f12b72.gz
+E           X-legacy-torch-stream5: 1 item(s): 19b5c02a1e4f0e4d290595e3.pt
+E           X-loads-stream-order: 1 item(s): ee01082c5b7fda0c84a52170.pickle
+E           X-npy-fortran-object: 1 item(s): afb76b59aaceee9299fba1d1.npy
+E           X-npy-header-v2: 2 item(s): b46e22a0a5a9e6ec414dfb24.npy, ee5a7b8cebf2bc98d5a2689a.npy
+E           X-npy-header-v3: 1 item(s): 1c479dfafeebe6171787623c.npy
+E           X-npy-object-O8: 1 item(s): 27f6355cc58653b9b371aa1b.npy
+E           X-npy-structured-object: 2 item(s): 3b25c42be316006e0253146d.npy, c5f23116a68e17f2b022268c.npy
+E           X-streams-proto0-second: 1 item(s): 04d9d3619bb9d253e1863663.pkl
+E           X-streams-third: 1 item(s): e7b4b292aa0a18e825ded41e.pkl
+E           X-zip-dup-last-malicious: 2 item(s): 51dfe5ef542e1bba99432837.zip, f7d45e4272dca56a7f7e0651.zip
+E           017840bb120a31a6bff4c86a  family=TF-if_branch  format=savedmodel  reported=clean
+E           01d9fd57f93714b2ca7e7061.xz  family=P-loads-b64decode-xz-p4  format=archive  reported=clean
+E           037e76b4c064a7b2d8449e5f.gz  family=P-xmlrpc-call-gzip-p4-dyn  format=archive  reported=clean
+E           047fe5b3140883616ae15863.xz  family=P-urlretrieve-xz-p0-dyn  format=archive  reported=clean
+E           04ab13bda1066385b9a6d553.h5  family=KERAS-wrapper-h5  format=keras-h5  reported=clean
+E           04d9d3619bb9d253e1863663.pkl  family=X-streams-proto0-second  format=pickle  reported=clean
+E           07145e6cda6d1a632091b313.gz  family=P-getattr-dunder-call-gzip-p5-dyn  format=archive  reported=clean
+E           095e52026b68f28c99852448.tar  family=P-tuple-map-tar-p1-dyn  format=archive  reported=clean
+E           099ad278b075bb4d36bbe72f.zip  family=P-exec-polyglot_zip-p2  format=archive  reported=clean
+E           0a3f9adad21cdb45a3513709.ckpt  family=P-loads-codecs-hex-torch_zip-p3-memo  format=torch-zip  reported=clean
+E           0e10a52a0b1d41172f6e1842.tgz  family=P-socket-create-connection-nested-p4-dyn  format=archive  reported=clean
+E           0e53f7a22b64f02dd6d77afd.bz2  family=P-wraps-wrapper-bz2-p0-dyn  format=archive  reported=clean
+E           1070e287521e0a8d1af81126.ckpt  family=P-tempfile-mkdtemp-torch_zip-p5-memo  format=torch-zip  reported=clean
+E           11a7bcff636c4e3530aa37f5.gz  family=P-reduce-add-map-gzip-p5  format=archive  reported=clean
+E           1330e80062a733f0595b6505.pickle  family=P-poplib-raw-p4-memo  format=pickle  reported=clean
+E           136e571a70c5f22f46ff8275.npz  family=P-methodtype-npz-p5  format=npz  reported=clean
+E           1422b6f97efb2a279fd014f5.npz  family=P-pathlib-mkdir-npz-p5  format=npz  reported=clean
+E           14998128eeab1b2de4b7c16c.xz  family=P-_pickle-load-bytesio-nested-p3  format=archive  reported=clean
+E           1555c5e5e8a9785c0cebf578.npy  family=P-timer-start-npy-p5  format=npy  reported=clean
+E           1693a1671173d97afe0f2d86.xz  family=P-loads-loads-nested-p4-memo  format=archive  reported=clean
+E           17448b7fdbbbfb4c839ee993.zip  family=P-temporary-directory-polyglot_zip-p5  format=archive  reported=clean
+E           178e59bd065778137533b476.keras  family=KERAS-nested-keras  format=keras-v3  reported=clean
+E           1821cf1660bda0f28425e897.pth  family=P-list-islice-map-legacy_torch-p2-memo  format=torch-legacy  reported=clean
+E           19230cf820fcebf157517e35.zip  family=P-operator-call-polyglot_zip-p5-dyn  format=archive  reported=clean
+E           19b5c02a1e4f0e4d290595e3.pt  family=X-legacy-torch-stream5  format=torch-legacy  reported=clean
+E           ... 178 more in /logs/verifier/reward-details.json
+E       assert 203 == 0
+
+test_outputs.py:141: AssertionError
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 203 of 226
+___________________________ test_no_false_positives ____________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...: {'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 22, 'disagree': 1}, ...}
+
+    def test_no_false_positives(graded):
+        flagged = [row for row in graded["items"] if row["label"] == "clean" and not row["correct"]]
+        print(f"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}")
+>       assert graded["totals"]["fp"] == 0, (f"{len(flagged)} clean artifact(s) were flagged, by family:\n"
+                                             f"{_by_family(flagged)}\n{_describe(flagged)}")
+E       AssertionError: 25 clean artifact(s) were flagged, by family:
+E           B-datetime: 1 item(s): b53ebf27524dc62f244f14c2.bin
+E           B-decimal: 1 item(s): 554f8e151be29e775f6be581.pkl
+E           B-islice-map-unconsumed: 1 item(s): e8c1041fb287c3331effceff.pickle
+E           B-itemgetter: 1 item(s): 0cfa88d4ce38f2229b1e9122.pickle
+E           B-iter-map-unconsumed: 1 item(s): 56e7c3da12cfda724d4d2049.joblib
+E           B-logreg-p0: 1 item(s): 6dba4f776833433e8d6bdfd6.pkl
+E           B-logreg-p2: 1 item(s): 0e2b89b74fdea6e7ee27ee97.joblib
+E           B-map-unconsumed: 1 item(s): 4cc10a3075146e8e48d41fff.pickle
+E           B-methodtype-stored: 1 item(s): dbd7cf7ea0da319e23bcdd3a.bin
+E           B-newobj-ex-popen-kwargs: 1 item(s): b739106893906e7fe316ba49.bin
+E           B-open-stored: 1 item(s): 86c73c68e44e3a3f5c81faa7.bin
+E           B-partial-retarget-benign: 1 item(s): 6080c4999a420a933ec56a04.joblib
+E           B-partial-system-stored: 1 item(s): 6bcfa516811daab111f9b326.pickle
+E           B-pipeline-p0: 1 item(s): 822c2111142145bfce2b258e.joblib
+E           B-pipeline-p2: 1 item(s): cff3d9574b9cdd4a8f88bd0f.pkl
+E           B-records-p0: 1 item(s): b582d6878f7fd7e29e61c823.bin
+E           B-starmap-unconsumed: 1 item(s): ae8886d87ad7b6a370c3ebbc.pickle
+E           B-strings-p0: 1 item(s): b5975c4817c8cc5a99e20211.pkl
+E           B-strings-p1: 1 item(s): 661ae67174adf90577629f07.pickle
+E           B-strings-p2: 1 item(s): 43df7970138b4e99b362a284.joblib
+E           B-strings-p4: 1 item(s): 1212232c9fe39ea6e9b98e51.joblib
+E           B-strings-p5: 1 item(s): 48d0f04f4d6c9869b97bb63e.joblib
+E           B-two-streams: 1 item(s): 27dc847984914d6888a4629d.pkl
+E           KERAS-output_shape-h5-twin: 1 item(s): 0326134d72e4cafe2bc483cb.h5
+E           P-getoutput-raw-p4-memo-dyn-twin: 1 item(s): ba7a6a61140aa24caf4cc738.pickle
+E           0326134d72e4cafe2bc483cb.h5  family=KERAS-output_shape-h5-twin  format=keras-h5  reported=malicious
+E           0cfa88d4ce38f2229b1e9122.pickle  family=B-itemgetter  format=pickle  reported=malicious
+E           0e2b89b74fdea6e7ee27ee97.joblib  family=B-logreg-p2  format=pickle  reported=malicious
+E           1212232c9fe39ea6e9b98e51.joblib  family=B-strings-p4  format=pickle  reported=malicious
+E           27dc847984914d6888a4629d.pkl  family=B-two-streams  format=pickle  reported=malicious
+E           43df7970138b4e99b362a284.joblib  family=B-strings-p2  format=pickle  reported=malicious
+E           48d0f04f4d6c9869b97bb63e.joblib  family=B-strings-p5  format=pickle  reported=malicious
+E           4cc10a3075146e8e48d41fff.pickle  family=B-map-unconsumed  format=pickle  reported=malicious
+E           554f8e151be29e775f6be581.pkl  family=B-decimal  format=pickle  reported=malicious
+E           56e7c3da12cfda724d4d2049.joblib  family=B-iter-map-unconsumed  format=pickle  reported=malicious
+E           6080c4999a420a933ec56a04.joblib  family=B-partial-retarget-benign  format=pickle  reported=malicious
+E           661ae67174adf90577629f07.pickle  family=B-strings-p1  format=pickle  reported=malicious
+E           6bcfa516811daab111f9b326.pickle  family=B-partial-system-stored  format=pickle  reported=malicious
+E           6dba4f776833433e8d6bdfd6.pkl  family=B-logreg-p0  format=pickle  reported=malicious
+E           822c2111142145bfce2b258e.joblib  family=B-pipeline-p0  format=pickle  reported=malicious
+E           86c73c68e44e3a3f5c81faa7.bin  family=B-open-stored  format=pickle  reported=malicious
+E           ae8886d87ad7b6a370c3ebbc.pickle  family=B-starmap-unconsumed  format=pickle  reported=malicious
+E           b53ebf27524dc62f244f14c2.bin  family=B-datetime  format=pickle  reported=malicious
+E           b582d6878f7fd7e29e61c823.bin  family=B-records-p0  format=pickle  reported=malicious
+E           b5975c4817c8cc5a99e20211.pkl  family=B-strings-p0  format=pickle  reported=malicious
+E           b739106893906e7fe316ba49.bin  family=B-newobj-ex-popen-kwargs  format=pickle  reported=malicious
+E           ba7a6a61140aa24caf4cc738.pickle  family=P-getoutput-raw-p4-memo-dyn-twin  format=pickle  reported=malicious
+E           cff3d9574b9cdd4a8f88bd0f.pkl  family=B-pipeline-p2  format=pickle  reported=malicious
+E           dbd7cf7ea0da319e23bcdd3a.bin  family=B-methodtype-stored  format=pickle  reported=malicious
+E           e8c1041fb287c3331effceff.pickle  family=B-islice-map-unconsumed  format=pickle  reported=malicious
+E       assert 25 == 0
+
+test_outputs.py:148: AssertionError
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 25 of 338
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.466
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=67.857 max_seconds=0.466 items=564 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_budget
+FAILED test_outputs.py::test_recall - AssertionError: 203 malicious artifact(...
+FAILED test_outputs.py::test_no_false_positives - AssertionError: 25 clean ar...
+==================== 2 failed, 6 passed in 69.92s (0:01:09) ====================

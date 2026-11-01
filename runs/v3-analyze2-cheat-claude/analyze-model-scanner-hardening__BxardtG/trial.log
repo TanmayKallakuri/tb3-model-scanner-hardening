@@ -1,0 +1,14 @@
+Uploading environment/ to /app
+Running command: apt-get update && apt-get install -y curl nodejs npm procps
+Command outputs captured
+Running command: set -euo pipefail; if command -v apk &> /dev/null; then  npm install -g @anthropic-ai/claude-code; else  curl -fsSL https://downloads.claude.ai/claude-code-releases/bootstrap.sh | bash -s --; fi && echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && export PATH="$HOME/.local/bin:$PATH" && claude --version
+Command outputs captured
+Running command: mkdir -p $CLAUDE_CONFIG_DIR/debug $CLAUDE_CONFIG_DIR/projects/-app $CLAUDE_CONFIG_DIR/shell-snapshots $CLAUDE_CONFIG_DIR/statsig $CLAUDE_CONFIG_DIR/todos $CLAUDE_CONFIG_DIR/skills && if [ -d ~/.claude/skills ]; then cp -r ~/.claude/skills/. $CLAUDE_CONFIG_DIR/skills/ 2>/dev/null || true; fi
+Command outputs captured
+Running command: export PATH="$HOME/.local/bin:$PATH"; harbor_claude_code_instruction_00a9078b3504466bb3723d64ebd78752="$HARBOR_CLAUDE_CODE_INSTRUCTION_00A9078B3504466BB3723D64EBD78752"; unset HARBOR_CLAUDE_CODE_INSTRUCTION_00A9078B3504466BB3723D64EBD78752; printf "%s" "$harbor_claude_code_instruction_00a9078b3504466bb3723d64ebd78752" | claude --verbose --output-format=stream-json --permission-mode=bypassPermissions --print 2>&1 | tee /logs/agent/claude-code.txt
+Command outputs captured
+Wrote Claude Code trajectory to jobs\v3-analyze2-cheat-claude\analyze-model-scanner-hardening__BxardtG\agent\trajectory.json
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment analyze-model-scanner-hardening__UiHFkaq. Command: docker compose --project-name analyze-model-scanner-hardening__bxardtg__env --project-directory <home>\AppData\Local\Temp\harbor-analyze-9xb_2suv\analyze-model-scanner-hardening__UiHFkaq\environment -f <home>\AppData\Local\Temp\tmps353udqo\analyze-model-scanner-hardening__BxardtG__env-docker-compose-resources.json -f <home>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-prebuilt.yaml -f <home>\AppData\Local\Temp\tmpyea05lhl\docker-compose-environment.json -f <home>\AppData\Local\Temp\tmphbww_19z\docker-compose-mounts.json cp main:/app/analysis.json jobs\v3-analyze2-cheat-claude\analyze-model-scanner-hardening__BxardtG\artifacts\analysis.json. Return code: 1. Stdout:  analyze-model-scanner-hardening__bxardtg__env-main-1 Copying analyze-model-scanner-hardening__bxardtg__env-main-1:/app/analysis.json to jobs\v3-analyze2-cheat-claude\analyze-model-scanner-hardening__BxardtG\artifacts\analysis.json
+invalid output path: directory "<home>\\AppData\\Local\\Temp\\harbor-analyze-9xb_2suv\\analyze-model-scanner-hardening__UiHFkaq\\environment\\jobs\\v3-analyze2-cheat-claude\\analyze-model-scanner-hardening__BxardtG\\artifacts" does not exist
+. Stderr: None. 

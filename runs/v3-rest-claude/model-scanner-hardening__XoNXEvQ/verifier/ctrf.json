@@ -1,0 +1,107 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-31T11:21:12.275429+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 6,
+            "failed": 2,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1793445555321,
+            "stop": 1793445672272
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_artifact_staged",
+                "status": "passed",
+                "duration": 116849,
+                "start": 1793445555386,
+                "stop": 1793445672235,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_corpus_pinned",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793445672235,
+                "stop": 1793445672236,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_every_scan_completed",
+                "status": "passed",
+                "duration": 2,
+                "start": 1793445672236,
+                "stop": 1793445672238,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_schema",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793445672238,
+                "stop": 1793445672239,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_no_side_effects",
+                "status": "passed",
+                "duration": 1,
+                "start": 1793445672239,
+                "stop": 1793445672240,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_recall",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 23,
+                "start": 1793445672240,
+                "stop": 1793445672263,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 197, 'disagree': 28}, ...}\n\n    def test_recall(graded):\n        missed = [row for row in graded[\"items\"] if row[\"label\"] == \"malicious\" and not row[\"correct\"]]\n        print(f\"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}\")\n>       assert graded[\"totals\"][\"fn\"] == 0, (f\"{len(missed)} malicious artifact(s) were not flagged, by family:\\n\"\n                                             f\"{_by_family(missed)}\\n{_describe(missed)}\")\nE       AssertionError: 1 malicious artifact(s) were not flagged, by family:\nE           P-object-getattribute-raw-p4-dyn: 1 item(s): dcf85df232ec8b5119633de5.bin\nE           dcf85df232ec8b5119633de5.bin  family=P-object-getattribute-raw-p4-dyn  format=pickle  reported=clean\nE       assert 1 == 0\n\ntest_outputs.py:141: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_no_false_positives",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 6,
+                "start": 1793445672264,
+                "stop": 1793445672270,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 197, 'disagree': 28}, ...}\n\n    def test_no_false_positives(graded):\n        flagged = [row for row in graded[\"items\"] if row[\"label\"] == \"clean\" and not row[\"correct\"]]\n        print(f\"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}\")\n>       assert graded[\"totals\"][\"fp\"] == 0, (f\"{len(flagged)} clean artifact(s) were flagged, by family:\\n\"\n                                             f\"{_by_family(flagged)}\\n{_describe(flagged)}\")\nE       AssertionError: 3 clean artifact(s) were flagged, by family:\nE           KERAS-benign-decoy-key: 3 item(s): 949b85c63583f207ec07b12e.keras, bf85814097e8f4c9984e75c4.keras, f356a269aef618bf45992c2f.h5\nE           949b85c63583f207ec07b12e.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious\nE           bf85814097e8f4c9984e75c4.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious\nE           f356a269aef618bf45992c2f.h5  family=KERAS-benign-decoy-key  format=keras-h5  reported=malicious\nE       assert 3 == 0\n\ntest_outputs.py:148: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_budget",
+                "status": "passed",
+                "duration": 2,
+                "start": 1793445672270,
+                "stop": 1793445672272,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

@@ -6,7 +6,7 @@ artifacts = ["/app/modelgate/"]
 
 [task]
 name = "terminal-bench/model-scanner-hardening"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = [{ name = "Tanmay Kallakuri", email = "ktanmaykumar@gmail.com" }]
 [metadata]

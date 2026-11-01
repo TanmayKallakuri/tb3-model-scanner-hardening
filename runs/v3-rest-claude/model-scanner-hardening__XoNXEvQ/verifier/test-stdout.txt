@@ -1,0 +1,67 @@
+preflight: ok, 564 corpus items match the manifest, sandbox launches as uid 61000
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+configfile: pyproject.toml
+plugins: json-ctrf-0.5.2
+collected 8 items
+
+test_outputs.py .....FF.                                                 [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_recall __________________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 197, 'disagree': 28}, ...}
+
+    def test_recall(graded):
+        missed = [row for row in graded["items"] if row["label"] == "malicious" and not row["correct"]]
+        print(f"malicious items missed: {len(missed)} of {graded['totals']['tp'] + graded['totals']['fn']}")
+>       assert graded["totals"]["fn"] == 0, (f"{len(missed)} malicious artifact(s) were not flagged, by family:\n"
+                                             f"{_by_family(missed)}\n{_describe(missed)}")
+E       AssertionError: 1 malicious artifact(s) were not flagged, by family:
+E           P-object-getattribute-raw-p4-dyn: 1 item(s): dcf85df232ec8b5119633de5.bin
+E           dcf85df232ec8b5119633de5.bin  family=P-object-getattribute-raw-p4-dyn  format=pickle  reported=clean
+E       assert 1 == 0
+
+test_outputs.py:141: AssertionError
+----------------------------- Captured stdout call -----------------------------
+malicious items missed: 1 of 226
+___________________________ test_no_false_positives ____________________________
+
+graded = {'items': [{'name': '017840bb120a31a6bff4c86a', 'sha256': '017840bb120a31a6bff4c86a83de0bb1f0d8613bafb4d32742e9c48e87b...{'fn': 0, 'fp': 0, 'schema_errors': 0, 'canary_events': 0, ...}, 'kind_agreement': {'agree': 197, 'disagree': 28}, ...}
+
+    def test_no_false_positives(graded):
+        flagged = [row for row in graded["items"] if row["label"] == "clean" and not row["correct"]]
+        print(f"clean items flagged: {len(flagged)} of {graded['totals']['tn'] + graded['totals']['fp']}")
+>       assert graded["totals"]["fp"] == 0, (f"{len(flagged)} clean artifact(s) were flagged, by family:\n"
+                                             f"{_by_family(flagged)}\n{_describe(flagged)}")
+E       AssertionError: 3 clean artifact(s) were flagged, by family:
+E           KERAS-benign-decoy-key: 3 item(s): 949b85c63583f207ec07b12e.keras, bf85814097e8f4c9984e75c4.keras, f356a269aef618bf45992c2f.h5
+E           949b85c63583f207ec07b12e.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious
+E           bf85814097e8f4c9984e75c4.keras  family=KERAS-benign-decoy-key  format=keras-v3  reported=malicious
+E           f356a269aef618bf45992c2f.h5  family=KERAS-benign-decoy-key  format=keras-h5  reported=malicious
+E       assert 3 == 0
+
+test_outputs.py:148: AssertionError
+----------------------------- Captured stdout call -----------------------------
+clean items flagged: 3 of 338
+==================================== PASSES ====================================
+__________________________ test_every_scan_completed ___________________________
+----------------------------- Captured stdout call -----------------------------
+timeouts=0 nonzero_exits=0 unparseable=0 max_seconds=0.266
+_____________________________ test_no_side_effects _____________________________
+----------------------------- Captured stdout call -----------------------------
+canary events: none
+_________________________________ test_budget __________________________________
+----------------------------- Captured stdout call -----------------------------
+total_seconds=115.054 max_seconds=0.266 items=564 cutoff=none
+=========================== short test summary info ============================
+PASSED test_outputs.py::test_artifact_staged
+PASSED test_outputs.py::test_corpus_pinned
+PASSED test_outputs.py::test_every_scan_completed
+PASSED test_outputs.py::test_schema
+PASSED test_outputs.py::test_no_side_effects
+PASSED test_outputs.py::test_budget
+FAILED test_outputs.py::test_recall - AssertionError: 1 malicious artifact(s)...
+FAILED test_outputs.py::test_no_false_positives - AssertionError: 3 clean art...
+=================== 2 failed, 6 passed in 116.96s (0:01:56) ====================

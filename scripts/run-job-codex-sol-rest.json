@@ -1,0 +1,23 @@
+{
+  "n_attempts": 2,
+  "jobs_dir": "jobs",
+  "n_concurrent_trials": 1,
+  "environment": {
+    "type": "docker"
+  },
+  "tasks": [
+    {
+      "path": "tasks/model-scanner-hardening"
+    }
+  ],
+  "agents": [
+    {
+      "name": "codex",
+      "model_name": "openai/gpt-6.1-sol",
+      "kwargs": {
+        "reasoning_effort": "xhigh"
+      },
+      "env": {}
+    }
+  ]
+}

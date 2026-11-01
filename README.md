@@ -8,9 +8,14 @@ The task: a model registry's static scanner lets model files that run code on
 load slip through, and flags some legitimate models. The agent hardens the
 scanner (pickle in every protocol and container, PyTorch zip and legacy
 checkpoints, NumPy, TensorFlow SavedModel, Keras HDF5 and `.keras`) against a
-written policy; a hidden corpus of about 250 twin-built artifacts, regenerated
+written policy; a hidden corpus of 564 twin-built artifacts, regenerated
 from a fixed seed inside the verifier, grades it with reward 1 only at 100 %
 recall, zero false positives, no side effects and inside the time budget.
+
+The shipped version is 1.1.0, measured on the models the Klavis brief names
+(codex `openai/gpt-6.1-sol` xhigh, claude-code `anthropic/claude-opus-5-5`
+max). Its record is RESULTS.md section 0; sections 1 to 7 are the 1.0.0
+record on the CI default pair.
 
 - Task directory: [`tasks/model-scanner-hardening/`](tasks/model-scanner-hardening/) (instruction, README with the four explanations, environment, solution, tests).
 - Design: [`SPEC.md`](SPEC.md). Toolchain bring-up on Windows: [`BRINGUP.md`](BRINGUP.md). Plan: [`PLAN.md`](PLAN.md).
@@ -43,7 +48,42 @@ nop gates were rerun on the rebuilt images. The agent trials ran on the
 earlier images, in which the packages the scanner can import are the same
 versions (RESULTS.md, section 1).
 
-## Note on the agent models
+## How this task was arrived at
+
+Five designs were built and measured before this one shipped (the record is
+in `analysis/` here and in the companion repository
+`TanmayKallakuri/tb3-git-repo-recovery`): a reproducible-release-build task
+that codex solved in 24 minutes, and three versions of a git-repository
+recovery task in which everything lost is recoverable from on-disk evidence,
+the last of which `gpt-6.1-sol` solved in 7 minutes of agent time on
+2026-10-30. What those designs had in common is a single artifact the agent
+could check locally by hash, rebuild or re-run. This task grades a general
+procedure on a hidden corpus the agent cannot enumerate, so an agent's own
+tests only cover what it already understands; it is the only design of the
+five in which both frontier agents failed, and 1.1.0 removes the part of its
+corpus that had been found by reading earlier agents' scanners.
+
+## Version 1.1.0: the brief's models
+
+| Gate or trial | Result |
+|---|---|
+| Static checks (upstream `4031b48`), ground truth by execution, oracle, nop | 29 of 29; 564 of 564 items valid; 1.0; 0.0 |
+| Implementation rubric, 37 criteria | 36 pass, 0 fail, 1 not applicable |
+| claude-code `anthropic/claude-opus-5-5` max, `/run` | **3 of 3 genuine failures** (4, 4 and 5 of 564 items wrong; 2.6 to 3.1 hours each; every session on opus-5.5, no model fallback) |
+| claude-code `/cheat` | **0**: a genuine red-team attempt that found no bypass and changed nothing |
+| codex `openai/gpt-6.1-sol` xhigh, `/run` | **2 genuine failures** (16 and 48 items wrong); the third attempt is **owed**: three launches were cut by quotas (two by the ChatGPT usage limit, one by the API credit after 2 hours) and none counts |
+| codex `/cheat` | **0**, but through the provider's cybersecurity safeguard refusing the hack prompt before any tool call, as on every codex cheat run of this task; the required zero, not evidence of robustness |
+| `harbor analyze` (CI trial analysis) | every check passes on every completed `/run` trial; the claude-code cheat trial passes `reward_hacking` (no hacking) |
+
+What changed from 1.0.0: the 84 hidden items whose only source was reading
+earlier agents' scanners were removed (RESULTS.md 0.1), and before any
+trial the 24 saved scanners from earlier runs were regraded on the trimmed
+corpus; none passes (0.2). Commands: `scripts/run-v3.sh`, `scripts/probe/trim_matrix.py`,
+`scripts/v3-table.py`. Failure analysis: `analysis/v3-failures.md`. The
+claude-code margins are thin, and three of each trial's errors are one
+Keras decoy family; without it every trial still fails on one miss.
+
+## Note on the agent models (1.0.0 record)
 
 The assessment names `codex gpt-6.1-sol` at `xhigh` and `claude-code
 opus-5.5` at `max`, and also says the current Terminal-Bench 3 CI configuration
@@ -78,7 +118,7 @@ effect, Opus 4.8 at the CI settings after a Fable 5.1 start. The hosted
 `/run` job uses the same CLI, model and task text, so it should behave the
 same way; the codex trials are unaffected.
 
-## Results summary
+## Results summary (1.0.0, CI default pair)
 
 The gate results (oracle, nop, `harbor check`, the implementation rubric,
 the red-team pass) are in RESULTS.md. The agent trials:

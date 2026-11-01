@@ -1,0 +1,568 @@
+useradd warning: scanuser's uid 61000 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+[ok ]    1/564 malicious -> malicious savedmodel   TF-if_branch                      
+[ok ]    2/564 malicious -> malicious archive      P-loads-b64decode-xz-p4          ["entries:['744dc5']", 'dir-times'] 
+[ok ]    3/564 clean     -> clean     keras-h5     KERAS-output_shape-h5-twin        
+[ok ]    4/564 clean     -> clean     pickle       P-dunder-import-fromlist-raw-p4-dyn-twin  
+[ok ]    5/564 malicious -> malicious archive      P-xmlrpc-call-gzip-p4-dyn        ['connections:+2'] 
+[ok ]    6/564 clean     -> clean     savedmodel   TF-benign-mg1                     
+[ok ]    7/564 malicious -> malicious archive      P-urlretrieve-xz-p0-dyn          ['connections:+1'] 
+[ok ]    8/564 clean     -> clean     archive      B-filter-unconsumed               
+[ok ]    9/564 malicious -> malicious keras-h5     KERAS-wrapper-h5                 ["entries:['33be2b']", 'dir-times'] 
+[ok ]   10/564 malicious -> malicious pickle       X-streams-proto0-second          ["entries:['72d9c0']", 'dir-times'] 
+[ok ]   11/564 clean     -> clean     npy          P-loads-latin1-encode-npy-p4-twin  
+[ok ]   12/564 clean     -> clean     archive      P-exec-polyglot_zip-p2-twin       
+[ok ]   13/564 clean     -> clean     archive      P-joblib-load-polyglot_zip-p5-memo-twin  
+[ok ]   14/564 clean     -> clean     npy          X-npy-structured-object-twin      
+[ok ]   15/564 clean     -> clean     pickle       P-pkgutil-resolve-second_stream-p5-dyn-twin  
+[ok ]   16/564 clean     -> clean     keras-h5     KERAS-top-h5-twin                 
+[ok ]   17/564 malicious -> malicious archive      P-getattr-dunder-call-gzip-p5-dyn ["entries:['5bec86']", 'dir-times'] 
+[ok ]   18/564 clean     -> clean     savedmodel   TF-benign-mg1                     
+[ok ]   19/564 clean     -> clean     npy          X-npy-header-v2-twin              
+[ok ]   20/564 clean     -> clean     archive      B-gzip                            
+[ok ]   21/564 clean     -> clean     savedmodel   TF-benign-pbtxt                   
+[ok ]   22/564 clean     -> clean     savedmodel   TF-serving-mg1-twin               
+[ok ]   23/564 clean     -> clean     archive      P-loads-loads-nested-p4-memo-twin  
+[ok ]   24/564 malicious -> malicious archive      P-tuple-map-tar-p1-dyn           ["entries:['e54350']", 'dir-times'] 
+[ok ]   25/564 malicious -> malicious archive      P-exec-polyglot_zip-p2           ["entries:['df2038']", 'dir-times'] 
+[ok ]   26/564 clean     -> clean     keras-v3     KERAS-benign-plain                
+[ok ]   27/564 clean     -> clean     torch-legacy B-legacy-torch                    
+[ok ]   28/564 malicious -> malicious torch-zip    P-loads-codecs-hex-torch_zip-p3-memo ["entries:['ac9852']", 'dir-times'] 
+[ok ]   29/564 clean     -> clean     archive      P-subprocess-popen-tar-p1-twin    
+[ok ]   30/564 malicious -> malicious torch-zip    P-os-system-torch_zip-p2-dyn     ["entries:['7e244c']", 'dir-times'] 
+[ok ]   31/564 clean     -> clean     pickle       B-itemgetter                      
+[ok ]   32/564 clean     -> clean     torch-zip    P-attrgetter-sys-modules-torch_zip-p3-dyn-twin  
+[ok ]   33/564 malicious -> malicious torch-zip    P-partial-retarget-torch_zip-p4  ["entries:['310473']", 'dir-times'] 
+[ok ]   34/564 malicious -> malicious archive      P-socket-create-connection-nested-p4-dyn ['connections:+1'] 
+[ok ]   35/564 clean     -> clean     pickle       B-logreg-p2                       
+[ok ]   36/564 clean     -> clean     npy          P-timer-start-npy-p5-twin         
+[ok ]   37/564 malicious -> malicious archive      P-wraps-wrapper-bz2-p0-dyn       ["entries:['c927e3']", 'dir-times'] 
+[ok ]   38/564 clean     -> clean     savedmodel   TF-wrapper-twin                   
+[ok ]   39/564 clean     -> clean     pickle       P-poplib-raw-p4-memo-twin         
+[ok ]   40/564 clean     -> clean     torch-legacy P-import-module-attrgetter-legacy_torch-p2-dyn-twin  
+[ok ]   41/564 clean     -> clean     pickle       B-memo-heavy-p2                   
+[ok ]   42/564 clean     -> clean     torch-zip    P-singledispatch-wrap-torch_zip-p4-twin  
+[ok ]   43/564 malicious -> malicious torch-zip    P-tempfile-mkdtemp-torch_zip-p5-memo ["entries:['3ef436w0o7qmno']", 'dir-times'] 
+[ok ]   44/564 malicious -> malicious archive      P-reduce-add-map-gzip-p5         ["entries:['ab0798']", 'dir-times'] 
+[ok ]   45/564 clean     -> clean     archive      P-pathlib-methodcaller-xz-p0-dyn-twin  
+[ok ]   46/564 clean     -> clean     pickle       B-strings-p4                      
+[ok ]   47/564 clean     -> clean     archive      P-telnetlib-nested-p4-dyn-twin    
+[ok ]   48/564 clean     -> clean     pickle       B-records-p5                      
+[ok ]   49/564 malicious -> malicious pickle       P-poplib-raw-p4-memo             ['connections:+1'] 
+[ok ]   50/564 clean     -> clean     pickle       B-records-p2                      
+[ok ]   51/564 malicious -> malicious npz          P-methodtype-npz-p5              ["entries:['da2ed9']", 'dir-times'] 
+[ok ]   52/564 malicious -> malicious npz          P-pathlib-mkdir-npz-p5           ["entries:['9f7bfa']", 'dir-times'] 
+[ok ]   53/564 malicious -> malicious archive      P-_pickle-load-bytesio-nested-p3 ["entries:['cbe302']", 'dir-times'] 
+[ok ]   54/564 malicious -> malicious npy          P-timer-start-npy-p5             ["entries:['2dd3f6']", 'dir-times'] 
+[ok ]   55/564 clean     -> clean     keras-h5     KERAS-wrapper-h5-twin             
+[ok ]   56/564 clean     -> clean     torch-zip    P-tempfile-mkdtemp-torch_zip-p5-memo-twin  
+[ok ]   57/564 malicious -> malicious archive      P-loads-loads-nested-p4-memo     ["entries:['6f4ee4']", 'dir-times'] 
+[ok ]   58/564 clean     -> clean     pickle       B-sys-modules-fspath              
+[ok ]   59/564 malicious -> malicious archive      P-temporary-directory-polyglot_zip-p5 ['dir-times'] 
+[ok ]   60/564 malicious -> malicious keras-v3     KERAS-nested-keras               ["entries:['27ba16']", 'dir-times'] 
+[ok ]   61/564 clean     -> clean     torch-legacy P-eval-legacy_torch-p2-twin       
+[ok ]   62/564 malicious -> malicious torch-legacy P-list-islice-map-legacy_torch-p2-memo ["entries:['ce6658']", 'dir-times'] 
+[ok ]   63/564 clean     -> clean     archive      B-polyglot                        
+[ok ]   64/564 malicious -> malicious archive      P-operator-call-polyglot_zip-p5-dyn ["entries:['c3f237']", 'dir-times'] 
+[ok ]   65/564 malicious -> malicious torch-legacy X-legacy-torch-stream5           ["entries:['4e0b42']", 'dir-times'] 
+[ok ]   66/564 clean     -> clean     archive      P-io-fileio-zip-p5-twin           
+[ok ]   67/564 clean     -> clean     archive      X-zip-dup-last-clean              
+[ok ]   68/564 clean     -> clean     pickle       B-numpy-scalar                    
+[ok ]   69/564 malicious -> malicious archive      P-logging-filehandler-gzip-p2-dyn ["entries:['fb8877']", 'dir-times'] 
+[ok ]   70/564 malicious -> malicious pickle       P-eval-raw-p0                    ["entries:['3af4e6']", 'dir-times'] 
+[ok ]   71/564 clean     -> clean     keras-h5     KERAS-benign-plain                
+[ok ]   72/564 malicious -> malicious npy          X-npy-header-v3                  ["entries:['9bec5a']", 'dir-times'] 
+[ok ]   73/564 clean     -> clean     archive      P-compile-eval-bz2-p5-twin        
+[ok ]   74/564 clean     -> clean     savedmodel   TF-benign-plain                   
+[ok ]   75/564 clean     -> clean     npy          P-dbm-open-npy-p2-dyn-twin        
+[ok ]   76/564 clean     -> clean     savedmodel   TF-wrapper-pbtxt-twin             
+[ok ]   77/564 malicious -> malicious savedmodel   TF-wrapper                        
+[ok ]   78/564 malicious -> malicious savedmodel   TF-if_branch                      
+[ok ]   79/564 malicious -> malicious archive      P-thread-run-polyglot_zip-p4     ["entries:['541b66']", 'dir-times'] 
+[ok ]   80/564 clean     -> clean     npz          X-npz-numeric-pickle-data         
+[ok ]   81/564 malicious -> malicious torch-legacy P-loads-mul-legacy_torch-p2      ["entries:['2879a2']", 'dir-times'] 
+[ok ]   82/564 malicious -> malicious keras-v3     KERAS-activation-keras           ["entries:['5f0c22']", 'dir-times'] 
+[ok ]   83/564 malicious -> malicious pickle       P-numpy-npyio-impl-load-second_stream-p0 ["entries:['0a2a63']", 'dir-times'] 
+[ok ]   84/564 clean     -> clean     archive      P-loads-b64decode-xz-p4-twin      
+[ok ]   85/564 malicious -> malicious pickle       P-inst-text-raw-p2               ["entries:['974897']", 'dir-times'] 
+[ok ]   86/564 clean     -> clean     archive      B-copyreg-newobj-popen            
+[ok ]   87/564 clean     -> clean     npy          X-npy-structured-no-object        
+[ok ]   88/564 clean     -> clean     archive      P-list-starmap-polyglot_zip-p5-memo-twin  
+[ok ]   89/564 clean     -> clean     pickle       P-importlib-dunder-import-raw-p5-dyn-twin  
+[ok ]   90/564 clean     -> clean     savedmodel   TF-serving-twin                   
+[ok ]   91/564 clean     -> clean     archive      P-pop3-ssl-polyglot_zip-p0-memo-twin  
+[ok ]   92/564 clean     -> clean     pickle       P-sorted-key-partial-raw-p2-dyn-twin  
+[ok ]   93/564 malicious -> malicious archive      P-socket-create-connection-bz2-p1-dyn ['connections:+1'] 
+[ok ]   94/564 clean     -> clean     pickle       B-two-streams                     
+[ok ]   95/564 malicious -> malicious npy          X-npy-object-O8                  ["entries:['a76208']", 'dir-times'] 
+[ok ]   96/564 clean     -> clean     archive      P-next-map-xz-p4-memo-twin        
+[ok ]   97/564 clean     -> clean     archive      P-os-symlink-tar-p0-dyn-twin      
+[ok ]   98/564 clean     -> clean     keras-v3     KERAS-output_shape-keras-twin     
+[ok ]   99/564 clean     -> clean     pickle       P-ftplib-second_stream-p4-dyn-twin  
+[ok ]  100/564 malicious -> malicious torch-zip    P-codecs-open-torch_zip-p2-memo-dyn ["entries:['27a9fe']", 'dir-times'] 
+[ok ]  101/564 clean     -> clean     torch-zip    P-path-write-bytes-torch_zip-p5-twin  
+[ok ]  102/564 clean     -> clean     savedmodel   TF-if_branch-mg1-twin             
+[ok ]  103/564 clean     -> clean     torch-legacy X-legacy-torch-stream5-twin       
+[ok ]  104/564 clean     -> clean     keras-v3     KERAS-wrapper-keras-twin          
+[ok ]  105/564 malicious -> malicious archive      P-bdb-run-polyglot_zip-p3        ["entries:['53d245']", 'dir-times'] 
+[ok ]  106/564 malicious -> malicious savedmodel   TF-while_body                     
+[ok ]  107/564 clean     -> clean     archive      P-loads-gzip-xz-p4-twin           
+[ok ]  108/564 clean     -> clean     archive      P-max-map-xz-p3-twin              
+[ok ]  109/564 malicious -> malicious keras-h5     KERAS-output_shape-h5            ["entries:['6c20b8']", 'dir-times'] 
+[ok ]  110/564 clean     -> clean     archive      P-shutil-copytree-nested-p2-dyn-twin  
+[ok ]  111/564 clean     -> clean     archive      P-pydoc-pipepager-tar-p2-twin     
+[ok ]  112/564 malicious -> malicious savedmodel   TF-wrapper-pbtxt                  
+[ok ]  113/564 clean     -> clean     archive      P-https-request-bz2-p2-dyn-twin   
+[ok ]  114/564 malicious -> malicious pickle       P-ftplib-second_stream-p4-dyn    ['connections:+1'] 
+[ok ]  115/564 malicious -> malicious keras-v3     KERAS-top-keras                  ["entries:['2e2a89']", 'dir-times'] 
+[ok ]  116/564 clean     -> clean     torch-zip    P-join-map-torch_zip-p2-dyn-twin  
+[ok ]  117/564 malicious -> malicious keras-v3     KERAS-output_shape-keras         ["entries:['e7d3a9']", 'dir-times'] 
+[ok ]  118/564 clean     -> clean     pickle       P-_unpickler-load-second_stream-p4-twin  
+[ok ]  119/564 clean     -> clean     npz          P-partial-of-copy-npz-p5-dyn-twin  
+[ok ]  120/564 malicious -> malicious archive      P-os-symlink-tar-p0-dyn          ["entries:['93b01d']", 'dir-times'] 
+[ok ]  121/564 clean     -> clean     keras-v3     KERAS-benign-plain                
+[ok ]  122/564 malicious -> malicious npy          X-npy-structured-object          ["entries:['d22e76']", 'dir-times'] 
+[ok ]  123/564 malicious -> malicious savedmodel   TF-while_body-pbtxt               
+[ok ]  124/564 clean     -> clean     pickle       B-reconstructor                   
+[ok ]  125/564 clean     -> clean     npy          X-npy-structured-object-twin      
+[ok ]  126/564 clean     -> clean     pickle       B-logreg-p5                       
+[ok ]  127/564 malicious -> malicious keras-v3     KERAS-top-keras                  ["entries:['c22cd2']", 'dir-times'] 
+[ok ]  128/564 malicious -> malicious torch-zip    P-os-spawnlp-torch_zip-p2        ["entries:['b4a307']", 'dir-times'] 
+[ok ]  129/564 malicious -> malicious archive      P-copy-deepcopy-xz-p2            ["entries:['864ca6']", 'dir-times'] 
+[ok ]  130/564 malicious -> malicious archive      P-lru-cache-wrap-xz-p0-dyn       ["entries:['4dbaba']", 'dir-times'] 
+[ok ]  131/564 clean     -> clean     keras-v3     KERAS-top-keras-twin              
+[ok ]  132/564 clean     -> clean     pickle       B-records-p4                      
+[ok ]  133/564 clean     -> clean     torch-legacy P-sys-modules-itemgetter-legacy_torch-p2-twin  
+[ok ]  134/564 malicious -> malicious archive      P-os-mkfifo-zip-p0-dyn           ["entries:['70c56b']", 'dir-times'] 
+[ok ]  135/564 clean     -> clean     keras-h5     KERAS-benign-inert                
+[ok ]  136/564 malicious -> malicious archive      P-getitem-sys-modules-polyglot_zip-p4 ["entries:['f39480']", 'dir-times'] 
+[ok ]  137/564 malicious -> malicious archive      P-compile-eval-bz2-p5            ["entries:['512515']", 'dir-times'] 
+[ok ]  138/564 clean     -> clean     keras-h5     KERAS-top-h5-twin                 
+[ok ]  139/564 clean     -> clean     pickle       B-functiontransformer             
+[ok ]  140/564 clean     -> clean     archive      B-xz                              
+[ok ]  141/564 clean     -> clean     keras-v3     KERAS-top-keras-twin              
+[ok ]  142/564 clean     -> clean     npz          P-methodcaller-on-module-npz-p2-twin  
+[ok ]  143/564 clean     -> clean     savedmodel   TF-benign-plain                   
+[ok ]  144/564 clean     -> clean     pickle       B-strings-p2                      
+[ok ]  145/564 malicious -> malicious archive      P-max-key-partial-nested-p2      ["entries:['e2c8f0']", 'dir-times'] 
+[ok ]  146/564 malicious -> malicious pickle       P-pathlib-methodcaller-raw-p2-dyn ["entries:['0acb7a']", 'dir-times'] 
+[ok ]  147/564 malicious -> malicious torch-zip    P-getattr-import-torch_zip-p2-dyn ["entries:['736ff3']", 'dir-times'] 
+[ok ]  148/564 clean     -> clean     keras-h5     KERAS-benign-plain                
+[ok ]  149/564 clean     -> clean     keras-h5     KERAS-benign-plain                
+[ok ]  150/564 malicious -> malicious archive      P-pop3-ssl-polyglot_zip-p0-memo  ['connections:+1'] 
+[ok ]  151/564 clean     -> clean     pickle       B-reload-fspath                   
+[ok ]  152/564 clean     -> clean     archive      P-loads-memoryview-zip-p5-twin    
+[ok ]  153/564 malicious -> malicious archive      P-telnetlib-nested-p4-dyn        ['connections:+1'] 
+[ok ]  154/564 malicious -> malicious archive      P-reduce-popen-tar-p0-dyn        ["entries:['86296d']", 'dir-times'] 
+[ok ]  155/564 malicious -> malicious pickle       P-loads-bytearray-raw-p5         ["entries:['c72eb9']", 'dir-times'] 
+[ok ]  156/564 clean     -> clean     archive      P-pickle-load-bytesio-xz-p2-twin  
+[ok ]  157/564 malicious -> malicious archive      P-logging-dictconfig-gzip-p1     ["entries:['4117d0']", 'dir-times'] 
+[ok ]  158/564 clean     -> clean     pickle       B-strings-p5                      
+[ok ]  159/564 clean     -> clean     keras-h5     KERAS-nested-h5-twin              
+[ok ]  160/564 clean     -> clean     archive      X-zip-dup-last-clean              
+[ok ]  161/564 clean     -> clean     keras-h5     KERAS-top-h5-twin                 
+[ok ]  162/564 malicious -> malicious keras-h5     KERAS-top-h5                     ["entries:['5fb2d6']", 'dir-times'] 
+[ok ]  163/564 malicious -> malicious keras-v3     KERAS-top-keras                  ["entries:['8ef7bd']", 'dir-times'] 
+[ok ]  164/564 clean     -> clean     pickle       B-map-unconsumed                  
+[ok ]  165/564 malicious -> malicious torch-legacy P-smtplib-legacy_torch-p2-dyn    ['connections:+1'] 
+[ok ]  166/564 malicious -> malicious npz          P-functools-cache-wrap-npz-p0    ["entries:['e7188d']", 'dir-times'] 
+[ok ]  167/564 clean     -> clean     savedmodel   TF-wrapper-twin                   
+[ok ]  168/564 clean     -> clean     torch-zip    B-state_dict-p4                   
+[ok ]  169/564 clean     -> clean     pickle       P-any-map-raw-p5-dyn-twin         
+[ok ]  170/564 malicious -> malicious savedmodel   TF-serving                        
+[ok ]  171/564 clean     -> clean     keras-v3     KERAS-top-keras-twin              
+[ok ]  172/564 malicious -> malicious pickle       P-named-tempfile-raw-p1-memo     ['dir-times'] 
+[ok ]  173/564 clean     -> clean     torch-zip    P-codecs-open-torch_zip-p2-memo-dyn-twin  
+[ok ]  174/564 malicious -> malicious archive      X-zip-dup-last-malicious         ["entries:['f4ad3e']", 'dir-times'] 
+[ok ]  175/564 clean     -> clean     archive      P-vars-getitem-nested-p3-twin     
+[ok ]  176/564 clean     -> clean     savedmodel   TF-if_branch-pbtxt-twin           
+[ok ]  177/564 malicious -> malicious torch-legacy P-open-write-legacy_torch-p2-dyn ["entries:['947c93']", 'dir-times'] 
+[ok ]  178/564 malicious -> malicious archive      P-commands-getstatusoutput-gzip-p2 ["entries:['c0c17f']", 'dir-times'] 
+[ok ]  179/564 clean     -> clean     pickle       P-pickle-loads-raw-p0-twin        
+[ok ]  180/564 malicious -> malicious pickle       P-socket-connect-ex-second_stream-p4 ['connections:+1'] 
+[ok ]  181/564 clean     -> clean     pickle       B-decimal                         
+[ok ]  182/564 clean     -> clean     keras-v3     KERAS-benign-plain                
+[ok ]  183/564 clean     -> clean     pickle       P-runpy-run-code-raw-p5-memo-dyn-twin  
+[ok ]  184/564 clean     -> clean     archive      P-dict-fromkeys-map-polyglot_zip-p4-twin  
+[ok ]  185/564 malicious -> malicious keras-h5     KERAS-wrapper-h5                 ["entries:['8c8dd5']", 'dir-times'] 
+[ok ]  186/564 clean     -> clean     npy          X-npy-py2-header-numeric          
+[ok ]  187/564 clean     -> clean     pickle       B-iter-map-unconsumed             
+[ok ]  188/564 malicious -> malicious npz          P-sqlite3-connect-npz-p5         ["entries:['9ea239']", 'dir-times'] 
+[ok ]  189/564 clean     -> clean     savedmodel   TF-if_branch-twin                 
+[ok ]  190/564 clean     -> clean     archive      P-methodcaller-dunder-call-nested-p4-dyn-twin  
+[ok ]  191/564 malicious -> malicious npz          P-build-opener-open-npz-p3       ['connections:+1'] 
+[ok ]  192/564 clean     -> clean     keras-h5     KERAS-benign-inert                
+[ok ]  193/564 malicious -> malicious torch-zip    P-imaplib-torch_zip-p2-dyn       ['connections:+1'] 
+[ok ]  194/564 malicious -> malicious pickle       P-pickle-loads-raw-p0            ["entries:['5f2886']", 'dir-times'] 
+[ok ]  195/564 clean     -> clean     archive      B-state_dict-p2                   
+[ok ]  196/564 clean     -> clean     torch-zip    P-os-spawnlp-torch_zip-p2-twin    
+[ok ]  197/564 clean     -> clean     torch-zip    P-ftp-tls-connect-torch_zip-p3-dyn-twin  
+[ok ]  198/564 malicious -> malicious archive      P-io-fileio-zip-p5               ["entries:['78f74c']", 'dir-times'] 
+[ok ]  199/564 clean     -> clean     npy          B-npy-object                      
+[ok ]  200/564 malicious -> malicious torch-legacy P-eval-legacy_torch-p2           ["entries:['47a67a']", 'dir-times'] 
+[ok ]  201/564 malicious -> malicious archive      P-_pickle-loads-bz2-p4-memo      ["entries:['44e46b']", 'dir-times'] 
+[ok ]  202/564 clean     -> clean     pickle       B-codecs                          
+[ok ]  203/564 malicious -> malicious keras-h5     KERAS-nested-h5                  ["entries:['726ad4']", 'dir-times'] 
+[ok ]  204/564 malicious -> malicious torch-zip    P-singledispatch-wrap-torch_zip-p4 ["entries:['0a1936']", 'dir-times'] 
+[ok ]  205/564 malicious -> malicious savedmodel   TF-if_branch-pbtxt                
+[ok ]  206/564 clean     -> clean     torch-zip    P-executor-map-torch_zip-p3-twin  
+[ok ]  207/564 clean     -> clean     pickle       B-partial-retarget-benign         
+[ok ]  208/564 malicious -> malicious archive      P-methodcaller-dunder-call-nested-p4-dyn ["entries:['b62b53']", 'dir-times'] 
+[ok ]  209/564 malicious -> malicious savedmodel   TF-while_body                     
+[ok ]  210/564 malicious -> malicious npy          P-loads-bytes-list-npy-p2        ["entries:['a6631c']", 'dir-times'] 
+[ok ]  211/564 malicious -> malicious pickle       P-open-write-raw-p5-dyn          ["entries:['019d03']", 'dir-times'] 
+[ok ]  212/564 clean     -> clean     pickle       X-loads-stream-order-twin         
+[ok ]  213/564 clean     -> clean     pickle       B-partial-add                     
+[ok ]  214/564 clean     -> clean     torch-legacy X-legacy-torch-stream1-twin       
+[ok ]  215/564 clean     -> clean     npz          P-pathlib-mkdir-npz-p5-twin       
+[ok ]  216/564 malicious -> malicious keras-v3     KERAS-wrapper-keras              ["entries:['38ea80']", 'dir-times'] 
+[ok ]  217/564 clean     -> clean     archive      P-os-mkfifo-zip-p0-dyn-twin       
+[ok ]  218/564 clean     -> clean     keras-v3     KERAS-benign-inert                
+[ok ]  219/564 malicious -> malicious savedmodel   TF-if_branch-mg1                 ["entries:['80fb77']", 'dir-times'] 
+[ok ]  220/564 clean     -> clean     pickle       B-strings-p1                      
+[ok ]  221/564 malicious -> malicious pickle       P-partial-retarget-second_stream-p0 ["entries:['c913b6']", 'dir-times'] 
+[ok ]  222/564 clean     -> clean     archive      P-copy-deepcopy-xz-p2-twin        
+[ok ]  223/564 clean     -> clean     savedmodel   TF-if_branch-mg1-twin             
+[ok ]  224/564 clean     -> clean     pickle       P-open-write-raw-p5-dyn-twin      
+[ok ]  225/564 malicious -> malicious torch-zip    P-join-map-torch_zip-p2-dyn      ["entries:['cf230b']", 'dir-times'] 
+[ok ]  226/564 clean     -> clean     pickle       B-partial-system-stored           
+[ok ]  227/564 clean     -> clean     archive      P-copy-copy-zip-p5-dyn-twin       
+[ok ]  228/564 malicious -> malicious savedmodel   TF-if_branch                      
+[ok ]  229/564 clean     -> clean     savedmodel   TF-benign-pbtxt                   
+[ok ]  230/564 clean     -> clean     savedmodel   TF-while_body-twin                
+[ok ]  231/564 clean     -> clean     pickle       P-bz2-open-write-second_stream-p5-dyn-twin  
+[ok ]  232/564 malicious -> malicious npz          P-shelve-open-npz-p5-dyn         ["entries:['b5a4cf']", 'dir-times'] 
+[ok ]  233/564 malicious -> malicious archive      P-shutil-copytree-nested-p2-dyn  ["entries:['80c5d6']", 'dir-times'] 
+[ok ]  234/564 clean     -> clean     savedmodel   TF-while_body-twin                
+[ok ]  235/564 clean     -> clean     pickle       B-logreg-p0                       
+[ok ]  236/564 malicious -> malicious torch-zip    P-list-filter-torch_zip-p4       ["entries:['32de5d']", 'dir-times'] 
+[ok ]  237/564 clean     -> clean     pickle       P-shutil-copy2-second_stream-p4-twin  
+[ok ]  238/564 clean     -> clean     archive      B-bz2                             
+[ok ]  239/564 malicious -> malicious savedmodel   TF-serving                        
+[ok ]  240/564 clean     -> clean     pickle       P-os-spawnvp-second_stream-p3-twin  
+[ok ]  241/564 clean     -> clean     archive      P-joblib-numpy-pickle-load-tar-p4-twin  
+[ok ]  242/564 malicious -> malicious savedmodel   TF-serving-pbtxt                  
+[ok ]  243/564 malicious -> malicious pickle       P-list-enumerate-map-raw-p0-dyn  ["entries:['a056f0']", 'dir-times'] 
+[ok ]  244/564 clean     -> clean     pickle       P-partial-raw-p3-twin             
+[ok ]  245/564 malicious -> malicious archive      P-loads-memoryview-zip-p5        ["entries:['c399ab']", 'dir-times'] 
+[ok ]  246/564 clean     -> clean     torch-zip    B-checkpoint-p2                   
+[ok ]  247/564 malicious -> malicious savedmodel   TF-while_body                    ["entries:['98f48c']", 'dir-times'] 
+[ok ]  248/564 clean     -> clean     savedmodel   TF-wrapper-twin                   
+[ok ]  249/564 malicious -> malicious torch-zip    P-inst-text-torch_zip-p2-dyn     ["entries:['e501de']", 'dir-times'] 
+[ok ]  250/564 clean     -> clean     torch-zip    P-imap4-ssl-torch_zip-p2-memo-twin  
+[ok ]  251/564 malicious -> malicious savedmodel   TF-serving                        
+[ok ]  252/564 clean     -> clean     savedmodel   TF-wrapper-twin                   
+[ok ]  253/564 clean     -> clean     archive      P-os-makedirs-zip-p2-dyn-twin     
+[ok ]  254/564 malicious -> malicious archive      P-pickle-load-bytesio-xz-p2      ["entries:['7a00c0']", 'dir-times'] 
+[ok ]  255/564 clean     -> clean     savedmodel   TF-while_body-pbtxt-twin          
+[ok ]  256/564 clean     -> clean     savedmodel   TF-if_branch-twin                 
+[ok ]  257/564 clean     -> clean     pickle       B-obj-benign                      
+[ok ]  258/564 clean     -> clean     archive      P-operator-call-polyglot_zip-p5-dyn-twin  
+[ok ]  259/564 malicious -> malicious npy          P-tempfile-mkstemp-npy-p4        ["entries:['5ab94coh0t93ht']", 'dir-times'] 
+[ok ]  260/564 clean     -> clean     archive      P-tuple-map-tar-p1-dyn-twin       
+[ok ]  261/564 malicious -> malicious archive      P-loads-zlib-zip-p2              ["entries:['90cad8']", 'dir-times'] 
+[ok ]  262/564 clean     -> clean     npz          P-sqlite3-connect-npz-p5-twin     
+[ok ]  263/564 clean     -> clean     savedmodel   TF-benign-mg1                     
+[ok ]  264/564 clean     -> clean     pickle       P-list-map-raw-p2-twin            
+[ok ]  265/564 clean     -> clean     pickle       B-purepath                        
+[ok ]  266/564 malicious -> malicious keras-h5     KERAS-top-h5                     ["entries:['c35737']", 'dir-times'] 
+[ok ]  267/564 clean     -> clean     pickle       B-functiontransformer-sqrt        
+[ok ]  268/564 clean     -> clean     pickle       P-named-tempfile-raw-p1-memo-twin  
+[ok ]  269/564 clean     -> clean     npz          P-os-open-npz-p1-memo-dyn-twin    
+[ok ]  270/564 malicious -> malicious archive      P-gzip-open-write-tar-p2-dyn     ["entries:['723f32']", 'dir-times'] 
+[ok ]  271/564 malicious -> malicious archive      P-posix-system-zip-p5-memo-dyn   ["entries:['a0e916']", 'dir-times'] 
+[ok ]  272/564 malicious -> malicious torch-zip    P-imap4-ssl-torch_zip-p2-memo    ['connections:+1'] 
+[ok ]  273/564 malicious -> malicious torch-legacy P-list-chain-map-legacy_torch-p2 ["entries:['11d5d4']", 'dir-times'] 
+[ok ]  274/564 clean     -> clean     npy          P-deque-map-npy-p4-twin           
+[ok ]  275/564 clean     -> clean     pickle       B-pipeline-p0                     
+[ok ]  276/564 clean     -> clean     keras-h5     KERAS-top-h5-twin                 
+[ok ]  277/564 clean     -> clean     savedmodel   TF-while_body-pbtxt-twin          
+[ok ]  278/564 clean     -> clean     keras-h5     KERAS-benign-inert                
+[ok ]  279/564 malicious -> malicious npy          P-loads-latin1-encode-npy-p4     ["entries:['8a5245']", 'dir-times'] 
+[ok ]  280/564 clean     -> clean     pickle       B-open-stored                     
+[ok ]  281/564 clean     -> clean     torch-zip    B-state_dict-p5                   
+[ok ]  282/564 clean     -> clean     torch-zip    P-partial-retarget-torch_zip-p4-twin  
+[ok ]  283/564 malicious -> malicious pickle       P-pkgutil-resolve-second_stream-p5-dyn ["entries:['f3bde7']", 'dir-times'] 
+[ok ]  284/564 clean     -> clean     npy          X-npy-header-v2-twin              
+[ok ]  285/564 clean     -> clean     npy          P-numpy-read-array-npy-p4-twin    
+[ok ]  286/564 malicious -> malicious npy          P-code-runsource-npy-p2          ["entries:['bc4e90']", 'dir-times'] 
+[ok ]  287/564 clean     -> clean     archive      P-executor-submit-bz2-p4-twin     
+[ok ]  288/564 malicious -> malicious npy          P-urlopen-npy-p5                 ['connections:+1'] 
+[ok ]  289/564 clean     -> clean     keras-v3     KERAS-benign-inert                
+[ok ]  290/564 clean     -> clean     archive      P-obj-zip-p2-twin                 
+[ok ]  291/564 clean     -> clean     npy          P-thread-start-npy-p5-dyn-twin    
+[ok ]  292/564 malicious -> malicious torch-legacy P-shutil-copyfile-legacy_torch-p2-memo ["entries:['b81bcc']", 'dir-times'] 
+[ok ]  293/564 malicious -> malicious npy          P-loads-fromhex-npy-p4           ["entries:['f96567']", 'dir-times'] 
+[ok ]  294/564 clean     -> clean     pickle       B-telnet-noconnect                
+[ok ]  295/564 malicious -> malicious archive      P-next-map-xz-p4-memo            ["entries:['854668']", 'dir-times'] 
+[ok ]  296/564 malicious -> malicious savedmodel   TF-wrapper                        
+[ok ]  297/564 malicious -> malicious archive      P-loads-gzip-xz-p4               ["entries:['489b6a']", 'dir-times'] 
+[ok ]  298/564 clean     -> clean     savedmodel   TF-wrapper-pbtxt-twin             
+[ok ]  299/564 clean     -> clean     torch-zip    B-checkpoint-p4                   
+[ok ]  300/564 clean     -> clean     npy          P-urlopen-npy-p5-twin             
+[ok ]  301/564 malicious -> malicious torch-zip    P-numpy-runstring-torch_zip-p4-dyn ["entries:['66527e']", 'dir-times'] 
+[ok ]  302/564 malicious -> malicious pickle       P-sorted-key-partial-raw-p2-dyn  ["entries:['1d3f14']", 'dir-times'] 
+[ok ]  303/564 clean     -> clean     pickle       P-pathlib-methodcaller-raw-p2-dyn-twin  
+[ok ]  304/564 clean     -> clean     pickle       P-loads-bytearray-raw-p5-twin     
+[ok ]  305/564 malicious -> malicious pickle       P-list-map-raw-p2                ["entries:['3fd9a0']", 'dir-times'] 
+[ok ]  306/564 malicious -> malicious torch-zip    P-executor-map-torch_zip-p3      ["entries:['a2a053']", 'dir-times'] 
+[ok ]  307/564 malicious -> malicious archive      P-pathlib-methodcaller-xz-p0-dyn ["entries:['04f57b']", 'dir-times'] 
+[ok ]  308/564 clean     -> clean     pickle       P-os-popen-second_stream-p2-memo-dyn-twin  
+[ok ]  309/564 malicious -> malicious npy          P-deque-map-npy-p4               ["entries:['60cc18']", 'dir-times'] 
+[ok ]  310/564 clean     -> clean     keras-v3     KERAS-benign-decoy-key            
+[ok ]  311/564 malicious -> malicious pickle       P-shutil-copy2-second_stream-p4  ["entries:['496d5b']", 'dir-times'] 
+[ok ]  312/564 malicious -> malicious npz          P-os-open-npz-p1-memo-dyn        ["entries:['d9c202']", 'dir-times'] 
+[ok ]  313/564 malicious -> malicious archive      P-obj-zip-p2                     ["entries:['c7d836']", 'dir-times'] 
+[ok ]  314/564 malicious -> malicious torch-legacy P-os-posix-spawn-legacy_torch-p2-memo ["entries:['bc5b36']", 'dir-times'] 
+[ok ]  315/564 clean     -> clean     archive      P-sum-map-tar-p5-dyn-twin         
+[ok ]  316/564 clean     -> clean     savedmodel   TF-serving-mg1-twin               
+[ok ]  317/564 malicious -> malicious archive      P-https-request-bz2-p2-dyn       ['connections:+1'] 
+[ok ]  318/564 malicious -> malicious npy          P-numpy-read-array-npy-p4        ["entries:['ed165d']", 'dir-times'] 
+[ok ]  319/564 malicious -> malicious archive      P-sum-map-tar-p5-dyn             ["entries:['fd62fe']", 'dir-times'] 
+[ok ]  320/564 clean     -> clean     pickle       X-streams-third-twin              
+[ok ]  321/564 clean     -> clean     npy          X-npy-header-v3-twin              
+[ok ]  322/564 malicious -> malicious npz          P-subprocess-run-npz-p5-dyn      ["entries:['5220c6']", 'dir-times'] 
+[ok ]  323/564 clean     -> clean     torch-legacy P-smtplib-legacy_torch-p2-dyn-twin  
+[ok ]  324/564 clean     -> clean     archive      P-commands-getstatusoutput-gzip-p2-twin  
+[ok ]  325/564 clean     -> clean     archive      P-http-connect-chain-zip-p4-dyn-twin  
+[ok ]  326/564 malicious -> malicious archive      P-subprocess-popen-tar-p1        ["entries:['fbbe44']", 'dir-times'] 
+[ok ]  327/564 clean     -> clean     torch-legacy P-loads-mul-legacy_torch-p2-twin  
+[ok ]  328/564 malicious -> malicious archive      P-list-starmap-polyglot_zip-p5-memo ["entries:['2f3f9d']", 'dir-times'] 
+[ok ]  329/564 clean     -> clean     archive      P-posix-system-zip-p5-memo-dyn-twin  
+[ok ]  330/564 clean     -> clean     torch-zip    P-loads-codecs-hex-torch_zip-p3-memo-twin  
+[ok ]  331/564 clean     -> clean     torch-legacy P-list-islice-map-legacy_torch-p2-memo-twin  
+[ok ]  332/564 clean     -> clean     npy          X-npy-numeric-pickle-data         
+[ok ]  333/564 clean     -> clean     pickle       B-build-popen-newobj-state        
+[ok ]  334/564 malicious -> malicious archive      P-os-makedirs-zip-p2-dyn         ["entries:['41aacc']", 'dir-times'] 
+[ok ]  335/564 clean     -> clean     npy          P-loads-bytes-list-npy-p2-twin    
+[ok ]  336/564 malicious -> malicious savedmodel   TF-serving-mg1                    
+[ok ]  337/564 malicious -> malicious torch-zip    P-bytes-map-torch_zip-p3         ["entries:['35d4d5']", 'dir-times'] 
+[ok ]  338/564 malicious -> malicious savedmodel   TF-wrapper-pbtxt                  
+[ok ]  339/564 clean     -> clean     pickle       P-path-open-write-raw-p4-dyn-twin  
+[ok ]  340/564 malicious -> malicious pickle       P-loads-concat-raw-p1            ["entries:['8fad09']", 'dir-times'] 
+[ok ]  341/564 clean     -> clean     pickle       B-type-of-function-stored         
+[ok ]  342/564 clean     -> clean     savedmodel   TF-serving-twin                   
+[ok ]  343/564 clean     -> clean     archive      P-reduce-add-map-gzip-p5-twin     
+[ok ]  344/564 malicious -> malicious pickle       P-runpy-run-code-raw-p5-memo-dyn ["entries:['823565']", 'dir-times'] 
+[ok ]  345/564 clean     -> clean     archive      P-zipfile-write-zip-p2-twin       
+[ok ]  346/564 clean     -> clean     pickle       B-marshal-loads-noexec            
+[ok ]  347/564 clean     -> clean     keras-v3     KERAS-nested-keras-twin           
+[ok ]  348/564 clean     -> clean     savedmodel   TF-while_body-twin                
+[ok ]  349/564 clean     -> clean     keras-h5     KERAS-benign-plain                
+[ok ]  350/564 clean     -> clean     pickle       B-pipeline-p5                     
+[ok ]  351/564 clean     -> clean     keras-v3     KERAS-activation-keras-twin       
+[ok ]  352/564 clean     -> clean     torch-zip    P-list-filter-torch_zip-p4-twin   
+[ok ]  353/564 malicious -> malicious archive      P-urlopen-bz2-p4                 ['connections:+1'] 
+[ok ]  354/564 clean     -> clean     torch-zip    P-tarfile-write-torch_zip-p5-dyn-twin  
+[ok ]  355/564 clean     -> clean     npy          P-loads-fromhex-npy-p4-twin       
+[ok ]  356/564 clean     -> clean     npy          X-npy-fortran-object-twin         
+[ok ]  357/564 clean     -> clean     pickle       P-inst-text-raw-p2-twin           
+[ok ]  358/564 clean     -> clean     archive      P-torch-load-from-bytes-xz-p2-twin  
+[ok ]  359/564 clean     -> clean     pickle       B-starmap-unconsumed              
+[ok ]  360/564 clean     -> clean     archive      P-temporary-directory-polyglot_zip-p5-twin  
+[ok ]  361/564 clean     -> clean     npz          P-methodtype-npz-p5-twin          
+[ok ]  362/564 malicious -> malicious npy          X-npy-fortran-object             ["entries:['cf9c34']", 'dir-times'] 
+[ok ]  363/564 clean     -> clean     pickle       B-builtins                        
+[ok ]  364/564 clean     -> clean     archive      P-io-open-xz-p2-memo-dyn-twin     
+[ok ]  365/564 malicious -> malicious torch-zip    P-ftp-tls-connect-torch_zip-p3-dyn ['connections:+1'] 
+[ok ]  366/564 malicious -> malicious pickle       P-numpy-load-raw-p2              ["entries:['333431']", 'dir-times'] 
+[ok ]  367/564 malicious -> malicious pickle       P-obj-raw-p1-dyn                 ["entries:['d9cb00']", 'dir-times'] 
+[ok ]  368/564 clean     -> clean     keras-v3     KERAS-benign-plain                
+[ok ]  369/564 clean     -> clean     archive      P-logging-filehandler-gzip-p2-dyn-twin  
+[ok ]  370/564 malicious -> malicious keras-h5     KERAS-activation-h5              ["entries:['57b255']", 'dir-times'] 
+[ok ]  371/564 malicious -> malicious archive      P-ssl-get-cert-polyglot_zip-p1   ['connections:+1'] 
+[ok ]  372/564 malicious -> malicious npz          P-subprocess-check-output-npz-p4-dyn ["entries:['4177e5']", 'dir-times'] 
+[ok ]  373/564 clean     -> clean     archive      P-gzip-open-write-tar-p2-dyn-twin  
+[ok ]  374/564 malicious -> malicious archive      P-lzma-open-write-xz-p4-memo-dyn ["entries:['d42e13']", 'dir-times'] 
+[ok ]  375/564 clean     -> clean     pickle       B-logreg-p4                       
+[ok ]  376/564 clean     -> clean     torch-zip    P-getattr-import-torch_zip-p2-dyn-twin  
+[ok ]  377/564 clean     -> clean     pickle       B-inst-benign                     
+[ok ]  378/564 malicious -> malicious npy          X-npy-header-v2                  ["entries:['d22e76']", 'dir-times'] 
+[ok ]  379/564 clean     -> clean     npy          X-npy-object-O8-twin              
+[ok ]  380/564 clean     -> clean     pickle       B-datetime                        
+[ok ]  381/564 clean     -> clean     pickle       P-eval-raw-p0-twin                
+[ok ]  382/564 clean     -> clean     pickle       B-records-p0                      
+[ok ]  383/564 clean     -> clean     pickle       P-partial-retarget-second_stream-p0-twin  
+[ok ]  384/564 clean     -> clean     pickle       B-strings-p0                      
+[ok ]  385/564 malicious -> malicious torch-zip    P-tarfile-write-torch_zip-p5-dyn ["entries:['c2a1e7']", 'dir-times'] 
+[ok ]  386/564 clean     -> clean     npy          P-import-module-posix-npy-p2-dyn-twin  
+[ok ]  387/564 malicious -> malicious keras-h5     KERAS-top-h5                     ["entries:['a8e0c3']", 'dir-times'] 
+[ok ]  388/564 clean     -> clean     keras-h5     KERAS-benign-inert                
+[ok ]  389/564 clean     -> clean     pickle       B-newobj-ex-popen-kwargs          
+[ok ]  390/564 clean     -> clean     npz          P-build-opener-open-npz-p3-twin   
+[ok ]  391/564 clean     -> clean     archive      P-unpickler-load-bz2-p4-twin      
+[ok ]  392/564 malicious -> malicious pickle       P-os-spawnvp-second_stream-p3    ["entries:['3cb3ac']", 'dir-times'] 
+[ok ]  393/564 clean     -> clean     pickle       P-list-enumerate-map-raw-p0-dyn-twin  
+[ok ]  394/564 clean     -> clean     torch-zip    P-counter-map-torch_zip-p4-twin   
+[ok ]  395/564 clean     -> clean     archive      P-socket-create-connection-bz2-p1-dyn-twin  
+[ok ]  396/564 malicious -> malicious archive      X-gzip-header-fields             ["entries:['921f2e']", 'dir-times'] 
+[ok ]  397/564 clean     -> clean     archive      P-getattr-dunder-call-gzip-p5-dyn-twin  
+[ok ]  398/564 clean     -> clean     pickle       P-getoutput-raw-p4-memo-dyn-twin  
+[ok ]  399/564 clean     -> clean     npy          B-npy-plain                       
+[ok ]  400/564 clean     -> clean     archive      B-nested                          
+[ok ]  401/564 clean     -> clean     npz          B-npz-plain                       
+[ok ]  402/564 clean     -> clean     npy          P-code-runsource-npy-p2-twin      
+[ok ]  403/564 clean     -> clean     pickle       B-ast-literal-eval                
+[ok ]  404/564 malicious -> malicious pickle       P-getoutput-raw-p4-memo-dyn      ["entries:['551494']", 'dir-times'] 
+[ok ]  405/564 clean     -> clean     savedmodel   TF-benign-inert                   
+[ok ]  406/564 malicious -> malicious keras-v3     KERAS-nested-keras               ["entries:['42086c']", 'dir-times'] 
+[ok ]  407/564 clean     -> clean     npy          P-tempfile-mkstemp-npy-p4-twin    
+[ok ]  408/564 malicious -> malicious pickle       P-any-map-raw-p5-dyn             ["entries:['4e4ba1']", 'dir-times'] 
+[ok ]  409/564 malicious -> malicious savedmodel   TF-if_branch-mg1                  
+[ok ]  410/564 malicious -> malicious keras-v3     KERAS-top-keras                  ["entries:['40e42f']", 'dir-times'] 
+[ok ]  411/564 clean     -> clean     keras-v3     KERAS-benign-decoy-key            
+[ok ]  412/564 clean     -> clean     pickle       X-streams-proto0-second-twin      
+[ok ]  413/564 clean     -> clean     keras-v3     KERAS-top-keras-twin              
+[ok ]  414/564 clean     -> clean     archive      B-methodcaller-stored             
+[ok ]  415/564 clean     -> clean     torch-legacy P-os-posix-spawn-legacy_torch-p2-memo-twin  
+[ok ]  416/564 clean     -> clean     archive      P-logging-dictconfig-gzip-p1-twin  
+[ok ]  417/564 clean     -> clean     pickle       B-deque                           
+[ok ]  418/564 malicious -> malicious archive      P-max-map-xz-p3                  ["entries:['ff15cf']", 'dir-times'] 
+[ok ]  419/564 clean     -> clean     savedmodel   TF-benign-inert                   
+[ok ]  420/564 clean     -> clean     torch-zip    P-os-system-torch_zip-p2-dyn-twin  
+[ok ]  421/564 clean     -> clean     savedmodel   TF-benign-pbtxt                   
+[ok ]  422/564 malicious -> malicious npy          X-npy-structured-object          ["entries:['ae2efc']", 'dir-times'] 
+[ok ]  423/564 clean     -> clean     archive      P-loads-join-tar-p3-twin          
+[ok ]  424/564 clean     -> clean     torch-legacy P-open-write-legacy_torch-p2-dyn-twin  
+[ok ]  425/564 clean     -> clean     torch-legacy P-list-chain-map-legacy_torch-p2-twin  
+[ok ]  426/564 clean     -> clean     archive      P-timeit-bz2-p2-dyn-twin          
+[ok ]  427/564 malicious -> malicious archive      P-pydoc-pipepager-tar-p2         ["entries:['b1b811']", 'dir-times'] 
+[ok ]  428/564 clean     -> clean     pickle       P-socket-connect-ex-second_stream-p4-twin  
+[ok ]  429/564 malicious -> malicious archive      P-dict-fromkeys-map-polyglot_zip-p4 ["entries:['de4d96']", 'dir-times'] 
+[ok ]  430/564 malicious -> malicious keras-v3     KERAS-top-keras                  ["entries:['037973']", 'dir-times'] 
+[ok ]  431/564 malicious -> malicious pickle       P-dunder-import-fromlist-raw-p4-dyn ["entries:['4233d0']", 'dir-times'] 
+[ok ]  432/564 clean     -> clean     torch-zip    P-imaplib-torch_zip-p2-dyn-twin   
+[ok ]  433/564 clean     -> clean     keras-v3     KERAS-top-keras-twin              
+[ok ]  434/564 clean     -> clean     savedmodel   TF-serving-pbtxt-twin             
+[ok ]  435/564 clean     -> clean     archive      P-ssl-get-cert-polyglot_zip-p1-twin  
+[ok ]  436/564 malicious -> malicious archive      P-set-map-gzip-p1-dyn            ["entries:['4d135f']", 'dir-times'] 
+[ok ]  437/564 clean     -> clean     torch-zip    P-smtp-ssl-torch_zip-p4-twin      
+[ok ]  438/564 clean     -> clean     keras-h5     KERAS-activation-h5-twin          
+[ok ]  439/564 clean     -> clean     archive      P-thread-run-polyglot_zip-p4-twin  
+[ok ]  440/564 malicious -> malicious archive      P-socket-connect-chain-tar-p4    ['connections:+1'] 
+[ok ]  441/564 clean     -> clean     npz          P-subprocess-run-npz-p5-dyn-twin  
+[ok ]  442/564 malicious -> malicious archive      P-copy-copy-zip-p5-dyn           ["entries:['47fbca']", 'dir-times'] 
+[ok ]  443/564 clean     -> clean     savedmodel   TF-serving-twin                   
+[ok ]  444/564 clean     -> clean     archive      P-loads-unhexlify-zip-p4-twin     
+[ok ]  445/564 malicious -> malicious keras-h5     KERAS-top-h5                     ["entries:['7aa6b3']", 'dir-times'] 
+[ok ]  446/564 clean     -> clean     pickle       B-newobj-popen-args               
+[ok ]  447/564 clean     -> clean     archive      B-zip                             
+[ok ]  448/564 malicious -> malicious archive      P-lmtp-tar-p2                    ['connections:+1'] 
+[ok ]  449/564 clean     -> clean     pickle       B-pipeline-p2                     
+[ok ]  450/564 clean     -> clean     pickle       P-nntplib-raw-p2-memo-twin        
+[ok ]  451/564 clean     -> clean     torch-zip    P-bytes-map-torch_zip-p3-twin     
+[ok ]  452/564 clean     -> clean     keras-h5     KERAS-wrapper-h5-twin             
+[ok ]  453/564 malicious -> malicious archive      P-timeit-bz2-p2-dyn              ["entries:['a0bc63']", 'dir-times'] 
+[ok ]  454/564 clean     -> clean     savedmodel   TF-benign-mg1                     
+[ok ]  455/564 clean     -> clean     keras-h5     KERAS-top-h5-twin                 
+[ok ]  456/564 clean     -> clean     archive      P-lru-cache-wrap-xz-p0-dyn-twin   
+[ok ]  457/564 malicious -> malicious npy          P-thread-start-npy-p5-dyn        ["entries:['e038b4']", 'dir-times'] 
+[ok ]  458/564 malicious -> malicious pickle       P-dotted-bdb-run-raw-p4-dyn      ["entries:['0ef6ea']", 'dir-times'] 
+[ok ]  459/564 malicious -> malicious pickle       P-bz2-open-write-second_stream-p5-dyn ["entries:['4d08b0']", 'dir-times'] 
+[ok ]  460/564 malicious -> malicious archive      P-io-open-xz-p2-memo-dyn         ["entries:['9d8e1a']", 'dir-times'] 
+[ok ]  461/564 malicious -> malicious archive      P-vars-getitem-nested-p3         ["entries:['7178a5']", 'dir-times'] 
+[ok ]  462/564 malicious -> malicious pickle       P-partial-raw-p3                 ["entries:['ceb213']", 'dir-times'] 
+[ok ]  463/564 malicious -> malicious savedmodel   TF-while_body                     
+[ok ]  464/564 clean     -> clean     keras-v3     KERAS-benign-inert                
+[ok ]  465/564 malicious -> malicious pickle       P-_unpickler-load-second_stream-p4 ["entries:['0d02a0']", 'dir-times'] 
+[ok ]  466/564 clean     -> clean     archive      P-max-key-partial-nested-p2-twin  
+[ok ]  467/564 malicious -> malicious archive      P-loads-join-tar-p3              ["entries:['bf0581']", 'dir-times'] 
+[ok ]  468/564 clean     -> clean     npz          B-npz-object                      
+[ok ]  469/564 clean     -> clean     torch-legacy P-list-zip-map-legacy_torch-p2-memo-twin  
+[ok ]  470/564 clean     -> clean     keras-v3     KERAS-benign-inert                
+[ok ]  471/564 clean     -> clean     pickle       P-loads-concat-raw-p1-twin        
+[ok ]  472/564 malicious -> malicious archive      P-unpickler-load-bz2-p4          ["entries:['ef0e7e']", 'dir-times'] 
+[ok ]  473/564 malicious -> malicious archive      P-joblib-numpy-pickle-load-tar-p4 ["entries:['235f0b']", 'dir-times'] 
+[ok ]  474/564 clean     -> clean     pickle       P-numpy-npyio-impl-load-second_stream-p0-twin  
+[ok ]  475/564 clean     -> clean     savedmodel   TF-wrapper-twin                   
+[ok ]  476/564 clean     -> clean     npz          P-functools-cache-wrap-npz-p0-twin  
+[ok ]  477/564 clean     -> clean     pickle       B-methodtype-stored               
+[ok ]  478/564 clean     -> clean     archive      P-bdb-run-polyglot_zip-p3-twin    
+[ok ]  479/564 clean     -> clean     pickle       P-object-getattribute-raw-p4-dyn-twin  
+[ok ]  480/564 clean     -> clean     archive      P-getstatusoutput-gzip-p2-dyn-twin  
+[ok ]  481/564 malicious -> malicious archive      P-loads-unhexlify-zip-p4         ["entries:['6c5430']", 'dir-times'] 
+[ok ]  482/564 clean     -> clean     savedmodel   TF-while_body-twin                
+[ok ]  483/564 malicious -> malicious pickle       P-object-getattribute-raw-p4-dyn ["entries:['f42b54']", 'dir-times'] 
+[ok ]  484/564 clean     -> clean     savedmodel   TF-benign-inert                   
+[ok ]  485/564 malicious -> malicious savedmodel   TF-wrapper                       ["entries:['c5d21e']", 'dir-times'] 
+[ok ]  486/564 malicious -> malicious pickle       P-path-open-write-raw-p4-dyn     ["entries:['e9f899']", 'dir-times'] 
+[ok ]  487/564 clean     -> clean     archive      P-loads-zlib-zip-p2-twin          
+[ok ]  488/564 malicious -> malicious keras-h5     KERAS-top-h5                     ["entries:['b4d04a']", 'dir-times'] 
+[ok ]  489/564 malicious -> malicious archive      P-executor-submit-bz2-p4         ["entries:['56a92c']", 'dir-times'] 
+[ok ]  490/564 clean     -> clean     archive      P-lzma-open-write-xz-p4-memo-dyn-twin  
+[ok ]  491/564 clean     -> clean     archive      P-set-map-gzip-p1-dyn-twin        
+[ok ]  492/564 clean     -> clean     archive      P-marshal-functiontype-nested-p2-dyn-twin  
+[ok ]  493/564 malicious -> malicious npy          P-import-module-posix-npy-p2-dyn ["entries:['1f0797']", 'dir-times'] 
+[ok ]  494/564 clean     -> clean     archive      B-tar                             
+[ok ]  495/564 malicious -> malicious savedmodel   TF-wrapper                        
+[ok ]  496/564 malicious -> malicious torch-zip    P-counter-map-torch_zip-p4       ["entries:['ac1c99']", 'dir-times'] 
+[ok ]  497/564 malicious -> malicious archive      P-zipfile-write-zip-p2           ["entries:['212b37']", 'dir-times'] 
+[ok ]  498/564 malicious -> malicious npz          P-partial-of-copy-npz-p5-dyn     ["entries:['812e99']", 'dir-times'] 
+[ok ]  499/564 malicious -> malicious pickle       P-nntplib-raw-p2-memo            ['connections:+1'] 
+[ok ]  500/564 malicious -> malicious torch-legacy X-legacy-torch-stream1           ["entries:['8a51bd']", 'dir-times'] 
+[ok ]  501/564 clean     -> clean     archive      P-wraps-wrapper-bz2-p0-dyn-twin   
+[ok ]  502/564 clean     -> clean     torch-zip    B-checkpoint-p5                   
+[ok ]  503/564 malicious -> malicious savedmodel   TF-wrapper                        
+[ok ]  504/564 malicious -> malicious torch-zip    P-smtp-ssl-torch_zip-p4          ['connections:+1'] 
+[ok ]  505/564 malicious -> malicious savedmodel   TF-serving-mg1                    
+[ok ]  506/564 clean     -> clean     archive      P-_pickle-load-bytesio-nested-p3-twin  
+[ok ]  507/564 clean     -> clean     pickle       P-obj-raw-p1-dyn-twin             
+[ok ]  508/564 clean     -> clean     savedmodel   TF-benign-plain                   
+[ok ]  509/564 malicious -> malicious torch-legacy P-list-zip-map-legacy_torch-p2-memo ["entries:['dda9fd']", 'dir-times'] 
+[ok ]  510/564 clean     -> clean     archive      P-lmtp-tar-p2-twin                
+[ok ]  511/564 malicious -> malicious pickle       X-streams-third                  ["entries:['096770']", 'dir-times'] 
+[ok ]  512/564 malicious -> malicious archive      P-marshal-functiontype-nested-p2-dyn ["entries:['b75ab7']", 'dir-times'] 
+[ok ]  513/564 malicious -> malicious savedmodel   TF-serving-mg1                   ["entries:['3ab15e']", 'dir-times'] 
+[ok ]  514/564 clean     -> clean     pickle       B-memo-heavy                      
+[ok ]  515/564 clean     -> clean     pickle       B-islice-map-unconsumed           
+[ok ]  516/564 clean     -> clean     pickle       P-dotted-bdb-run-raw-p4-dyn-twin  
+[ok ]  517/564 clean     -> clean     torch-legacy B-legacy-torch                    
+[ok ]  518/564 clean     -> clean     savedmodel   TF-benign-inert                   
+[ok ]  519/564 malicious -> malicious torch-zip    P-attrgetter-sys-modules-torch_zip-p3-dyn ["entries:['1add88']", 'dir-times'] 
+[ok ]  520/564 clean     -> clean     archive      P-pandas-read-pickle-zip-p5-memo-twin  
+[ok ]  521/564 clean     -> clean     archive      P-_pickle-loads-bz2-p4-memo-twin  
+[ok ]  522/564 clean     -> clean     archive      P-getitem-sys-modules-polyglot_zip-p4-twin  
+[ok ]  523/564 clean     -> clean     archive      P-socket-create-connection-nested-p4-dyn-twin  
+[ok ]  524/564 malicious -> malicious archive      P-getstatusoutput-gzip-p2-dyn    ["entries:['0d4f2a']", 'dir-times'] 
+[ok ]  525/564 clean     -> clean     savedmodel   TF-if_branch-twin                 
+[ok ]  526/564 malicious -> malicious torch-zip    P-path-write-bytes-torch_zip-p5  ["entries:['1965e0']", 'dir-times'] 
+[ok ]  527/564 malicious -> malicious torch-legacy P-sys-modules-itemgetter-legacy_torch-p2 ["entries:['0a927f']", 'dir-times'] 
+[ok ]  528/564 clean     -> clean     torch-zip    P-inst-text-torch_zip-p2-dyn-twin  
+[ok ]  529/564 malicious -> malicious pickle       P-os-popen-second_stream-p2-memo-dyn ["entries:['89e694']", 'dir-times'] 
+[ok ]  530/564 malicious -> malicious npy          P-dbm-open-npy-p2-dyn            ["entries:['6c86ae']", 'dir-times'] 
+[ok ]  531/564 clean     -> clean     keras-v3     KERAS-nested-keras-twin           
+[ok ]  532/564 clean     -> clean     archive      P-pickle-loads-gzip-p5-memo-twin  
+[ok ]  533/564 malicious -> malicious pickle       X-loads-stream-order             ["entries:['b9d228']", 'dir-times'] 
+[ok ]  534/564 malicious -> malicious npy          X-npy-header-v2                  ["entries:['ae2efc']", 'dir-times'] 
+[ok ]  535/564 clean     -> clean     archive      P-reduce-popen-tar-p0-dyn-twin    
+[ok ]  536/564 clean     -> clean     npz          P-subprocess-check-output-npz-p4-dyn-twin  
+[ok ]  537/564 malicious -> malicious archive      P-http-connect-chain-zip-p4-dyn  ['connections:+1'] 
+[ok ]  538/564 malicious -> malicious archive      P-pandas-read-pickle-zip-p5-memo ["entries:['d4d3bf']", 'dir-times'] 
+[ok ]  539/564 clean     -> clean     archive      P-xmlrpc-call-gzip-p4-dyn-twin    
+[ok ]  540/564 clean     -> clean     npz          P-shelve-open-npz-p5-dyn-twin     
+[ok ]  541/564 clean     -> clean     savedmodel   TF-benign-plain                   
+[ok ]  542/564 clean     -> clean     archive      P-urlretrieve-xz-p0-dyn-twin      
+[ok ]  543/564 clean     -> clean     archive      P-urlopen-bz2-p4-twin             
+[ok ]  544/564 clean     -> clean     torch-legacy P-shutil-copyfile-legacy_torch-p2-memo-twin  
+[ok ]  545/564 malicious -> malicious archive      P-torch-load-from-bytes-xz-p2    ["entries:['7a59fc']", 'dir-times'] 
+[ok ]  546/564 clean     -> clean     archive      X-gzip-header-fields-twin         
+[ok ]  547/564 clean     -> clean     savedmodel   TF-benign-pbtxt                   
+[ok ]  548/564 clean     -> clean     keras-h5     KERAS-benign-decoy-key            
+[ok ]  549/564 clean     -> clean     torch-zip    P-numpy-runstring-torch_zip-p4-dyn-twin  
+[ok ]  550/564 clean     -> clean     pickle       P-numpy-load-raw-p2-twin          
+[ok ]  551/564 malicious -> malicious archive      P-joblib-load-polyglot_zip-p5-memo ["entries:['5990ca']", 'dir-times'] 
+[ok ]  552/564 clean     -> clean     archive      P-socket-connect-chain-tar-p4-twin  
+[ok ]  553/564 clean     -> clean     pickle       P-pathlib-touch-raw-p2-twin       
+[ok ]  554/564 malicious -> malicious archive      X-zip-dup-last-malicious         ["entries:['94baa1']", 'dir-times'] 
+[ok ]  555/564 malicious -> malicious savedmodel   TF-while_body-pbtxt               
+[ok ]  556/564 malicious -> malicious npz          P-methodcaller-on-module-npz-p2  ["entries:['032ac3']", 'dir-times'] 
+[ok ]  557/564 malicious -> malicious torch-legacy P-import-module-attrgetter-legacy_torch-p2-dyn ["entries:['e19e85']", 'dir-times'] 
+[ok ]  558/564 malicious -> malicious pickle       P-pathlib-touch-raw-p2           ["entries:['783410']", 'dir-times'] 
+[ok ]  559/564 malicious -> malicious keras-v3     KERAS-output_shape-keras         ["entries:['1d43a2']", 'dir-times'] 
+[ok ]  560/564 malicious -> malicious pickle       P-importlib-dunder-import-raw-p5-dyn ["entries:['0dd13f']", 'dir-times'] 
+[ok ]  561/564 malicious -> malicious archive      P-pickle-loads-gzip-p5-memo      ["entries:['6b6df3']", 'dir-times'] 
+[ok ]  562/564 clean     -> clean     savedmodel   TF-serving-mg1-twin               
+[ok ]  563/564 clean     -> clean     keras-v3     KERAS-output_shape-keras-twin     
+[ok ]  564/564 clean     -> clean     pickle       B-pipeline-p4                     
+summary: {'clean->clean': 338, 'malicious->malicious': 226} invalid: 0
+wrote /repo/tasks/model-scanner-hardening/tests/manifest.json 564 items
+exit=0

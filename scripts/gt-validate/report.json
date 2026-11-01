@@ -1,6 +1,6 @@
 {
  "seed": 19783,
- "items": 648,
+ "items": 564,
  "invalid": 0,
  "results": [
   {
@@ -18,7 +18,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.09
+   "seconds": 8.69
   },
   {
    "name": "01d9fd57f93714b2ca7e7061.xz",
@@ -38,7 +38,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.72
   },
   {
    "name": "0326134d72e4cafe2bc483cb.h5",
@@ -55,7 +55,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.88
+   "seconds": 4.16
   },
   {
    "name": "037d91ec3ff6f5bbc67fcc0b.pkl",
@@ -91,7 +91,7 @@
    "loaded_ok": false,
    "stderr_tail": ", line 1478, in getresponse\n    response.begin()\n  File \"/usr/local/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/http/client.py\", line 304, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/socket.py\", line 720, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nConnectionResetError: [Errno 104] Connection reset by peer\n",
    "timed_out": false,
-   "seconds": 0.09
+   "seconds": 0.1
   },
   {
    "name": "0426940b266a5c358550e015",
@@ -108,7 +108,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.92
+   "seconds": 4.25
   },
   {
    "name": "047fe5b3140883616ae15863.xz",
@@ -127,7 +127,7 @@
    "loaded_ok": false,
    "stderr_tail": ", line 1478, in getresponse\n    response.begin()\n  File \"/usr/local/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/http/client.py\", line 304, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/socket.py\", line 720, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nConnectionResetError: [Errno 104] Connection reset by peer\n",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.62
   },
   {
    "name": "04893e2a2be171c16e66aefb.gz",
@@ -147,26 +147,6 @@
    "seconds": 0.06
   },
   {
-   "name": "049fdb1f801e2bb7663c365f.npy",
-   "sha256": "049fdb1f801e2bb7663c365ff036f2a8c6523f20cb598ab7baa65a8b205259b8",
-   "format": "npy",
-   "family": "P-dict-npz-npy-p5-memo",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['87e41f']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.14
-  },
-  {
    "name": "04ab13bda1066385b9a6d553.h5",
    "sha256": "04ab13bda1066385b9a6d55377b20d6bcf397e9c014323a6caf0e1113fbfc3f9",
    "format": "keras-h5",
@@ -184,24 +164,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 4.21
-  },
-  {
-   "name": "04ae5d5378602347b7ddb208.npy",
-   "sha256": "04ae5d5378602347b7ddb208ea86d1a807e18ea4f2ec8378e5c230bb9bec78ba",
-   "format": "npy",
-   "family": "P-dict-npz-npy-p5-memo-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.16
+   "seconds": 4.27
   },
   {
    "name": "04d9d3619bb9d253e1863663.pkl",
@@ -238,7 +201,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.16
+   "seconds": 0.15
   },
   {
    "name": "05fe4c6ba6da8d3f17908306.zip",
@@ -272,7 +235,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.35
+   "seconds": 0.39
   },
   {
    "name": "06819b73656c71fdd3f53fc8.npy",
@@ -306,7 +269,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.06
+   "seconds": 0.08
   },
   {
    "name": "06ff752a70e471fcecd86479.h5",
@@ -323,7 +286,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 4.06
+   "seconds": 4.12
   },
   {
    "name": "07145e6cda6d1a632091b313.gz",
@@ -343,7 +306,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.55
   },
   {
    "name": "074caa49acaf6fcc14306ba5",
@@ -360,7 +323,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.89
+   "seconds": 4.14
   },
   {
    "name": "075183db1601b6fd8a89e22e.npy",
@@ -394,7 +357,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.67
   },
   {
    "name": "083880efddfaa1e2df4f1383",
@@ -411,7 +374,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.86
+   "seconds": 4.29
   },
   {
    "name": "083936fccfe7f9734b52f02c",
@@ -428,7 +391,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.88
+   "seconds": 4.25
   },
   {
    "name": "08b7324fa0e9275d39e33112.xz",
@@ -445,7 +408,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.63
+   "seconds": 2.65
   },
   {
    "name": "095e52026b68f28c99852448.tar",
@@ -465,7 +428,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.58
   },
   {
    "name": "099ad278b075bb4d36bbe72f.zip",
@@ -502,7 +465,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.91
+   "seconds": 4.21
   },
   {
    "name": "0a0fbd8d5b8e1cdd2e17f3ff.pt",
@@ -519,7 +482,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.75
+   "seconds": 1.8
   },
   {
    "name": "0a3f9adad21cdb45a3513709.ckpt",
@@ -539,7 +502,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.64
+   "seconds": 1.86
   },
   {
    "name": "0a7d34ef2887269bde9dfd30.tar",
@@ -576,7 +539,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.86
+   "seconds": 3.15
   },
   {
    "name": "0cfa88d4ce38f2229b1e9122.pickle",
@@ -610,7 +573,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.84
+   "seconds": 3.02
   },
   {
    "name": "0d8b66e86c39c990bb0474c0.ckpt",
@@ -630,7 +593,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.7
   },
   {
    "name": "0e10a52a0b1d41172f6e1842.tgz",
@@ -649,7 +612,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.64
+   "seconds": 1.8
   },
   {
    "name": "0e2b89b74fdea6e7ee27ee97.joblib",
@@ -666,7 +629,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.52
+   "seconds": 1.72
   },
   {
    "name": "0e4a13cf73d740973aba1cf5.npy",
@@ -683,7 +646,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.15
+   "seconds": 0.13
   },
   {
    "name": "0e53f7a22b64f02dd6d77afd.bz2",
@@ -703,7 +666,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.63
   },
   {
    "name": "0e564c7a2b302eb68c8564a8",
@@ -720,7 +683,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.3
   },
   {
    "name": "0eb4cf95cea9f51cb618c314.pickle",
@@ -737,7 +700,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.52
+   "seconds": 1.7
   },
   {
    "name": "0ede4983b56389942309434e.pt",
@@ -754,7 +717,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.93
   },
   {
    "name": "0f2f94779174cc0c450e4e29.bin",
@@ -771,7 +734,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.15
+   "seconds": 0.16
   },
   {
    "name": "1061e6c472f3d7a5ec47d434.pth",
@@ -788,7 +751,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.83
+   "seconds": 3.0
   },
   {
    "name": "1070e287521e0a8d1af81126.ckpt",
@@ -801,14 +764,14 @@
    "label_source": "execution",
    "valid": true,
    "events": [
-    "entries:['3ef4362z0t5mc3']",
+    "entries:['3ef436w0o7qmno']",
     "dir-times"
    ],
    "rc": 0,
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.67
   },
   {
    "name": "11a7bcff636c4e3530aa37f5.gz",
@@ -845,7 +808,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.55
   },
   {
    "name": "1212232c9fe39ea6e9b98e51.joblib",
@@ -879,7 +842,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.64
+   "seconds": 1.8
   },
   {
    "name": "130f2dbf0151c8307941580d.pickle",
@@ -896,7 +859,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.06
+   "seconds": 0.07
   },
   {
    "name": "1330e80062a733f0595b6505.pickle",
@@ -913,9 +876,9 @@
    ],
    "rc": 1,
    "loaded_ok": false,
-   "stderr_tail": "tes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/50/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 107, in __init__\n    self.welcome = self._getresp()\n                   ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 154, in _getresp\n    resp, o = self._getline()\n              ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 138, in _getline\n    if not line: raise error_proto('-ERR EOF')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npoplib.error_proto: -ERR EOF\n",
+   "stderr_tail": "tes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/48/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 107, in __init__\n    self.welcome = self._getresp()\n                   ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 154, in _getresp\n    resp, o = self._getline()\n              ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/poplib.py\", line 138, in _getline\n    if not line: raise error_proto('-ERR EOF')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npoplib.error_proto: -ERR EOF\n",
    "timed_out": false,
-   "seconds": 1.57
+   "seconds": 1.72
   },
   {
    "name": "1365015fc3d262a9059d7d58.joblib",
@@ -952,23 +915,6 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
-  },
-  {
-   "name": "13cd4055666a035980699b45.tar",
-   "sha256": "13cd4055666a035980699b4505b12d509efdd44c9a7eff0e6b551e6fad50ac45",
-   "format": "archive",
-   "family": "P-cprofile-run-tar-p3-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
    "seconds": 1.55
   },
   {
@@ -989,7 +935,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.49
+   "seconds": 1.55
   },
   {
    "name": "14998128eeab1b2de4b7c16c.xz",
@@ -1009,7 +955,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.66
+   "seconds": 1.74
   },
   {
    "name": "1555c5e5e8a9785c0cebf578.npy",
@@ -1029,27 +975,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.13
-  },
-  {
-   "name": "1579fd5171d895f12b2edbc6.bin",
-   "sha256": "1579fd5171d895f12b2edbc6d30d5bec54ae2162fb15201ae71041e16cfd1b05",
-   "format": "pickle",
-   "family": "P-importlib-reload-getattr-raw-p5-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['cde244']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.06
+   "seconds": 0.14
   },
   {
    "name": "15d248cab1a57d88a2621484.h5",
@@ -1066,7 +992,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.34
   },
   {
    "name": "1691495cddee8c6a5b30a7d3.ckpt",
@@ -1083,7 +1009,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.7
+   "seconds": 1.74
   },
   {
    "name": "1693a1671173d97afe0f2d86.xz",
@@ -1103,7 +1029,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.64
+   "seconds": 1.69
   },
   {
    "name": "169cd43ae5881a105e200206.bin",
@@ -1139,7 +1065,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.46
+   "seconds": 1.55
   },
   {
    "name": "178e59bd065778137533b476.keras",
@@ -1159,7 +1085,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.95
+   "seconds": 4.12
   },
   {
    "name": "17907bf2f1911a51825b12a8.pt",
@@ -1176,7 +1102,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.6
+   "seconds": 1.68
   },
   {
    "name": "1821cf1660bda0f28425e897.pth",
@@ -1196,7 +1122,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.6
+   "seconds": 1.72
   },
   {
    "name": "1873987b90be52589891ecbf.zip",
@@ -1213,27 +1139,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.46
-  },
-  {
-   "name": "18c0ad6e2e45bd91d470eb4f.pth",
-   "sha256": "18c0ad6e2e45bd91d470eb4ff907c159ba98970b0269ca45864b5509e1551d99",
-   "format": "torch-legacy",
-   "family": "P-tarfile-bltn-open-legacy_torch-p2-dyn",
-   "capability": "file-access",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['6c80ed']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.55
   },
   {
    "name": "19230cf820fcebf157517e35.zip",
@@ -1253,27 +1159,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.06
-  },
-  {
-   "name": "193cfb3b2ab53f2e86e4a1ea.pth",
-   "sha256": "193cfb3b2ab53f2e86e4a1ea02b4685d7baa000ab3edeb91021f7e884849f012",
-   "format": "torch-zip",
-   "family": "P-shelf-getitem-torch_zip-p4",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['bd6730']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.58
+   "seconds": 0.07
   },
   {
    "name": "19b5c02a1e4f0e4d290595e3.pt",
@@ -1293,7 +1179,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.79
   },
   {
    "name": "19d09462c603c1d936da3668.zip",
@@ -1310,24 +1196,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.49
-  },
-  {
-   "name": "1a0cedda7b5d5392e6823ec4.pt",
-   "sha256": "1a0cedda7b5d5392e6823ec451c383c47e7cae3d51f38f7b34dc4ae1790773dc",
-   "format": "torch-legacy",
-   "family": "P-pickle-_loads-legacy_torch-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.56
   },
   {
    "name": "1b56e16e62623cb32895e9d3.zip",
@@ -1381,7 +1250,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.46
+   "seconds": 1.53
   },
   {
    "name": "1bbf092b586988eb186b9de7.pkl",
@@ -1418,24 +1287,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 3.9
-  },
-  {
-   "name": "1bf6f1da4e73168acfc86922.bin",
-   "sha256": "1bf6f1da4e73168acfc86922561f9636fb483ae8c2007b93879b9b5f213a5152",
-   "format": "pickle",
-   "family": "P-importlib-reload-getattr-raw-p5-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.06
+   "seconds": 4.39
   },
   {
    "name": "1c479dfafeebe6171787623c.npy",
@@ -1455,7 +1307,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.14
+   "seconds": 0.15
   },
   {
    "name": "1cb892dc2f0d44b83ca95d2b.bz2",
@@ -1489,7 +1341,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.89
+   "seconds": 4.15
   },
   {
    "name": "1d0737f08f2a3454fa3f5f66.npy",
@@ -1523,7 +1375,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.13
   },
   {
    "name": "1d81643f6a525f1b364da210",
@@ -1540,7 +1392,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.86
+   "seconds": 4.1
   },
   {
    "name": "1e7f6c6d4fc02f7ef6384343",
@@ -1557,24 +1409,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.86
-  },
-  {
-   "name": "1eb9eb9e86edc2f288a6f978.xz",
-   "sha256": "1eb9eb9e86edc2f288a6f978cc18ab0cc6e89b3128a1103354b4572b08086bfc",
-   "format": "archive",
-   "family": "P-interactiveconsole-nested-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.58
+   "seconds": 4.13
   },
   {
    "name": "1ec699a14be99e883f64367d.zip",
@@ -1594,7 +1429,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.52
   },
   {
    "name": "200ae548199301d086f1cd2c.npz",
@@ -1611,7 +1446,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.14
+   "seconds": 0.15
   },
   {
    "name": "203d9a67d569b453036c50f9.pt",
@@ -1631,7 +1466,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.74
   },
   {
    "name": "20b629239ed42d6d9522da8c.keras",
@@ -1651,27 +1486,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.93
-  },
-  {
-   "name": "20d2963615a382d10801bfa1.pt",
-   "sha256": "20d2963615a382d10801bfa1b03be84ed587630c65d1386d2ae28c69ea2f314a",
-   "format": "torch-legacy",
-   "family": "P-pickle-_loads-legacy_torch-p2",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['712c32']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.6
+   "seconds": 4.23
   },
   {
    "name": "20dc62575818d3f77e6bc6b6.pickle",
@@ -1691,41 +1506,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.5
-  },
-  {
-   "name": "21ca1ae6077c36fa4c1b3659.zip",
-   "sha256": "21ca1ae6077c36fa4c1b3659ce8a1c93d7fe8cb7a224d2bb60535f98972b3651",
-   "format": "archive",
-   "family": "P-len-self-builtins-polyglot_zip-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.47
-  },
-  {
-   "name": "222bbe98f7ddc2c509aae88e.zip",
-   "sha256": "222bbe98f7ddc2c509aae88eff3526b15aa554464cd5fc40bb2097db2a8d73dd",
-   "format": "archive",
-   "family": "P-module-build-rebind-zip-p3-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.63
   },
   {
    "name": "227fec9d06cbc30e1a9fa2c2.xz",
@@ -1742,7 +1523,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.58
   },
   {
    "name": "238a3fee7b35b7d31b2e96fa.pickle",
@@ -1796,7 +1577,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.15
+   "seconds": 0.14
   },
   {
    "name": "25fb60e7c303fa672d073762.zip",
@@ -1813,7 +1594,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.46
+   "seconds": 1.56
   },
   {
    "name": "266d15c45761e34b3ed27bd8.pickle",
@@ -1830,7 +1611,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.5
+   "seconds": 1.57
   },
   {
    "name": "26a8fdd24b805fdc796bfac8",
@@ -1847,24 +1628,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.93
-  },
-  {
-   "name": "26badb627b93e63d650f8b59.bin",
-   "sha256": "26badb627b93e63d650f8b59a1388b6e1dc664221716a860da5112c64cb049f8",
-   "format": "torch-zip",
-   "family": "P-tarfile-class-torch_zip-p3-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.62
+   "seconds": 4.19
   },
   {
    "name": "26eb73fd73f3aac5d9a93380.zip",
@@ -1881,7 +1645,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.49
+   "seconds": 1.54
   },
   {
    "name": "274ab1ab7df4aeb1b7cbb66f.pickle",
@@ -1917,7 +1681,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.57
   },
   {
    "name": "27dc847984914d6888a4629d.pkl",
@@ -1934,7 +1698,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.53
+   "seconds": 1.61
   },
   {
    "name": "27f6355cc58653b9b371aa1b.npy",
@@ -1954,7 +1718,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.14
+   "seconds": 0.16
   },
   {
    "name": "2926fc56bc3a0ef49d1b1a74.xz",
@@ -1971,7 +1735,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.45
+   "seconds": 1.62
   },
   {
    "name": "29494252a88412e51f810a98.tar",
@@ -1991,23 +1755,6 @@
    "seconds": 0.06
   },
   {
-   "name": "29f7be95267ab21020834d91.npz",
-   "sha256": "29f7be95267ab21020834d91e4c054d08f8bf3a17907b8b6985bda3c7b45cf21",
-   "format": "npz",
-   "family": "P-dotted-dunder-call-npz-p4-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.48
-  },
-  {
    "name": "29fa4d03b93430ae48654035.keras",
    "sha256": "29fa4d03b93430ae48654035acf36a88571455b6d1e845d55edc0cbe68766788",
    "format": "keras-v3",
@@ -2022,7 +1769,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.25
   },
   {
    "name": "2b34115155b8344aec171cc5.joblib",
@@ -2039,7 +1786,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.52
+   "seconds": 1.62
   },
   {
    "name": "2c1fd6de79a4ffbf4784b5d1.ckpt",
@@ -2059,27 +1806,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.68
-  },
-  {
-   "name": "2d2aa30094487613c773846f.tar",
-   "sha256": "2d2aa30094487613c773846f2ba7b1090e155f04adfe64741d072318a40c0eac",
-   "format": "archive",
-   "family": "P-attrgetter-npz-tar-p2",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['bd18b4']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.49
+   "seconds": 1.73
   },
   {
    "name": "2d38b3a95540acc62796e5bc.bin",
@@ -2096,24 +1823,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.84
-  },
-  {
-   "name": "2e85b504d6d8a96ae3e1e2a6.bin",
-   "sha256": "2e85b504d6d8a96ae3e1e2a65b03155289e9c2c7999f272fa83901c5e08aeddb",
-   "format": "pickle",
-   "family": "P-numpy-load-raw-pickle-second_stream-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.47
+   "seconds": 3.03
   },
   {
    "name": "2e85e675fda1fc1de2be632b",
@@ -2130,47 +1840,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.91
-  },
-  {
-   "name": "2ef4181d67c1fbd57cef8b9a.tgz",
-   "sha256": "2ef4181d67c1fbd57cef8b9a9f3da5780f59c8ed76ba1ac651912369f8f81bb0",
-   "format": "archive",
-   "family": "P-exec-via-vars-builtins-nested-p4",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['14393f']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.62
-  },
-  {
-   "name": "2fd05652e65fdbf6d8246d72.bin",
-   "sha256": "2fd05652e65fdbf6d8246d721e0bdcc8fa036d11b8165a9bdb8504c5807e78ec",
-   "format": "torch-zip",
-   "family": "P-tarfile-class-torch_zip-p3-dyn",
-   "capability": "file-access",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['7405ee']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.59
+   "seconds": 4.06
   },
   {
    "name": "31180cf02493cd208b4ff9e9.pt",
@@ -2187,7 +1857,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.71
   },
   {
    "name": "315768f19027b5cb1a5bf7dd.keras",
@@ -2204,7 +1874,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.25
   },
   {
    "name": "31afbdcc1887f3fb9bdf9166.zip",
@@ -2224,7 +1894,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.46
+   "seconds": 1.54
   },
   {
    "name": "32ce15fc05da8e881c31ab42",
@@ -2241,7 +1911,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.82
+   "seconds": 4.13
   },
   {
    "name": "335f132c7caa150b6d971601.xz",
@@ -2258,7 +1928,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.06
+   "seconds": 0.07
   },
   {
    "name": "340cdfe8c0a49f298cce4c8a.xz",
@@ -2275,7 +1945,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.44
+   "seconds": 1.55
   },
   {
    "name": "34b5fc2dbe24352f01f82314.h5",
@@ -2295,27 +1965,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.87
-  },
-  {
-   "name": "354b619fb2aa62cae03fdc9c.zip",
-   "sha256": "354b619fb2aa62cae03fdc9c02dac8bba414a05a0145ed71303b77f0d4a99358",
-   "format": "archive",
-   "family": "X-zip-member-binfloat-prefix",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['99fce5']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.06
+   "seconds": 4.15
   },
   {
    "name": "35664e1d90a47d8445505410.xz",
@@ -2332,7 +1982,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.8
+   "seconds": 3.0
   },
   {
    "name": "35ac3c96a7d9c87d7fca60d7.tar",
@@ -2349,7 +1999,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.09
+   "seconds": 0.1
   },
   {
    "name": "365bd7e0916b3d0b7f35b385",
@@ -2366,7 +2016,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.84
+   "seconds": 4.03
   },
   {
    "name": "36b33ba92b176d993a622784.bz2",
@@ -2400,9 +2050,9 @@
    ],
    "rc": 1,
    "loaded_ok": false,
-   "stderr_tail": "esIO(data))\n  File \"/work/run/132/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 162, in connect\n    self.welcome = self.getresp()\n                   ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 244, in getresp\n    resp = self.getmultiline()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 230, in getmultiline\n    line = self.getline()\n           ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 218, in getline\n    raise EOFError\nEOFError\n",
+   "stderr_tail": "esIO(data))\n  File \"/work/run/113/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 162, in connect\n    self.welcome = self.getresp()\n                   ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 244, in getresp\n    resp = self.getmultiline()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 230, in getmultiline\n    line = self.getline()\n           ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 218, in getline\n    raise EOFError\nEOFError\n",
    "timed_out": false,
-   "seconds": 1.53
+   "seconds": 1.76
   },
   {
    "name": "37418f9838eeab71deb5bba1.keras",
@@ -2422,7 +2072,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.96
+   "seconds": 4.31
   },
   {
    "name": "3836a8764d2c3251ce6c5dce.pth",
@@ -2439,7 +2089,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.59
+   "seconds": 1.76
   },
   {
    "name": "38d9c2bcc1054c2c40269697.keras",
@@ -2459,7 +2109,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.89
+   "seconds": 4.11
   },
   {
    "name": "38f74336510fa7f119f7cbd7.joblib",
@@ -2476,7 +2126,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.58
   },
   {
    "name": "38fae88dd219ced0c5603154.npz",
@@ -2530,7 +2180,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.97
+   "seconds": 4.18
   },
   {
    "name": "3b25c42be316006e0253146d.npy",
@@ -2550,24 +2200,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.13
-  },
-  {
-   "name": "3b60f470c13ade95ba51e8ca.bin",
-   "sha256": "3b60f470c13ade95ba51e8cad661e52efed8e3f76e1b2794fc1408d6aaff1e40",
-   "format": "pickle",
-   "family": "P-obj-argless-partial-second_stream-p1-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.52
+   "seconds": 0.14
   },
   {
    "name": "3b7f1edd2fc12f030c3ae7a4",
@@ -2584,7 +2217,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.88
+   "seconds": 4.11
   },
   {
    "name": "3bccac9d5e9f080411c9c11a.pkl",
@@ -2618,7 +2251,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 0.15
+   "seconds": 0.13
   },
   {
    "name": "3c2cdfabd8f38c9d02005751.joblib",
@@ -2635,7 +2268,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.53
+   "seconds": 1.6
   },
   {
    "name": "3d36b576c32415e106f394a0.keras",
@@ -2655,7 +2288,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.92
+   "seconds": 4.21
   },
   {
    "name": "3d58669343754253f18862a2.ckpt",
@@ -2675,7 +2308,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.74
+   "seconds": 1.69
   },
   {
    "name": "3d6467669b67e6f468428cec.xz",
@@ -2695,24 +2328,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
-  },
-  {
-   "name": "3d789d2e8980c294cdec1fa1.bin",
-   "sha256": "3d789d2e8980c294cdec1fa16f47e9c2f1ebc1c268870ef7fd5f9616a42c4a74",
-   "format": "pickle",
-   "family": "B-reduce-list-args",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/149/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/149/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/149/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\nTypeError: argument list must be a tuple\n",
-   "timed_out": false,
-   "seconds": 0.06
+   "seconds": 1.53
   },
   {
    "name": "3d82a24fc32a879c9115adb4.xz",
@@ -2732,7 +2348,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.55
   },
   {
    "name": "3ddf4282f53f9fbe0dfb9eab.keras",
@@ -2749,7 +2365,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.93
+   "seconds": 4.19
   },
   {
    "name": "3de43753aee68dca63a2af4b.joblib",
@@ -2783,7 +2399,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.58
+   "seconds": 1.69
   },
   {
    "name": "402cd557019a48dd5aa4dfd6.zip",
@@ -2820,7 +2436,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.87
+   "seconds": 4.13
   },
   {
    "name": "40aeec50ad27be4c6eb402bf.zip",
@@ -2840,24 +2456,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
-  },
-  {
-   "name": "4150d434476c5357495f19d9.pickle",
-   "sha256": "4150d434476c5357495f19d9ab1be88fb1a14696713872f9a4917d384b55a439",
-   "format": "pickle",
-   "family": "B-proto0-tuple-top",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 0.06
+   "seconds": 1.56
   },
   {
    "name": "41556199ba4aff5569ecbdd3.bz2",
@@ -2894,7 +2493,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 3.89
+   "seconds": 4.09
   },
   {
    "name": "41607f2e5d9ec641d1062d12.joblib",
@@ -2911,7 +2510,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.45
+   "seconds": 1.5
   },
   {
    "name": "436dd16847b030e1c64027ba.xz",
@@ -2928,7 +2527,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.53
   },
   {
    "name": "438f37f78a17dda608b64c36.keras",
@@ -2945,7 +2544,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.1
   },
   {
    "name": "439079e346f255fa9a22b192.npz",
@@ -2979,7 +2578,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.87
+   "seconds": 4.09
   },
   {
    "name": "43df7970138b4e99b362a284.joblib",
@@ -3016,7 +2615,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.6
+   "seconds": 1.71
   },
   {
    "name": "4482776f0e8d251314afb160.pickle",
@@ -3056,7 +2655,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.02
+   "seconds": 3.03
   },
   {
    "name": "44c64cd1162f3a48b14250e6.h5",
@@ -3073,7 +2672,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.91
+   "seconds": 4.07
   },
   {
    "name": "44e501f5b5e713cdee5b4f9c.h5",
@@ -3090,7 +2689,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 3.89
+   "seconds": 4.05
   },
   {
    "name": "456081c16f9a4a328ba9ff17.zip",
@@ -3109,7 +2708,7 @@
    "loaded_ok": false,
    "stderr_tail": "le \"/usr/local/lib/python3.12/poplib.py\", line 451, in _create_socket\n    sock = self.context.wrap_socket(sock,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1054, in _create\n    self.do_handshake()\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1332, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)\n",
    "timed_out": false,
-   "seconds": 1.47
+   "seconds": 1.54
   },
   {
    "name": "46f791a1d3f990f1be253ad8.pkl",
@@ -3129,26 +2728,6 @@
    "seconds": 0.06
   },
   {
-   "name": "475a2f9c6950423664be822e.tar",
-   "sha256": "475a2f9c6950423664be822edfa9b73b441f14c04f3eaf29da4f259010046479",
-   "format": "archive",
-   "family": "P-cprofile-run-tar-p3-dyn",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['54e1fe']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 1.52
-  },
-  {
    "name": "477ffcfdf04a4aa2dd9cb1f1.zip",
    "sha256": "477ffcfdf04a4aa2dd9cb1f1b305e1e8cdecd765212d21599a9d398f7d585c01",
    "format": "archive",
@@ -3163,7 +2742,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.48
+   "seconds": 1.56
   },
   {
    "name": "4797ce20fe203549fb11b948.tgz",
@@ -3182,7 +2761,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 1.62
+   "seconds": 1.72
   },
   {
    "name": "47d052e7d63c1db13814a356.tar",
@@ -3202,7 +2781,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.13
   },
   {
    "name": "48030a236f2e74aabd707506.bin",
@@ -3222,7 +2801,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.08
   },
   {
    "name": "481bacf9b88e6fa9ad6d260b.xz",
@@ -3239,7 +2818,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.06
   },
   {
    "name": "481d66e68306883121dc4fa5.gz",
@@ -3259,7 +2838,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.08
   },
   {
    "name": "48d0f04f4d6c9869b97bb63e.joblib",
@@ -3293,7 +2872,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 6.43
+   "seconds": 6.72
   },
   {
    "name": "49c2a5f938dd7ac7391300ff.zip",
@@ -3327,7 +2906,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.45
+   "seconds": 6.63
   },
   {
    "name": "4aab9d6e492987fbc5502d7e.h5",
@@ -3347,7 +2926,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.55
+   "seconds": 6.61
   },
   {
    "name": "4b957421e83c771f7d7c62d2.keras",
@@ -3367,24 +2946,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.42
-  },
-  {
-   "name": "4be2a10a947ae9f24c7f16c3.zip",
-   "sha256": "4be2a10a947ae9f24c7f16c3991fc68ac14dcf11035d35bdfa0405a847fc53ea",
-   "format": "archive",
-   "family": "B-fileinput-unconsumed",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 6.74
   },
   {
    "name": "4cc10a3075146e8e48d41fff.pickle",
@@ -3420,24 +2982,7 @@
    "loaded_ok": false,
    "stderr_tail": "rch/serialization.py\", line 1812, in _legacy_load\n    result = unpickler.load()\n             ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 255, in __init__\n    (code, msg) = self.connect(host, port)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 343, in connect\n    (code, msg) = self.getreply()\n                  ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 405, in getreply\n    raise SMTPServerDisconnected(\"Connection unexpectedly closed\")\nsmtplib.SMTPServerDisconnected: Connection unexpectedly closed\n",
    "timed_out": false,
-   "seconds": 4.15
-  },
-  {
-   "name": "4d85e431f14daf6c969dff80.bz2",
-   "sha256": "4d85e431f14daf6c969dff804d0d8091b9443811c55f2c2395fc8547b07e4cbc",
-   "format": "archive",
-   "family": "P-path-truediv-bz2-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.58
+   "seconds": 4.31
   },
   {
    "name": "4ddddd90898795219c2c2cd4.npz",
@@ -3457,7 +3002,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.06
   },
   {
    "name": "4ed12f123b307fd6b7fa4e1a",
@@ -3474,27 +3019,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.42
-  },
-  {
-   "name": "4f22ada332f0897dd48551b3.bin",
-   "sha256": "4f22ada332f0897dd48551b3c37b7a13029e11c7fa5a30fc434ace194e7f9738",
-   "format": "pickle",
-   "family": "P-numpy-load-raw-pickle-second_stream-p2",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['0713b0']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 3.99
+   "seconds": 6.61
   },
   {
    "name": "4f2c0da0cb8ae4d79d36a0ac.bin",
@@ -3511,7 +3036,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.34
   },
   {
    "name": "4f3903a55fdf3a862b6056ac.joblib",
@@ -3528,7 +3053,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.06
   },
   {
    "name": "4fa92e1b5a3bca99c59caa35",
@@ -3545,7 +3070,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.42
+   "seconds": 6.68
   },
   {
    "name": "5021dcc7512b1d08ab6cf98a.keras",
@@ -3562,7 +3087,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.53
+   "seconds": 6.82
   },
   {
    "name": "50d7f5d47dfab74ccc07c730.bin",
@@ -3598,7 +3123,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.22
+   "seconds": 4.25
   },
   {
    "name": "51dfe5ef542e1bba99432837.zip",
@@ -3635,7 +3160,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.21
+   "seconds": 4.24
   },
   {
    "name": "520466afd7b68a165fd6a430",
@@ -3652,24 +3177,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
-  },
-  {
-   "name": "528a863739da01b09cfabc18.pkl",
-   "sha256": "528a863739da01b09cfabc18be6fdc871951aba6407777224ebd8a599acecdbe",
-   "format": "pickle",
-   "family": "B-reduce-list-args",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/202/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/202/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/202/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\nTypeError: argument list must be a tuple\n",
-   "timed_out": false,
-   "seconds": 2.58
+   "seconds": 6.65
   },
   {
    "name": "544081b16880afb14991d1dd.pth",
@@ -3689,27 +3197,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.19
-  },
-  {
-   "name": "548ba07b0214b4ee2d1a7086.bin",
-   "sha256": "548ba07b0214b4ee2d1a7086e39919d4e045d2d6ddbfed1059e8456bcf761358",
-   "format": "pickle",
-   "family": "P-obj-argless-partial-second_stream-p1-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['2532f8']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.06
+   "seconds": 4.2
   },
   {
    "name": "54ceef431e6c3366fc3864f7.gz",
@@ -3729,7 +3217,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.09
   },
   {
    "name": "54ddb0667a7cb1c313718ea3.bin",
@@ -3746,7 +3234,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "54f4766a0f1cfbce79775161.bin",
@@ -3765,7 +3253,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.06
+   "seconds": 4.12
   },
   {
    "name": "554f8e151be29e775f6be581.pkl",
@@ -3799,7 +3287,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.62
   },
   {
    "name": "55618a89e983b2fe14b5ea0b.pkl",
@@ -3816,7 +3304,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "55aee9711ad1f29216698fff.zip",
@@ -3833,24 +3321,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
-  },
-  {
-   "name": "5631e6b7912c459175189c7e.pkl",
-   "sha256": "5631e6b7912c459175189c7e94915c48b76a3f7fbf9c07cb39b01fc08bf3f39c",
-   "format": "pickle",
-   "family": "B-persid-then-payload-p0",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/212/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/212/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/212/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n_pickle.UnpicklingError: A load persistent id instruction was encountered, but no persistent_load function was specified.\n",
-   "timed_out": false,
-   "seconds": 2.58
+   "seconds": 4.15
   },
   {
    "name": "5637b817973daa46bb9e1ebc.h5",
@@ -3870,7 +3341,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.58
+   "seconds": 6.79
   },
   {
    "name": "5640ead24781411bfd1e7149.npy",
@@ -3885,9 +3356,9 @@
    "events": [],
    "rc": 0,
    "loaded_ok": true,
-   "stderr_tail": "/work/run/214/loader.py:81: UserWarning: Reading `.npy` or `.npz` file required additional header parsing as it was created on Python 2. Save the file again to speed up loading and avoid this warning.\n  np.load(io.BytesIO(data), allow_pickle=True); return\n",
+   "stderr_tail": "/work/run/185/loader.py:81: UserWarning: Reading `.npy` or `.npz` file required additional header parsing as it was created on Python 2. Save the file again to speed up loading and avoid this warning.\n  np.load(io.BytesIO(data), allow_pickle=True); return\n",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.68
   },
   {
    "name": "56e7c3da12cfda724d4d2049.joblib",
@@ -3924,7 +3395,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.06
   },
   {
    "name": "5854f59839005caaad5e21fb",
@@ -3941,7 +3412,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.62
   },
   {
    "name": "59c5c03d1044c3a345a25abf.tgz",
@@ -3958,7 +3429,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.14
+   "seconds": 4.26
   },
   {
    "name": "59ebc9f5c2cc0d46991acc29.npz",
@@ -3977,7 +3448,7 @@
    "loaded_ok": false,
    "stderr_tail": ", line 1478, in getresponse\n    response.begin()\n  File \"/usr/local/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/http/client.py\", line 304, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/socket.py\", line 720, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nConnectionResetError: [Errno 104] Connection reset by peer\n",
    "timed_out": false,
-   "seconds": 2.72
+   "seconds": 2.73
   },
   {
    "name": "59f5ccf4b23ccc91cc7bcf27.h5",
@@ -3994,7 +3465,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.68
+   "seconds": 6.61
   },
   {
    "name": "59f6cf3d6c40b651e0508e64.pt",
@@ -4013,7 +3484,7 @@
    "loaded_ok": false,
    "stderr_tail": "ine 2119, in _load\n    result = unpickler.load()\n             ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/imaplib.py\", line 208, in __init__\n    self._connect()\n  File \"/usr/local/lib/python3.12/imaplib.py\", line 250, in _connect\n    self.welcome = self._get_response()\n                   ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/imaplib.py\", line 1084, in _get_response\n    resp = self._get_line()\n           ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/imaplib.py\", line 1194, in _get_line\n    raise self.abort('socket error: EOF')\nimaplib.IMAP4.abort: socket error: EOF\n",
    "timed_out": false,
-   "seconds": 5.46
+   "seconds": 5.61
   },
   {
    "name": "5ac7ec7298d0a54f3745adc4.bin",
@@ -4050,7 +3521,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.23
   },
   {
    "name": "5c8a3738a45b2bb1099f46b4.ckpt",
@@ -4067,7 +3538,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.26
   },
   {
    "name": "5cc7be0da433be296d6d7f1a.bin",
@@ -4084,7 +3555,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.21
   },
   {
    "name": "5dd564709c994384a43cf870.zip",
@@ -4104,7 +3575,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.07
   },
   {
    "name": "5df9ccf979eef9090e8493d5.npy",
@@ -4121,7 +3592,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.65
+   "seconds": 2.67
   },
   {
    "name": "5e1f41a68989e5f2336f8f27.pt",
@@ -4141,7 +3612,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.27
   },
   {
    "name": "5e37622c1ae4ced83e28cdc3.bz2",
@@ -4161,7 +3632,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.6
   },
   {
    "name": "5e42c7d804a1e38ae7db50cd.joblib",
@@ -4198,7 +3669,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.75
   },
   {
    "name": "5fb0f6cdc956f2efa7756631.pth",
@@ -4218,7 +3689,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.48
+   "seconds": 5.67
   },
   {
    "name": "600c9d79e38fda74401a0ebb",
@@ -4235,24 +3706,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
-  },
-  {
-   "name": "605715ac6dc659d9e2d126e5.pkl",
-   "sha256": "605715ac6dc659d9e2d126e5ce3c8ac973dfea85a7b5625b31479e1c7b42d548",
-   "format": "pickle",
-   "family": "P-genericbrowser-open-raw-p4-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.02
+   "seconds": 6.69
   },
   {
    "name": "606ec9e85bb219bfc21f236f.ckpt",
@@ -4269,7 +3723,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.35
   },
   {
    "name": "6080c4999a420a933ec56a04.joblib",
@@ -4306,7 +3760,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.31
   },
   {
    "name": "6131dde597ee6d9a149db2df",
@@ -4323,7 +3777,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.42
+   "seconds": 6.68
   },
   {
    "name": "617ba45f79be6062d884ca40.npy",
@@ -4343,7 +3797,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.67
   },
   {
    "name": "6260fafbf12be6e55adc07db.pickle",
@@ -4363,7 +3817,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "62e0db2cfed652500c1a261a.pickle",
@@ -4397,7 +3851,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "64c72e01e351b184d99eb04d.pt",
@@ -4414,7 +3868,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "6537abeb9b31dc3165ee9842.npz",
@@ -4431,27 +3885,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
-  },
-  {
-   "name": "658dab683c75242ed9b3ff0a.xz",
-   "sha256": "658dab683c75242ed9b3ff0ad3ec8005833441b5332ba18c7fa44bbe03c84203",
-   "format": "archive",
-   "family": "P-interactiveconsole-nested-p4",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['4aad9d']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.1
   },
   {
    "name": "65a51cd961f73b7e778a0b83.keras",
@@ -4471,7 +3905,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.6
+   "seconds": 6.76
   },
   {
    "name": "65ab52647de4fa0e67188a26.zip",
@@ -4488,7 +3922,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "65c0bae382937eeceb32df39.keras",
@@ -4505,7 +3939,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.58
+   "seconds": 6.67
   },
   {
    "name": "661888a18abdb374e723b596",
@@ -4525,7 +3959,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.66
   },
   {
    "name": "661ae67174adf90577629f07.pickle",
@@ -4545,97 +3979,6 @@
    "seconds": 2.58
   },
   {
-   "name": "665257353de403deef959ecd.joblib",
-   "sha256": "665257353de403deef959ecd3ccb0e171b4c7494b9aefc1a1bfc9a20e6af8183",
-   "format": "pickle",
-   "family": "P-cprofile-runcall-raw-p3",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['a88c97']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
-   "name": "667f0074807f1628c7141d4c.npz",
-   "sha256": "667f0074807f1628c7141d4c35283611be30cbb5ee921c31d4ece2e1d0d448d3",
-   "format": "npz",
-   "family": "P-dotted-dunder-call-npz-p4-dyn",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['1a94bc']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.06
-  },
-  {
-   "name": "6694b683332067350c1bf2b4.joblib",
-   "sha256": "6694b683332067350c1bf2b4b8e750c185024f30525a4a65bceb35ed4e45cb9c",
-   "format": "pickle",
-   "family": "P-cprofile-runcall-raw-p3-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
-   "name": "66b1946f6a7291a579f24f4c.xz",
-   "sha256": "66b1946f6a7291a579f24f4c0a8b049c466a2be4f480ce35a6995a5ef51761c2",
-   "format": "archive",
-   "family": "P-pydoc-locate-nested-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.22
-  },
-  {
-   "name": "66bf4d2391335c0da89d8a50.bz2",
-   "sha256": "66bf4d2391335c0da89d8a5088182a8fc8154db837d0b10c15b511c27571d357",
-   "format": "archive",
-   "family": "P-shutil-os-getattr-bz2-p4-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.0
-  },
-  {
    "name": "6748f2367b544c31ea2bb653.pkl",
    "sha256": "6748f2367b544c31ea2bb653b58b8cc43b37bf652a05ac0be869ebf90081c798",
    "format": "pickle",
@@ -4653,7 +3996,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.12
   },
   {
    "name": "68d0dc47316bb41a4509eb22.xz",
@@ -4670,7 +4013,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.12
   },
   {
    "name": "68d693d1544237be90aae9e1",
@@ -4687,24 +4030,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.52
-  },
-  {
-   "name": "696e5549faf7569579313b93.tgz",
-   "sha256": "696e5549faf7569579313b931db9fd2b16914e390d769618083565d5d637620f",
-   "format": "archive",
-   "family": "P-exec-via-vars-builtins-nested-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.59
+   "seconds": 6.68
   },
   {
    "name": "6a83315b24da0189ded3b250.pickle",
@@ -4741,7 +4067,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.31
   },
   {
    "name": "6bcfa516811daab111f9b326.pickle",
@@ -4758,7 +4084,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "6bfe1511aae70912a406de18.zip",
@@ -4792,7 +4118,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.67
   },
   {
    "name": "6c407866c7d82bc89c27728f",
@@ -4809,7 +4135,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.64
   },
   {
    "name": "6cf09548608fca8a83cd5759",
@@ -4826,7 +4152,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.7
   },
   {
    "name": "6d2f1728390afc4a66542e0a.bin",
@@ -4843,7 +4169,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.16
   },
   {
    "name": "6d8478acf2da498d89b3126b.npz",
@@ -4863,7 +4189,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.14
   },
   {
    "name": "6d9b42fb6e77393e63f4b774.xz",
@@ -4883,7 +4209,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.47
+   "seconds": 5.84
   },
   {
    "name": "6db4d70b5238d1d8d05770c3",
@@ -4900,7 +4226,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.43
+   "seconds": 6.69
   },
   {
    "name": "6dba4f776833433e8d6bdfd6.pkl",
@@ -4917,7 +4243,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.19
   },
   {
    "name": "6dc243b41fa3fc47d4b75ca3.ckpt",
@@ -4937,7 +4263,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.46
+   "seconds": 5.64
   },
   {
    "name": "6edb2a70a67262e1dbd942c8.pkl",
@@ -4971,7 +4297,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.1
   },
   {
    "name": "6f9d1178fb8cb3c719d5e8fb",
@@ -4988,7 +4314,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.46
+   "seconds": 6.74
   },
   {
    "name": "6ff96ae12233bb79cfd848f4.joblib",
@@ -5005,7 +4331,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.2
   },
   {
    "name": "70c8d50e74f50b36ae9ca830.tar",
@@ -5022,24 +4348,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
-  },
-  {
-   "name": "720ab2b66057257da8f1edfb.pth",
-   "sha256": "720ab2b66057257da8f1edfb3d3b40289390da3270f33cc2c4f99156749baacb",
-   "format": "torch-zip",
-   "family": "P-shelf-getitem-torch_zip-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.11
   },
   {
    "name": "728f15500428db4642976fee",
@@ -5056,7 +4365,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.52
+   "seconds": 6.73
   },
   {
    "name": "72fc40411ae39a8cbdda9887.pkl",
@@ -5076,7 +4385,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.12
   },
   {
    "name": "73754a9553af505f634ea9ea.joblib",
@@ -5093,7 +4402,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "75489991a2145dba603c8270.zip",
@@ -5113,7 +4422,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.11
   },
   {
    "name": "7614c94fc1474e8394367009.pth",
@@ -5130,7 +4439,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.31
   },
   {
    "name": "7779be4f46dba40721ea7e34",
@@ -5150,7 +4459,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.45
+   "seconds": 6.67
   },
   {
    "name": "77b1503f948f25b13c8c57b4",
@@ -5167,27 +4476,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.42
-  },
-  {
-   "name": "77eb030681093087965cb6c8.gz",
-   "sha256": "77eb030681093087965cb6c8410caf96b7b1793463e7f1e577e4745d5ecd99b9",
-   "format": "archive",
-   "family": "P-shutil-os-dotted-gzip-p4",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['511e42']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 6.66
   },
   {
    "name": "77ed527bcf4e9a975bd3c2a7.ckpt",
@@ -5207,27 +4496,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
-  },
-  {
-   "name": "786a99d45eb9dca749aeb081.gz",
-   "sha256": "786a99d45eb9dca749aeb08109390c36292943f1a505f9b770e67d2b8b65cc31",
-   "format": "archive",
-   "family": "P-newobj-attrgetter-gzip-p2",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['72d9ef']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.58
+   "seconds": 4.3
   },
   {
    "name": "788037cb6b3cecfc4f11ab09.ckpt",
@@ -5244,7 +4513,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.45
+   "seconds": 5.61
   },
   {
    "name": "789fad672a3e6f3012df3a82",
@@ -5261,7 +4530,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.42
+   "seconds": 6.63
   },
   {
    "name": "78b8bed6330c2f81a1e85efd",
@@ -5278,24 +4547,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.48
-  },
-  {
-   "name": "790b2f6432ca8f5148a13833.npz",
-   "sha256": "790b2f6432ca8f5148a13833d3296a477bd5ac4be051ab4b8533f7472790e047",
-   "format": "npz",
-   "family": "P-list-sort-key-npz-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.68
+   "seconds": 6.67
   },
   {
    "name": "79140c0473c0e5a59744c03c.zip",
@@ -5312,7 +4564,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "7a05fa050f41fd8dd7163146.xz",
@@ -5332,7 +4584,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "7aa6ee3f46ca818e92d4ff68",
@@ -5349,7 +4601,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.53
+   "seconds": 6.72
   },
   {
    "name": "7ba2ca70fac0689dc919aab7",
@@ -5366,7 +4618,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.46
+   "seconds": 6.66
   },
   {
    "name": "7c43ae6b65b77ebc4e946b4f.joblib",
@@ -5383,7 +4635,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "7c4cd6017ac487a108816ad7.zip",
@@ -5413,14 +4665,14 @@
    "label_source": "execution",
    "valid": true,
    "events": [
-    "entries:['5ab94ci_be6s1s']",
+    "entries:['5ab94coh0t93ht']",
     "dir-times"
    ],
    "rc": 0,
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.65
   },
   {
    "name": "7ce564ee5739f0c914658f39.tar",
@@ -5437,7 +4689,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.11
   },
   {
    "name": "7d5f4f0037b7f888dfd85f07.zip",
@@ -5457,7 +4709,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.58
+   "seconds": 2.59
   },
   {
    "name": "7debe52a5bac791c3d34ea29.npz",
@@ -5474,7 +4726,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.11
   },
   {
    "name": "7e27ff243f9d4eafcd0a93b1",
@@ -5491,7 +4743,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.68
   },
   {
    "name": "7e80a99eb0240ce7da34fcd5.pkl",
@@ -5545,7 +4797,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.45
+   "seconds": 6.65
   },
   {
    "name": "7ecf9d59a449ac82d373c19b.joblib",
@@ -5562,7 +4814,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.97
+   "seconds": 4.08
   },
   {
    "name": "7f3637f1eeb34bc3281870bb.bin",
@@ -5639,26 +4891,6 @@
    "seconds": 2.59
   },
   {
-   "name": "8154c6d866ea2658677a130a.pkl",
-   "sha256": "8154c6d866ea2658677a130a6baa1e357664a71044e87d0a76f4845ea4a19b77",
-   "format": "pickle",
-   "family": "P-genericbrowser-open-raw-p4-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['cbff74']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.02
-  },
-  {
    "name": "81696c3beaf54d56e152a2fa.ckpt",
    "sha256": "81696c3beaf54d56e152a2fa35927b4fd3a38f7a35565cd1dc01f839e8754024",
    "format": "torch-zip",
@@ -5673,9 +4905,9 @@
    ],
    "rc": 1,
    "loaded_ok": false,
-   "stderr_tail": "ocal/lib/python3.12/imaplib.py\", line 1319, in _create_socket\n    return self.ssl_context.wrap_socket(sock,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1054, in _create\n    self.do_handshake()\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1332, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)\n",
+   "stderr_tail": "   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/imaplib.py\", line 1319, in _create_socket\n    return self.ssl_context.wrap_socket(sock,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1054, in _create\n    self.do_handshake()\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1332, in do_handshake\n    self._sslobj.do_handshake()\nConnectionResetError: [Errno 104] Connection reset by peer\n",
    "timed_out": false,
-   "seconds": 5.46
+   "seconds": 5.6
   },
   {
    "name": "81b815f5aa29270da5460e2d.pt",
@@ -5695,7 +4927,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.3
   },
   {
    "name": "81c99fb9bf0440b462b30943.npy",
@@ -5712,7 +4944,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.65
   },
   {
    "name": "822c2111142145bfce2b258e.joblib",
@@ -5729,7 +4961,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.13
   },
   {
    "name": "82b28ab0d6c6f2d7fbaf0813.h5",
@@ -5746,7 +4978,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.58
+   "seconds": 6.7
   },
   {
    "name": "831ab7ccc3ee54af374aa66f",
@@ -5763,24 +4995,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.56
-  },
-  {
-   "name": "843032f7d9c1515d066fd114.bz2",
-   "sha256": "843032f7d9c1515d066fd11483d4005ebf0524612b7e095bec912ed0332ef5e4",
-   "format": "archive",
-   "family": "P-mock-side-effect-bz2-p1-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.76
+   "seconds": 6.76
   },
   {
    "name": "8447865fb756690f0fc9e066.h5",
@@ -5797,24 +5012,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.62
-  },
-  {
-   "name": "849df2a5a87f1329b9f8bc12.pickle",
-   "sha256": "849df2a5a87f1329b9f8bc12717bd9032f4dc17c66bcdca8f479a1cc87623b91",
-   "format": "pickle",
-   "family": "B-asyncio-coroutine",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "/work/run/321/loader.py:37: RuntimeWarning: coroutine 'create_subprocess_exec' was never awaited\n  pickle.load(f); n += 1\nRuntimeWarning: Enable tracemalloc to get the object allocation traceback\n",
-   "timed_out": false,
-   "seconds": 2.7
+   "seconds": 6.91
   },
   {
    "name": "84e326c2232dffa60aaa133a.npy",
@@ -5835,40 +5033,6 @@
    "stderr_tail": "",
    "timed_out": false,
    "seconds": 2.67
-  },
-  {
-   "name": "853f5fbdfd03650884db6f7a.pickle",
-   "sha256": "853f5fbdfd03650884db6f7a0a9c34beaafb3688eea7770171823b557db68d1a",
-   "format": "pickle",
-   "family": "B-sqlite-memory",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
-   "name": "85dbb590f00a5368d609df4c.ckpt",
-   "sha256": "85dbb590f00a5368d609df4cd8b0e85d07f5d22aee4a5855e9f94cafc65adea6",
-   "format": "torch-zip",
-   "family": "P-newobj-methodcaller-torch_zip-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.47
   },
   {
    "name": "86c73c68e44e3a3f5c81faa7.bin",
@@ -5902,7 +5066,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.62
   },
   {
    "name": "87428339f8010a32b1e536a1.ckpt",
@@ -5919,7 +5083,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.26
   },
   {
    "name": "877591bab26976c2d012eac7.pickle",
@@ -5942,26 +5106,6 @@
    "seconds": 2.59
   },
   {
-   "name": "87c3b17865cc33000b010854.xz",
-   "sha256": "87c3b17865cc33000b010854a82e541ba4b5c28b9d57bc2c8c022a923cdd0195",
-   "format": "archive",
-   "family": "P-reconstructor-popen-xz-p4",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['2ac538']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 3.99
-  },
-  {
    "name": "8820c7450ff05388ca098878.npy",
    "sha256": "8820c7450ff05388ca098878d0ea7cc607571037c7f2f1b42cca137bd6e57ea2",
    "format": "npy",
@@ -5976,7 +5120,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "88714e0ba320d088e55484d0.npy",
@@ -6013,7 +5157,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "89ae6d9ce4221236a670d101.bz2",
@@ -6030,7 +5174,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.08
   },
   {
    "name": "8a915a7d7414645faa35e51d.npy",
@@ -6066,7 +5210,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.65
   },
   {
    "name": "8b197eae442c7efa7e002d8a.zip",
@@ -6083,7 +5227,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.14
   },
   {
    "name": "8ba210679016023f83500cf5.npy",
@@ -6100,7 +5244,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.67
   },
   {
    "name": "8bdaf7ea6c68145c4520501c.pt",
@@ -6120,7 +5264,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.31
   },
   {
    "name": "8cab3cf7fc47093bde3e4c4d.npy",
@@ -6140,26 +5284,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
-  },
-  {
-   "name": "8d4ed3e68677ffdb53e880f5.gz",
-   "sha256": "8d4ed3e68677ffdb53e880f5f7ae96bb0ca74585a3d9a4dc34ab6bf58734a22a",
-   "format": "archive",
-   "family": "P-sysloghandler-gzip-p2",
-   "capability": "network",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "connections:+1"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.6
+   "seconds": 2.68
   },
   {
    "name": "8da259e61bfcf88e32cae3aa.joblib",
@@ -6174,7 +5299,7 @@
    "events": [],
    "rc": 0,
    "loaded_ok": true,
-   "stderr_tail": "/work/run/341/loader.py:37: DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13\n  pickle.load(f); n += 1\n",
+   "stderr_tail": "/work/run/293/loader.py:37: DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13\n  pickle.load(f); n += 1\n",
    "timed_out": false,
    "seconds": 2.59
   },
@@ -6196,7 +5321,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.11
   },
   {
    "name": "8f4e060bd4fd33a99f24e5a3",
@@ -6213,7 +5338,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.43
+   "seconds": 6.69
   },
   {
    "name": "8f59905fc2e686d60f996a79.xz",
@@ -6250,7 +5375,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.51
+   "seconds": 6.7
   },
   {
    "name": "90f2e351048c7f7a220b9672.pth",
@@ -6267,7 +5392,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.25
   },
   {
    "name": "912b4774726b5a4b8d1cb28f.npy",
@@ -6284,7 +5409,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.65
+   "seconds": 2.67
   },
   {
    "name": "91c44162278e2632c4385004.pt",
@@ -6304,7 +5429,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.44
+   "seconds": 5.63
   },
   {
    "name": "9269492bfefc6f11517e8603.pickle",
@@ -6341,7 +5466,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "92c38533f1b46eb446446adc.bin",
@@ -6358,7 +5483,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.15
   },
   {
    "name": "939ba182d41f48938156920b.pkl",
@@ -6398,7 +5523,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.28
   },
   {
    "name": "9406504e31cbc08bcf83478a.xz",
@@ -6418,7 +5543,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.11
   },
   {
    "name": "947e2d85371d32bd4f98a448.joblib",
@@ -6455,7 +5580,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.68
   },
   {
    "name": "949b85c63583f207ec07b12e.keras",
@@ -6472,7 +5597,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.64
   },
   {
    "name": "94dffaf598d0051ef9735a30.pkl",
@@ -6512,7 +5637,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "963275c072c56e40ee3d1779.zip",
@@ -6532,7 +5657,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.13
   },
   {
    "name": "9692afc25be9bf06a7d0f569.pth",
@@ -6552,7 +5677,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.2
+   "seconds": 4.31
   },
   {
    "name": "97083a240c19dee18949f901.tar",
@@ -6569,7 +5694,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "970cca3e6b7519c2b23b6fdb",
@@ -6586,7 +5711,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.51
+   "seconds": 6.59
   },
   {
    "name": "976f37ccc6405a01f8b36332.bz2",
@@ -6608,43 +5733,6 @@
    "seconds": 2.64
   },
   {
-   "name": "97d8909e7468c456c0034bee.npy",
-   "sha256": "97d8909e7468c456c0034bee312116b25a37719e45e352930dc3e8a45e4b02d8",
-   "format": "npy",
-   "family": "X-npy-py2-header-object-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "/work/run/365/loader.py:81: UserWarning: Reading `.npy` or `.npz` file required additional header parsing as it was created on Python 2. Save the file again to speed up loading and avoid this warning.\n  np.load(io.BytesIO(data), allow_pickle=True); return\n",
-   "timed_out": false,
-   "seconds": 2.66
-  },
-  {
-   "name": "98e9737957e05df10a907169.gz",
-   "sha256": "98e9737957e05df10a907169821fba30698c0d4f230d7180555b7665afdc541e",
-   "format": "archive",
-   "family": "P-doctest-run-gzip-p5-dyn",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['e1c1d9']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.68
-  },
-  {
    "name": "98ee465a6f92c3e3c4873ebb.npy",
    "sha256": "98ee465a6f92c3e3c4873ebba7de790f08c537df89efce41f29fa709e116edcc",
    "format": "npy",
@@ -6662,7 +5750,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.68
   },
   {
    "name": "9a97a347a27794983943921d.tar",
@@ -6702,23 +5790,6 @@
    "seconds": 2.59
   },
   {
-   "name": "9c0682fa2deb96ab418305cb.xz",
-   "sha256": "9c0682fa2deb96ab418305cb5acfba9f1faa71ba056124e0ef797d8c1c5e3bf1",
-   "format": "archive",
-   "family": "P-reconstructor-popen-xz-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 3.99
-  },
-  {
    "name": "9c211da14b54441188951a3c.npy",
    "sha256": "9c211da14b54441188951a3c76752385a67a7599cd3612fa8a1821bf49301146",
    "format": "npy",
@@ -6733,7 +5804,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.67
   },
   {
    "name": "9c565069dc8b771461cd8f15.npz",
@@ -6753,7 +5824,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.11
   },
   {
    "name": "9cae647dfa944a54053d6616.pth",
@@ -6770,7 +5841,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.29
   },
   {
    "name": "9ccb3629f2336de2f26e63b4.gz",
@@ -6787,7 +5858,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.13
   },
   {
    "name": "9d1d58a8e8489df5ba9fa72d.zip",
@@ -6804,7 +5875,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.08
   },
   {
    "name": "9d435e9da271a6f765002021.tar",
@@ -6841,7 +5912,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.28
   },
   {
    "name": "9e45181dd02f6ec92bfcba31.zip",
@@ -6861,7 +5932,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.12
   },
   {
    "name": "9f0c4d2423a36d087bd3d780.zip",
@@ -6895,7 +5966,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.27
   },
   {
    "name": "9fd8721bdbb75464d2c23f83.pth",
@@ -6912,7 +5983,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.29
   },
   {
    "name": "a06c9a17e517c84081276e2a.npy",
@@ -6929,7 +6000,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.66
+   "seconds": 2.67
   },
   {
    "name": "a083bff78f489ea854b23280.pickle",
@@ -6966,7 +6037,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.12
   },
   {
    "name": "a0db04484ae873b6b8549ab0.npy",
@@ -6983,7 +6054,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "a13d0f5ae2e21b44aa25c4e4",
@@ -7000,24 +6071,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
-  },
-  {
-   "name": "a1abc092ba2b5fff423cb5b7.pickle",
-   "sha256": "a1abc092ba2b5fff423cb5b735c5ce1648e488c5e0370d1a62afd3e44a0a870f",
-   "format": "pickle",
-   "family": "B-os-walk-unconsumed",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 6.71
   },
   {
    "name": "a1eb3dd1bb6ed77c974c694c.pt",
@@ -7037,24 +6091,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.2
-  },
-  {
-   "name": "a2b45044bd1eea5c3f2c78bb.gz",
-   "sha256": "a2b45044bd1eea5c3f2c78bbf7506d30a9bdf018a124db2275304b3bf84c5985",
-   "format": "archive",
-   "family": "P-shutil-os-dotted-gzip-p4-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 4.24
   },
   {
    "name": "a34ebd7e95bd562f6ae855c8",
@@ -7071,7 +6108,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.59
   },
   {
    "name": "a55e350bbb08b923fae11c39.pkl",
@@ -7088,7 +6125,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.14
   },
   {
    "name": "a59e03b06548fe8451f9fbfb.bin",
@@ -7108,7 +6145,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.07
+   "seconds": 4.14
   },
   {
    "name": "a63e4174b82aa4b446454b19.bin",
@@ -7142,24 +6179,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
-  },
-  {
-   "name": "a814c9524d49b920ae6bd095.pickle",
-   "sha256": "a814c9524d49b920ae6bd0953a20dbd5735c6a6cc29af72d8c36694574ecc164",
-   "format": "pickle",
-   "family": "B-reduce-list-args",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/395/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/395/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/395/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\nTypeError: argument list must be a tuple\n",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 6.62
   },
   {
    "name": "a89e4a46aca19f52396eb10d.gz",
@@ -7176,7 +6196,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "a9b55d4173c2bebbc993cc3b.pkl",
@@ -7196,7 +6216,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "aa706fb2b826144c1523b6a4.zip",
@@ -7247,27 +6267,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.51
-  },
-  {
-   "name": "ab3ecc6a9c8eb0e7379882df.tar",
-   "sha256": "ab3ecc6a9c8eb0e7379882df510df6365cf8c19c4e8674059c50e6a14af2c8dd",
-   "format": "archive",
-   "family": "X-tar-member-binint-prefix",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['92f6e4']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 6.65
   },
   {
    "name": "ab83e9b14ffc132ccd9c24ba",
@@ -7284,7 +6284,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.64
   },
   {
    "name": "abe7038cd8dfdfd686b15de9.h5",
@@ -7301,7 +6301,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.59
+   "seconds": 6.95
   },
   {
    "name": "ac05d859416387192caf2a47.joblib",
@@ -7318,7 +6318,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.98
+   "seconds": 4.17
   },
   {
    "name": "ac22f931fcfe1b70d20735ca.keras",
@@ -7335,7 +6335,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.51
+   "seconds": 6.7
   },
   {
    "name": "ac27d616cfd43ef7827023bc.ckpt",
@@ -7352,7 +6352,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.48
+   "seconds": 5.64
   },
   {
    "name": "acfa7cf53454f8f0018945cb.bz2",
@@ -7371,7 +6371,7 @@
    "loaded_ok": false,
    "stderr_tail": ", line 1478, in getresponse\n    response.begin()\n  File \"/usr/local/lib/python3.12/http/client.py\", line 343, in begin\n    version, status, reason = self._read_status()\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/http/client.py\", line 304, in _read_status\n    line = str(self.fp.readline(_MAXLINE + 1), \"iso-8859-1\")\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/socket.py\", line 720, in readinto\n    return self._sock.recv_into(b)\n           ^^^^^^^^^^^^^^^^^^^^^^^\nConnectionResetError: [Errno 104] Connection reset by peer\n",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.15
   },
   {
    "name": "ad02e58a1fab030266cfcf8a.bin",
@@ -7388,7 +6388,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.33
   },
   {
    "name": "ad571cf40908de2d3fde4eb9.npy",
@@ -7405,7 +6405,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.65
+   "seconds": 2.66
   },
   {
    "name": "ad6f7a652dad2ad49154d656.npy",
@@ -7422,7 +6422,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "ad92706530db7851c7856740.pickle",
@@ -7456,7 +6456,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.19
+   "seconds": 4.34
   },
   {
    "name": "ae8886d87ad7b6a370c3ebbc.pickle",
@@ -7473,7 +6473,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "af856a49e6a6961f5fe57945.zip",
@@ -7490,7 +6490,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "af9b6c18226ea0d67e60256e.npz",
@@ -7507,7 +6507,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.11
   },
   {
    "name": "afb76b59aaceee9299fba1d1.npy",
@@ -7527,7 +6527,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "afd1b9d56bd82007ab400e8b.bin",
@@ -7580,7 +6580,7 @@
    "loaded_ok": false,
    "stderr_tail": "te-packages/torch/serialization.py\", line 2119, in _load\n    result = unpickler.load()\n             ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 162, in connect\n    self.welcome = self.getresp()\n                   ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 244, in getresp\n    resp = self.getmultiline()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 230, in getmultiline\n    line = self.getline()\n           ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 218, in getline\n    raise EOFError\nEOFError\n",
    "timed_out": false,
-   "seconds": 4.19
+   "seconds": 4.29
   },
   {
    "name": "b001631d3218f649c6acbcef.joblib",
@@ -7600,7 +6600,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.11
   },
   {
    "name": "b00ad93f7331a45ba2cf8cd0.pkl",
@@ -7620,7 +6620,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.16
   },
   {
    "name": "b0565eb0be95fe4a1cee66e8.keras",
@@ -7637,7 +6637,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.65
   },
   {
    "name": "b0a94af4480dfef68dfbbda0.gz",
@@ -7654,7 +6654,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.98
+   "seconds": 4.12
   },
   {
    "name": "b13bd7b03656d418795960f7.h5",
@@ -7674,7 +6674,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.68
   },
   {
    "name": "b20ffebb5f39941e576b6e3a.zip",
@@ -7693,7 +6693,7 @@
    "loaded_ok": false,
    "stderr_tail": ", in get_server_certificate\n    with context.wrap_socket(sock, server_hostname=host) as sslsock:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1054, in _create\n    self.do_handshake()\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1332, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)\n",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.11
   },
   {
    "name": "b28159889499ce1eec93344e.npz",
@@ -7713,7 +6713,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.18
   },
   {
    "name": "b2a3a1422b77cae25d9f5d66.tar",
@@ -7750,7 +6750,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.1
   },
   {
    "name": "b2da2b9e4bbd6bb00c2e2b31.pkl",
@@ -7767,7 +6767,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.14
   },
   {
    "name": "b2f4e6452c2aafe21cc1fa4d.bin",
@@ -7784,7 +6784,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.48
+   "seconds": 6.23
   },
   {
    "name": "b4179d52fe8cf10f01cda17f.pkl",
@@ -7821,7 +6821,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.66
   },
   {
    "name": "b49c3e69b0d2547b413015db.npy",
@@ -7906,7 +6906,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.11
   },
   {
    "name": "b5975c4817c8cc5a99e20211.pkl",
@@ -7943,7 +6943,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.2
+   "seconds": 4.31
   },
   {
    "name": "b69f00b7dd6a23001c0af0b6.npy",
@@ -7960,7 +6960,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.65
+   "seconds": 2.67
   },
   {
    "name": "b6fcd5805eacde3cacdd599c.h5",
@@ -7980,7 +6980,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.6
+   "seconds": 6.83
   },
   {
    "name": "b732d1f1d8672b4574de329e.h5",
@@ -7997,7 +6997,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.64
   },
   {
    "name": "b739106893906e7fe316ba49.bin",
@@ -8031,7 +7031,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.73
+   "seconds": 2.75
   },
   {
    "name": "b746fc696f30f091401308ed.bz2",
@@ -8068,7 +7068,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.17
   },
   {
    "name": "b7829c108b2ea65b5e93c157.pkl",
@@ -8085,7 +7085,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.12
   },
   {
    "name": "b80f0ed0a6cacadc729df3c0.pth",
@@ -8102,7 +7102,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.32
   },
   {
    "name": "b888db462f02af7ceb2f4a90.bz2",
@@ -8119,7 +7119,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "b9dcbaf5d3b5895920f12b72.gz",
@@ -8156,7 +7156,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.07
   },
   {
    "name": "ba7a6a61140aa24caf4cc738.pickle",
@@ -8190,7 +7190,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.65
   },
   {
    "name": "badf5272662f3b1a29a22024.xz",
@@ -8207,24 +7207,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
-  },
-  {
-   "name": "bba8b1505a60cf9175cc90a1.tgz",
-   "sha256": "bba8b1505a60cf9175cc90a16777be7588e863d48a0ec9f9be7af9484eed54f9",
-   "format": "archive",
-   "family": "P-logging-os-dotted-nested-p4-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.49
+   "seconds": 4.28
   },
   {
    "name": "bbefe45240caeb81d26bba57.npz",
@@ -8261,26 +7244,6 @@
    "seconds": 2.67
   },
   {
-   "name": "bc8f35309426e5268a627201.npz",
-   "sha256": "bc8f35309426e5268a6272012e4f321d9cdf901fa62b4984b5c9f591b5e94a67",
-   "format": "npz",
-   "family": "P-list-sort-key-npz-p4",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['daf084']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.68
-  },
-  {
    "name": "bcb8115dbd3c7a1abb252893.pickle",
    "sha256": "bcb8115dbd3c7a1abb252893c45b667a50072baab73d4c1aba6ab9dddd071990",
    "format": "pickle",
@@ -8315,7 +7278,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.6
+   "seconds": 2.59
   },
   {
    "name": "bd7ee6016a4ee3c914636a07",
@@ -8332,7 +7295,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.52
+   "seconds": 6.71
   },
   {
    "name": "bdf46a92e31a413c7d3eb197.keras",
@@ -8352,7 +7315,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.64
   },
   {
    "name": "bdffe707d69458101e993d62.npy",
@@ -8389,24 +7352,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
-  },
-  {
-   "name": "be7994af6899c757f095617e.pkl",
-   "sha256": "be7994af6899c757f095617e632167e3a507b98edfc360b95592acb99114cb95",
-   "format": "pickle",
-   "family": "B-dotted-global-proto2",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/465/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/465/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/465/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\nAttributeError: Can't get attribute 'Bdb.run' on <module 'bdb' from '/usr/local/lib/python3.12/bdb.py'>\n",
-   "timed_out": false,
-   "seconds": 2.6
+   "seconds": 4.14
   },
   {
    "name": "bed72c05dc8effe736b3fce4",
@@ -8423,7 +7369,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.58
+   "seconds": 6.69
   },
   {
    "name": "bf38810269776a71be415cbb.keras",
@@ -8443,7 +7389,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.54
+   "seconds": 6.62
   },
   {
    "name": "bf85814097e8f4c9984e75c4.keras",
@@ -8460,7 +7406,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.67
   },
   {
    "name": "bf8cc4e2aae679e1df3b46e6.pkl",
@@ -8480,80 +7426,6 @@
    "seconds": 2.59
   },
   {
-   "name": "c0775385cae1e2956407195e.zip",
-   "sha256": "c0775385cae1e2956407195e4c92b1a3633a4888e8f9c3b32ca23c54414c6264",
-   "format": "archive",
-   "family": "P-len-self-builtins-polyglot_zip-p4",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['2d03c2']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.01
-  },
-  {
-   "name": "c11c0838ae3a972920e1e81a.ckpt",
-   "sha256": "c11c0838ae3a972920e1e81a3d339085e2e61594a47f1eb3364b567e37ed901c",
-   "format": "torch-zip",
-   "family": "P-newobj-methodcaller-torch_zip-p4",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['6f91cf']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.55
-  },
-  {
-   "name": "c198028da9da0b9bc3dc7aeb.gz",
-   "sha256": "c198028da9da0b9bc3dc7aeb657e6f159b423c7224dbdbfd630d9e1253111ebe",
-   "format": "archive",
-   "family": "P-sysloghandler-gzip-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.6
-  },
-  {
-   "name": "c1e0b0bce82e95a4d70d502a.pkl",
-   "sha256": "c1e0b0bce82e95a4d70d502ae4cbd19a5ffc6e18a23b0464cda7b0494b40c82f",
-   "format": "pickle",
-   "family": "B-persid-then-payload",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "Traceback (most recent call last):\n  File \"/work/run/473/loader.py\", line 122, in <module>\n    load_bytes(data, path)\n  File \"/work/run/473/loader.py\", line 94, in load_bytes\n    load_pickles(io.BytesIO(data))\n  File \"/work/run/473/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n_pickle.UnpicklingError: A load persistent id instruction was encountered, but no persistent_load function was specified.\n",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
    "name": "c28e724efbb9bab0463d773c.keras",
    "sha256": "c28e724efbb9bab0463d773c7dd183a8e780dcefa850a40b411258ccc1d553de",
    "format": "keras-v3",
@@ -8568,7 +7440,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.6
+   "seconds": 6.8
   },
   {
    "name": "c2dcdd0b4d0b6f98bf87e592.zip",
@@ -8602,7 +7474,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.19
+   "seconds": 4.28
   },
   {
    "name": "c35422cc7dbcc8039e081c8f.gz",
@@ -8619,27 +7491,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
-  },
-  {
-   "name": "c381a89362463906a2ec9a75.tgz",
-   "sha256": "c381a89362463906a2ec9a75053554c81442de0b83e18ceba5b575299513c005",
-   "format": "archive",
-   "family": "P-logging-os-dotted-nested-p4-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['ac542a']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.49
+   "seconds": 4.1
   },
   {
    "name": "c4004d9bfcea310635dfeb1c.joblib",
@@ -8656,7 +7508,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.58
   },
   {
    "name": "c40b8608e00966505d87bbfb.xz",
@@ -8676,7 +7528,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.13
   },
   {
    "name": "c458458cd8601290ca0de03b",
@@ -8693,7 +7545,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.63
   },
   {
    "name": "c47be96d0426d8bc43782360.bin",
@@ -8710,7 +7562,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.44
+   "seconds": 5.6
   },
   {
    "name": "c54eb5556bf0cb4af63c04c4",
@@ -8727,7 +7579,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.52
+   "seconds": 6.68
   },
   {
    "name": "c5f23116a68e17f2b022268c.npy",
@@ -8747,30 +7599,13 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.68
   },
   {
    "name": "c5fbab581981ee9f4d701574.tar",
    "sha256": "c5fbab581981ee9f4d7015742f57e462db7240a6cf2c44d789629614e9174593",
    "format": "archive",
    "family": "P-loads-join-tar-p3-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
-   "name": "c6b27bf9c26139d798f285e7.zip",
-   "sha256": "c6b27bf9c26139d798f285e7cae39ea41cdd947ac6b6b9c223988424fcdfb2b8",
-   "format": "archive",
-   "family": "X-zip-member-binfloat-prefix-twin",
    "capability": null,
    "expected": "clean",
    "observed": "clean",
@@ -8798,7 +7633,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.55
+   "seconds": 4.3
   },
   {
    "name": "c6e2b0622a1350b5d951af21.pt",
@@ -8815,7 +7650,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.12
+   "seconds": 4.25
   },
   {
    "name": "c743bf7a721590c541de342f.bz2",
@@ -8832,7 +7667,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.08
   },
   {
    "name": "c7c58dd1e8d4b770b40ed370.tar",
@@ -8869,7 +7704,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.07
+   "seconds": 4.18
   },
   {
    "name": "c8456625b26a33352e365a2a.zip",
@@ -8889,24 +7724,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.06
-  },
-  {
-   "name": "c8fc2583671793b859acf764.gz",
-   "sha256": "c8fc2583671793b859acf7648b72cfe8e869fcf4cd7ca375d55f254af586405f",
-   "format": "archive",
-   "family": "P-doctest-run-gzip-p5-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.68
+   "seconds": 4.11
   },
   {
    "name": "c9c5add20f341800e8c723de.keras",
@@ -8926,7 +7744,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.64
+   "seconds": 6.76
   },
   {
    "name": "ca10d4eeb9bc5de8a87de040.pkl",
@@ -8946,7 +7764,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.6
   },
   {
    "name": "cac52cf4eb80c061989d6bbf.pt",
@@ -8963,7 +7781,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.48
+   "seconds": 5.76
   },
   {
    "name": "cb53dd89a2dfe237719490bd.keras",
@@ -8980,7 +7798,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.79
   },
   {
    "name": "cbca75c16b7764144a8ef2b0",
@@ -8997,7 +7815,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.67
   },
   {
    "name": "cc15e72a22d7858951e43acb.zip",
@@ -9014,7 +7832,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "cc79eb919f2d20fe30a8902b.gz",
@@ -9034,7 +7852,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.13
   },
   {
    "name": "ccac305b3ac00d6397074208.bin",
@@ -9051,7 +7869,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.47
+   "seconds": 5.59
   },
   {
    "name": "ccc43f0b7ed1ec8948666331.h5",
@@ -9068,7 +7886,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.45
+   "seconds": 6.65
   },
   {
    "name": "ccdabaef5affdd0ab2dab105.zip",
@@ -9085,7 +7903,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.07
   },
   {
    "name": "ccf80bec87d1d805ce561ca8.tar",
@@ -9104,7 +7922,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.08
   },
   {
    "name": "cd3b2b941b284c45f43091a4.npz",
@@ -9121,7 +7939,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.12
   },
   {
    "name": "cd7da803a7f252f33adf8405.zip",
@@ -9158,7 +7976,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.65
   },
   {
    "name": "ce1700c6ffae6eb42e96bd2f.zip",
@@ -9175,7 +7993,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.11
   },
   {
    "name": "ce27b0f51b4af6e7900404f6.h5",
@@ -9195,7 +8013,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.7
   },
   {
    "name": "cf0ddc5564e0d2cac9f1001b.joblib",
@@ -9248,7 +8066,7 @@
    "loaded_ok": false,
    "stderr_tail": "(host, port)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 1065, in connect\n    return super().connect(host, port, source_address=source_address)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 343, in connect\n    (code, msg) = self.getreply()\n                  ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/smtplib.py\", line 405, in getreply\n    raise SMTPServerDisconnected(\"Connection unexpectedly closed\")\nsmtplib.SMTPServerDisconnected: Connection unexpectedly closed\n",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.18
   },
   {
    "name": "cff3d9574b9cdd4a8f88bd0f.pkl",
@@ -9265,7 +8083,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.17
   },
   {
    "name": "cffa091be98587be4e2a151f.pkl",
@@ -9280,7 +8098,7 @@
    "events": [],
    "rc": 0,
    "loaded_ok": true,
-   "stderr_tail": "/work/run/514/loader.py:37: DeprecationWarning: 'nntplib' is deprecated and slated for removal in Python 3.13\n  pickle.load(f); n += 1\n",
+   "stderr_tail": "/work/run/449/loader.py:37: DeprecationWarning: 'nntplib' is deprecated and slated for removal in Python 3.13\n  pickle.load(f); n += 1\n",
    "timed_out": false,
    "seconds": 2.61
   },
@@ -9299,7 +8117,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.32
   },
   {
    "name": "d013a4cbdadd1b02cbfa7317.h5",
@@ -9316,7 +8134,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.63
+   "seconds": 6.89
   },
   {
    "name": "d08e37afb3faf0febd119adc.bz2",
@@ -9336,7 +8154,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.11
   },
   {
    "name": "d1770b6a56528fc3763ae378",
@@ -9353,7 +8171,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.81
   },
   {
    "name": "d36333daecb06fe38b8262d9.h5",
@@ -9370,7 +8188,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.7
   },
   {
    "name": "d363b43c7fb50ddfcc7c9449.xz",
@@ -9387,7 +8205,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.15
   },
   {
    "name": "d3fb5083aedd9081dfeeba4f.npy",
@@ -9408,23 +8226,6 @@
    "stderr_tail": "",
    "timed_out": false,
    "seconds": 2.66
-  },
-  {
-   "name": "d43951f935357a6242582707.tar",
-   "sha256": "d43951f935357a6242582707efc6b535a1b8d8c692e7f2ce74a45400eb004946",
-   "format": "archive",
-   "family": "P-attrgetter-npz-tar-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.04
   },
   {
    "name": "d449cbc7401f4c17b9a7f2e5.bin",
@@ -9464,7 +8265,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.16
   },
   {
    "name": "d4a7915a9224eaf487351d69.xz",
@@ -9504,7 +8305,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.2
+   "seconds": 4.35
   },
   {
    "name": "d6096e4be89eb1227b381146.joblib",
@@ -9541,7 +8342,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.45
+   "seconds": 6.71
   },
   {
    "name": "d6482cae9ee009d3fda5bcaa.keras",
@@ -9558,7 +8359,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.6
+   "seconds": 7.07
   },
   {
    "name": "d74937a5a1f0833bc6915e44.joblib",
@@ -9578,7 +8379,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.26
   },
   {
    "name": "d78416d11f099d363e4a4a9d.xz",
@@ -9595,7 +8396,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.38
   },
   {
    "name": "d78f6ab6254f6a92abbad4eb.tar",
@@ -9632,24 +8433,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.68
-  },
-  {
-   "name": "d88a386edb35522faa27108f.zip",
-   "sha256": "d88a386edb35522faa27108f50273894e48b33c0e27e2c197df227a837cc0e7a",
-   "format": "archive",
-   "family": "P-ssl-create-connection-polyglot_zip-p4-memo-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.6
+   "seconds": 2.69
   },
   {
    "name": "d8f03f9ce9b9bbb9969b17c0.pt",
@@ -9666,7 +8450,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.32
   },
   {
    "name": "d923b53f5fe657afe3894f23.keras",
@@ -9683,7 +8467,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['signal']\nReceived: inputs=Tensor(shape=(1, 8, 2))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.83
   },
   {
    "name": "d975b5c7a996df60c76e74ad.bin",
@@ -9700,7 +8484,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.06
+   "seconds": 4.26
   },
   {
    "name": "d9cb8579691f87b3ca72e5b0.bz2",
@@ -9740,24 +8524,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
-  },
-  {
-   "name": "da3f7e70768127977555df24.bin",
-   "sha256": "da3f7e70768127977555df240f29930f512c0464bf7e240ee2d1d1def8e305a1",
-   "format": "pickle",
-   "family": "B-ftp-login-nohost",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "raise-before-capability",
-   "valid": true,
-   "events": [],
-   "rc": 1,
-   "loaded_ok": false,
-   "stderr_tail": "r.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 412, in login\n    resp = self.sendcmd('USER ' + user)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 280, in sendcmd\n    self.putcmd(cmd)\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 207, in putcmd\n    self.putline(line)\n  File \"/usr/local/lib/python3.12/ftplib.py\", line 202, in putline\n    self.sock.sendall(line.encode(self.encoding))\n    ^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'sendall'\n",
-   "timed_out": false,
-   "seconds": 2.61
+   "seconds": 4.2
   },
   {
    "name": "daf1cf6404ddf1ff9bda1e9b.pickle",
@@ -9774,7 +8541,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.24
   },
   {
    "name": "db411bb3df90a17a36b4ab3f",
@@ -9791,27 +8558,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.45
-  },
-  {
-   "name": "db63fc3e0fa4338810040032.bz2",
-   "sha256": "db63fc3e0fa433881004003256bbb6d5d1148519295a14298889f50cfce4bb3e",
-   "format": "archive",
-   "family": "P-mock-side-effect-bz2-p1-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['930904']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.76
+   "seconds": 6.75
   },
   {
    "name": "dbc69e621cd5dfe3e3de9efa.npz",
@@ -9828,7 +8575,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.3
   },
   {
    "name": "dbd7cf7ea0da319e23bcdd3a.bin",
@@ -9862,7 +8609,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.15
   },
   {
    "name": "dc0ac8ebaa02e5092ff09f14.bin",
@@ -9916,7 +8663,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.04
+   "seconds": 4.22
   },
   {
    "name": "dc9bf67129d8f351597c9e3a",
@@ -9933,7 +8680,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.69
   },
   {
    "name": "dcf85df232ec8b5119633de5.bin",
@@ -9970,7 +8717,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.54
+   "seconds": 6.69
   },
   {
    "name": "dd839fbe534cf15892591928",
@@ -9990,7 +8737,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
+   "seconds": 6.83
   },
   {
    "name": "dd98bf34ed301406ef0d1929.pkl",
@@ -10010,24 +8757,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
-  },
-  {
-   "name": "ddafdb6db437fa17b8053f27.bz2",
-   "sha256": "ddafdb6db437fa17b8053f27fbc8739e25718acde99e12e93e4fabd87aec9b68",
-   "format": "archive",
-   "family": "P-staticmethod-wrap-bz2-p5-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.13
   },
   {
    "name": "ddcf04fce81bac8034eb206d.zip",
@@ -10064,7 +8794,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.68
   },
   {
    "name": "de2e0632371370ef6a2a2d8b.bz2",
@@ -10084,7 +8814,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.98
+   "seconds": 4.11
   },
   {
    "name": "de38a107430a01b068b39d77.xz",
@@ -10101,7 +8831,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.03
+   "seconds": 4.13
   },
   {
    "name": "dedc5155ec2f0367b8da199d.gz",
@@ -10118,7 +8848,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.12
   },
   {
    "name": "df1c01a37977e14d0e881472.xz",
@@ -10135,7 +8865,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.46
+   "seconds": 5.67
   },
   {
    "name": "e0b08ba61b96d6e7aa4644ee.npy",
@@ -10155,7 +8885,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.68
   },
   {
    "name": "e0e1ccc77d64b1f30c049530.tar",
@@ -10175,26 +8905,6 @@
    "seconds": 2.59
   },
   {
-   "name": "e1adde587c7bfbc2792d7320.pkl",
-   "sha256": "e1adde587c7bfbc2792d73201a131757a6d07c3a4dd6269bc94d439410171b3c",
-   "format": "pickle",
-   "family": "P-weakref-finalize-second_stream-p2-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['ce3a06']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.04
-  },
-  {
    "name": "e1c783bbb52d91264a2e0e6e",
    "sha256": "e1c783bbb52d91264a2e0e6e00ceb488f02957d5010d44b131555cd12af9e791",
    "format": "savedmodel",
@@ -10209,7 +8919,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.66
   },
   {
    "name": "e22e0b4d918d2d53e2e98126.pth",
@@ -10229,7 +8939,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.29
   },
   {
    "name": "e2c20e19b379dca9c6bbee44.zip",
@@ -10269,7 +8979,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.69
+   "seconds": 2.67
   },
   {
    "name": "e3351f6cb8c1f98fda4de098.pkl",
@@ -10286,7 +8996,7 @@
    ],
    "rc": 1,
    "loaded_ok": false,
-   "stderr_tail": "k/run/569/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 341, in __init__\n    self._base_init(readermode)\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 355, in _base_init\n    self.welcome = self._getresp()\n                   ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 481, in _getresp\n    resp = self._getline()\n           ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 469, in _getline\n    if not line: raise EOFError\n                 ^^^^^^^^^^^^^^\nEOFError\n",
+   "stderr_tail": "k/run/498/loader.py\", line 37, in load_pickles\n    pickle.load(f); n += 1\n    ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 341, in __init__\n    self._base_init(readermode)\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 355, in _base_init\n    self.welcome = self._getresp()\n                   ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 481, in _getresp\n    resp = self._getline()\n           ^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/nntplib.py\", line 469, in _getline\n    if not line: raise EOFError\n                 ^^^^^^^^^^^^^^\nEOFError\n",
    "timed_out": false,
    "seconds": 2.61
   },
@@ -10325,7 +9035,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.1
   },
   {
    "name": "e41b0cd0b6b1f9ce1f12d456.bin",
@@ -10342,7 +9052,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.18
+   "seconds": 4.29
   },
   {
    "name": "e434e2aede3317bfb0888d6c",
@@ -10359,7 +9069,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.43
+   "seconds": 6.65
   },
   {
    "name": "e52499bbec93ed907bf5e0b8.bin",
@@ -10378,27 +9088,7 @@
    "loaded_ok": false,
    "stderr_tail": "on3.12/smtplib.py\", line 1029, in _get_socket\n    new_socket = self.context.wrap_socket(new_socket,\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1054, in _create\n    self.do_handshake()\n  File \"/usr/local/lib/python3.12/ssl.py\", line 1332, in do_handshake\n    self._sslobj.do_handshake()\nssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)\n",
    "timed_out": false,
-   "seconds": 5.48
-  },
-  {
-   "name": "e5cff58f5518b5e7d6d6bf90.xz",
-   "sha256": "e5cff58f5518b5e7d6d6bf908366690f8177ea3ec5e234773e2514c642cf8f6c",
-   "format": "archive",
-   "family": "P-pydoc-locate-nested-p4",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['522711']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.17
+   "seconds": 5.66
   },
   {
    "name": "e5e0fadaca405e9a27613420",
@@ -10415,7 +9105,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.46
+   "seconds": 6.69
   },
   {
    "name": "e658dd77e1b010621aa8f9b6.xz",
@@ -10432,7 +9122,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.16
+   "seconds": 4.27
   },
   {
    "name": "e663ba1be8e638322b831864.pkl",
@@ -10449,7 +9139,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.1
+   "seconds": 4.2
   },
   {
    "name": "e6a7727460a249b8766e8723",
@@ -10466,7 +9156,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.46
+   "seconds": 6.63
   },
   {
    "name": "e78992b8d604a9333c930a61.pt",
@@ -10486,7 +9176,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.27
   },
   {
    "name": "e78df450b929ae1030007dd1.tar",
@@ -10503,7 +9193,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.12
   },
   {
    "name": "e7b4b292aa0a18e825ded41e.pkl",
@@ -10543,7 +9233,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.52
+   "seconds": 5.63
   },
   {
    "name": "e892908a3dcf3bb6e21161d5",
@@ -10563,7 +9253,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.65
   },
   {
    "name": "e8bbf45d4ac5ca6e855b021d.pkl",
@@ -10580,7 +9270,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.67
+   "seconds": 2.68
   },
   {
    "name": "e8c1041fb287c3331effceff.pickle",
@@ -10631,7 +9321,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.29
   },
   {
    "name": "e96e8e473261b7f13b04966b",
@@ -10648,7 +9338,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.43
+   "seconds": 6.74
   },
   {
    "name": "e9b99ed8489d307fb8915731.ckpt",
@@ -10668,7 +9358,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.41
+   "seconds": 5.63
   },
   {
    "name": "e9baba7a20ca2ae9d54a4f80.zip",
@@ -10685,7 +9375,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.11
   },
   {
    "name": "e9d6c936e27f7e8a6dba6e59.bz2",
@@ -10705,26 +9395,6 @@
    "seconds": 2.59
   },
   {
-   "name": "ea819dea46d7f9914a27db4e.zip",
-   "sha256": "ea819dea46d7f9914a27db4e14afad7f5e646573e1bfcff3f8d1121ce0968f16",
-   "format": "archive",
-   "family": "P-module-build-rebind-zip-p3",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['0e93c0']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.04
-  },
-  {
    "name": "ea9f8e2efa951163452a5e32.zip",
    "sha256": "ea9f8e2efa951163452a5e32a3027a8952ae8b0344b8197ee5d154df313a9393",
    "format": "archive",
@@ -10739,7 +9409,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.11
   },
   {
    "name": "ead55292e28af34b567be0e0.tgz",
@@ -10756,7 +9426,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.29
   },
   {
    "name": "eb2fdb758ff4031e4966f7c1.gz",
@@ -10779,43 +9449,6 @@
    "seconds": 2.59
   },
   {
-   "name": "eb99682cc886c58b90deabd0.pth",
-   "sha256": "eb99682cc886c58b90deabd0e9b64463867acbec202e12458f3f4afd730193b5",
-   "format": "torch-legacy",
-   "family": "P-tarfile-bltn-open-legacy_torch-p2-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.18
-  },
-  {
-   "name": "ec06b9843f09c8546b960e75.bz2",
-   "sha256": "ec06b9843f09c8546b960e75f277398d8575dc5ceb8c3f6e1288202184f45610",
-   "format": "archive",
-   "family": "P-staticmethod-wrap-bz2-p5",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['c91a7a']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.01
-  },
-  {
    "name": "ec53b6d1835940bfbdde7de2",
    "sha256": "ec53b6d1835940bfbdde7de2f563bf8a1784c127b375a8ee6f12c75da06e008f",
    "format": "savedmodel",
@@ -10830,7 +9463,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.7
   },
   {
    "name": "ec7657d80bc8432e7b7bf3fe.bin",
@@ -10850,7 +9483,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.43
+   "seconds": 5.55
   },
   {
    "name": "ecd147d9575b20943fd1b1e1.pth",
@@ -10870,7 +9503,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.28
   },
   {
    "name": "ed1727303149909499ae4a2b.ckpt",
@@ -10887,7 +9520,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.15
+   "seconds": 4.29
   },
   {
    "name": "ed4a05d1dc6760494e41d14e.joblib",
@@ -10907,7 +9540,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.6
   },
   {
    "name": "ed4b82ef7878761281c4e441.npy",
@@ -10927,7 +9560,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.68
+   "seconds": 2.69
   },
   {
    "name": "ed79c093e7f7fab6c9ba0c72.keras",
@@ -10944,7 +9577,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.49
+   "seconds": 6.67
   },
   {
    "name": "edefa7690b89bb6c807b662e.gz",
@@ -10961,7 +9594,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.08
   },
   {
    "name": "ee01082c5b7fda0c84a52170.pickle",
@@ -10981,7 +9614,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.6
+   "seconds": 2.59
   },
   {
    "name": "ee5a7b8cebf2bc98d5a2689a.npy",
@@ -11018,7 +9651,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.07
   },
   {
    "name": "eef10cf8c67b200dccb07e4e.npz",
@@ -11035,26 +9668,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
-  },
-  {
-   "name": "ef000c5041850285aa8aef2a.zip",
-   "sha256": "ef000c5041850285aa8aef2a1909403750b0f158ad9d957341b27d35af3f6acb",
-   "format": "archive",
-   "family": "P-ssl-create-connection-polyglot_zip-p4-memo-dyn",
-   "capability": "network",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "connections:+1"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.6
+   "seconds": 4.12
   },
   {
    "name": "ef6ef81f7ed7a0901064e0b4.zip",
@@ -11073,7 +9687,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.09
   },
   {
    "name": "ef75f2ade824ef2c67336d4d.zip",
@@ -11093,7 +9707,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.11
   },
   {
    "name": "ef83929be15f5311f5c8761a.gz",
@@ -11127,7 +9741,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.13
   },
   {
    "name": "f0896bccd2c36105b58d1934",
@@ -11144,7 +9758,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.47
+   "seconds": 6.7
   },
   {
    "name": "f0e7781dfe175d5075438c8f.xz",
@@ -11161,7 +9775,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.1
   },
   {
    "name": "f14ef5e3611060593cca0d46.bz2",
@@ -11178,7 +9792,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.01
+   "seconds": 4.12
   },
   {
    "name": "f173a350d38174c5da4733ed.pt",
@@ -11195,7 +9809,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.17
+   "seconds": 4.29
   },
   {
    "name": "f17ce6e04d23cc6434e7d40b.xz",
@@ -11215,7 +9829,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.19
+   "seconds": 4.29
   },
   {
    "name": "f2a02359a17030477baf8eb9.gz",
@@ -11249,7 +9863,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.55
+   "seconds": 6.74
   },
   {
    "name": "f356a269aef618bf45992c2f.h5",
@@ -11266,27 +9880,7 @@
    "loaded_ok": true,
    "stderr_tail": "WARNING:absl:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.\n/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['sequence']\nReceived: inputs=Tensor(shape=(1, 5, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.57
-  },
-  {
-   "name": "f3d0989c01e1f57daeb03001.npy",
-   "sha256": "f3d0989c01e1f57daeb030012ee46f7e55fe54a24b9a1251a822bda823c9eba9",
-   "format": "npy",
-   "family": "X-npy-py2-header-object",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['179d9b']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "/work/run/624/loader.py:81: UserWarning: Reading `.npy` or `.npz` file required additional header parsing as it was created on Python 2. Save the file again to speed up loading and avoid this warning.\n  np.load(io.BytesIO(data), allow_pickle=True); return\n",
-   "timed_out": false,
-   "seconds": 2.66
+   "seconds": 6.73
   },
   {
    "name": "f48662f25767bc853c525692.pt",
@@ -11303,7 +9897,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 5.44
+   "seconds": 5.6
   },
   {
    "name": "f5bf98258aac929f06a1823d.joblib",
@@ -11320,7 +9914,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
+   "seconds": 4.14
   },
   {
    "name": "f5c47ce6d787cf0a5d5ac0e1.zip",
@@ -11340,27 +9934,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.88
-  },
-  {
-   "name": "f6f8563e19567b9ebefd2322.bz2",
-   "sha256": "f6f8563e19567b9ebefd23229b8de8ddebb576521d78a4c879235475bed48fd4",
-   "format": "archive",
-   "family": "P-path-truediv-bz2-p2",
-   "capability": "file-access",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['3bba3a']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 2.87
   },
   {
    "name": "f7086bdb0d627e811ca50192.tar",
@@ -11377,7 +9951,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
+   "seconds": 4.15
   },
   {
    "name": "f76d9f92d0692ed563326a9c.pkl",
@@ -11394,7 +9968,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.05
+   "seconds": 4.18
   },
   {
    "name": "f7d45e4272dca56a7f7e0651.zip",
@@ -11431,7 +10005,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.52
+   "seconds": 6.79
   },
   {
    "name": "f81ee8c37c5c8caad8d454bd.npz",
@@ -11451,41 +10025,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 2.68
-  },
-  {
-   "name": "f829719ee29f4f2e863ab2e8.tar",
-   "sha256": "f829719ee29f4f2e863ab2e850e17aa380a9b7226d5d53973e09e0f35ccd6073",
-   "format": "archive",
-   "family": "X-tar-member-binint-prefix-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
-  },
-  {
-   "name": "f94a031f0589eb62bc03d062.pkl",
-   "sha256": "f94a031f0589eb62bc03d062b9945ac3474f812948c951271b908542fb63ea22",
-   "format": "pickle",
-   "family": "P-weakref-finalize-second_stream-p2-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.03
+   "seconds": 2.67
   },
   {
    "name": "f9e8f6751095be6698d8edf8.pt",
@@ -11505,7 +10045,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.19
+   "seconds": 4.28
   },
   {
    "name": "fa590873ad10b3fbf6d174e9.pkl",
@@ -11525,7 +10065,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.06
+   "seconds": 4.22
   },
   {
    "name": "fab37c34a3af1fc1f1faf3d5.keras",
@@ -11545,7 +10085,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.73
   },
   {
    "name": "fabbf8639784e92a7ff361ef.pickle",
@@ -11565,24 +10105,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.02
-  },
-  {
-   "name": "fb039d1587c0e01dd50f2c10.pt",
-   "sha256": "fb039d1587c0e01dd50f2c10fff76f3f79c3beebca14032a851d2316eb97243e",
-   "format": "torch-zip",
-   "family": "P-type-of-function-torch_zip-p2-dyn-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.45
+   "seconds": 4.16
   },
   {
    "name": "fb2431dd6cd36229dfd217d1.gz",
@@ -11602,44 +10125,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 3.99
-  },
-  {
-   "name": "fb460e87a579a7c169573b3e.bz2",
-   "sha256": "fb460e87a579a7c169573b3e9c6e6e48479338995c3539a60aa5655c4eb9d77a",
-   "format": "archive",
-   "family": "P-shutil-os-getattr-bz2-p4-dyn",
-   "capability": "process",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['f531b8']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 4.04
-  },
-  {
-   "name": "fb59518d3a299b95040be439.gz",
-   "sha256": "fb59518d3a299b95040be43957259615a94d234653872ff2df04c14845f7d375",
-   "format": "archive",
-   "family": "P-newobj-attrgetter-gzip-p2-twin",
-   "capability": null,
-   "expected": "clean",
-   "observed": "clean",
-   "label_source": "execution",
-   "valid": true,
-   "events": [],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 2.59
+   "seconds": 4.12
   },
   {
    "name": "fcda898c4cf79aa936107558",
@@ -11656,27 +10142,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 6.5
-  },
-  {
-   "name": "fd39d7ec53597907570e8b2c.pt",
-   "sha256": "fd39d7ec53597907570e8b2c8092ec238f1483d266a5692a18c47948e08d7962",
-   "format": "torch-zip",
-   "family": "P-type-of-function-torch_zip-p2-dyn",
-   "capability": "code-execution",
-   "expected": "malicious",
-   "observed": "malicious",
-   "label_source": "execution",
-   "valid": true,
-   "events": [
-    "entries:['1a7796']",
-    "dir-times"
-   ],
-   "rc": 0,
-   "loaded_ok": true,
-   "stderr_tail": "",
-   "timed_out": false,
-   "seconds": 5.43
+   "seconds": 6.65
   },
   {
    "name": "ff8cb0c59306eb28725ad83c.keras",
@@ -11693,7 +10159,7 @@
    "loaded_ok": true,
    "stderr_tail": "/usr/local/lib/python3.12/site-packages/keras/src/models/functional.py:241: UserWarning: The structure of `inputs` doesn't match the expected structure.\nExpected: ['features']\nReceived: inputs=Tensor(shape=(1, 4))\n  warnings.warn(msg)\n",
    "timed_out": false,
-   "seconds": 6.48
+   "seconds": 6.67
   },
   {
    "name": "ffa8b9dbe9f0ab7f74147fb9.pickle",
@@ -11710,7 +10176,7 @@
    "loaded_ok": true,
    "stderr_tail": "",
    "timed_out": false,
-   "seconds": 4.0
+   "seconds": 4.13
   }
  ]
 }

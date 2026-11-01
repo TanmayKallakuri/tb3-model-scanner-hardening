@@ -1,0 +1,39 @@
+{
+    "id": "757abeb1-af0f-4b86-885a-a811b63f60a4",
+    "started_at": "2026-10-31T07:00:37.409015",
+    "updated_at": "2026-10-31T07:09:54.030282",
+    "finished_at": "2026-10-31T07:09:54.030282",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "claude-code__claude-opus-5-5__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "model-scanner-hardening__UiHFkaq"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": 426720,
+        "n_cache_tokens": 373180,
+        "n_output_tokens": 26303,
+        "cost_usd": 1.028928
+    }
+}
